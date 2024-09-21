@@ -486,7 +486,9 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: null !default;
-$body-color: $gray-900 !default;
+// $body-color: $gray-900 !default;
+$body-color: $white !default; // 2024/9/21 更新
+// $body-bg: $white !default;
 $body-bg: $primary-1000 !default;
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
