@@ -20,7 +20,11 @@
 // vendors
 @import "./vendors/swiper";
 
+//layout
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/project-intro-nav";
+@import "./layout/project-photograph-proposer";
 
 @import "./pages/index.scss";
+@import "./pages/project-intro";
