@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>追風者-資訊揭露與承諾</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- 劇照 swiper & 提案人 info -->
+    <%- include('./layout/project-photograph-proposer'); -%>
+
+    <!-- project-intro-nav -->
+    <%- include('./layout/project-intro-nav', {page:
+    "project-information-disclosure"}); -%>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
