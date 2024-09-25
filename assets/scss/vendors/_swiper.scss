@@ -1,0 +1,59 @@
+// project-intro
+// 劇照 swiper
+.projectIntroSwiper .swiper-slide {
+  opacity: 0.4;
+}
+
+.projectIntroSwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+//手機版 劇照 Swiper
+.swiper-button-prev.projectIntroSwiper-button-prev {
+  &::after {
+    content: "";
+    @media (max-width: 768px) {
+      content: "\e5cb";
+      font-family: "Material Symbols Outlined";
+      font-size: 20px;
+      color: $white;
+      padding: 0.25rem;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+    }
+  }
+  &:hover::after {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  &:active::after {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.swiper-button-next.projectIntroSwiper-button-next {
+  &::after {
+    content: "";
+    @media (max-width: 768px) {
+      content: "\e5cc";
+      font-family: "Material Symbols Outlined";
+      font-size: 20px;
+      padding: 0.25rem;
+      color: $white;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+    }
+  }
+  &:hover::after {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  &:active::after {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+// 第一張左邊按鈕隱藏；最後一張右邊按鈕隱藏
+.swiper-button-prev.projectIntroSwiper-button-prev.swiper-button-disabled,
+.swiper-button-next.projectIntroSwiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
