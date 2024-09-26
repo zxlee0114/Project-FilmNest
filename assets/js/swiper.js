@@ -37,3 +37,19 @@ const projectIntroSwiper2 = new Swiper(".projectIntroSwiper2", {
     swiper: projectIntroSwiper,
   },
 });
+
+// project-intro-nav 手機版
+const projectIntroNavSwiper = new Swiper(".project-intro-nav-swiper", {
+  slidesPerView: 4.1,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  freeMode: true,
+
+  breakpoint: {
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 1,
+      spaceBetween: 32,
+    },
+  },
+});
