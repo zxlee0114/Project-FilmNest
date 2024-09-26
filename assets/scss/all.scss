@@ -16,6 +16,7 @@
 
 // components
 @import "./components/buttons";
+@import "./components/project-card";
 
 // vendors
 @import "./vendors/swiper";
@@ -26,5 +27,7 @@
 @import "./layout/project-intro-nav";
 @import "./layout/project-photograph-proposer";
 
+//pages
 @import "./pages/index.scss";
 @import "./pages/project-intro";
+@import "./pages/project-explore";
