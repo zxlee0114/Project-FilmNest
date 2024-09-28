@@ -1,4 +1,51 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.bg-transparent {
+  background-color: transparent;
+}
+
+.navbar-dark {
+  .nav-link {
+    color: #FFF;
+  }
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-btn-deco::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 1px;
+  opacity: 40%;
+  background: #FFF;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.exploreDropdownDeco {
+  width: 24px;
+  height: 24px;
+  &::before {
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    content: "\e313";
+  }
+}
+
+.exploreDropdown.show {
+  .exploreDropdownDeco::before {
+    content: "\e316";
+  }
+}
+
+.navbar > .container {
+  justify-content:start;
+  @media (min-width: 992px) {
+    justify-content: space-between;
+  }
 }
