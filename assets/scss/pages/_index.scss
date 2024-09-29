@@ -1,3 +1,199 @@
-.index-title {
-  font-size: 100px;
+// .index-projectcard{
+//   padding-top: 120px;
+//   padding-bottom: 120px;
+// }
+// .index-banner-container{
+//   max-width: 1608px;
+//   padding-left: 12px;
+//   margin-left: auto;
+// }
+.index-banner-text-bg{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/image.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.index-banner-text{
+  position: relative;
+  z-index: 2;
+  padding-top: 290px;
+  padding-bottom: 60px;
+  padding-right: 616px;
+  @media(max-width:992px){
+    text-align: center;
+    padding-top: 333px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+}
+.index-banner-text-bg::after{
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #040404 0%, rgba(0, 0, 0, 0) 100%);
+}
+.swiper-horizontal > .swiper-scrollbar.indexbannerswiper-scrollbar, .swiper-scrollbar.indexbannerswiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: 77%;
+  bottom: 0;
+  top: 90%;
+  z-index: 50;
+  height: var(--swiper-scrollbar-size, 4px);
+  width: 200px;
+  @media(max-width:992px){
+    left: 50%;
+    top: 60%;
+    translate: (-50% -50%);
+  }
+}
+.indexbannerswiper-scrollbar>.swiper-scrollbar-drag {
+  background: #FFFFFF;
+}
+
+.card.index-card,.card.index-card2{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #606060;
+  box-shadow: 2px 2px 20px 2px rgba(255,255,255,0.2);
+}
+.progress.index-progress{
+  border-radius: 30px;
+}
+.progress-bar.index-progress-bar{
+  border-radius: 30px;
+}
+.index-projectcard::after{
+  content: "";
+  width: 480px;
+  height: 464px;
+  border-radius: 100%;
+  position: absolute;
+  top: 305px;
+  left:-72px;
+  background-color: $primary-600;
+  z-index: -1;
+  filter: blur(400px);
+  @media(max-width:576px){
+    width: 251px;
+    height: 243px;
+    top: 327px;
+    left:-102px;
+  }
+}
+.index-category{
+  background-image: url(/assets/images/image\ 49.png);
+  background-position: top center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media(max-width:992px){
+    padding-top: 28px;
+    padding-bottom: 72px;
+  }
+}
+.indexcategory-img{
+  @media(max-width:992px){
+    width: 36px;
+    height: 36px;
+  }
+}
+.index-case{
+  overflow: hidden;
+}
+.index-case::after{
+  content: "";
+  width: 619px;
+  height: 614px;
+  border-radius: 100%;
+  position: absolute;
+  top: 151px;
+  right:-142px;
+  background-color: $primary-600;
+  z-index: -1;
+  filter: blur(500px);
+  @media(max-width:576px){
+    width: 255px;
+    height: 252px;
+    top: 261px;
+    right:-113px;
+  }
+}
+.index-case::before{
+  content: "";
+  width: 363px;
+  height: 360px;
+  border-radius: 100%;
+  position: absolute;
+  top: 926px;
+  left:-5px;
+  background-color: $primary-600;
+  z-index: -1;
+  filter: blur(400px);
+  @media(max-width:576px){
+    width: 175px;
+    height: 174px;
+    top: 708px;
+    left:-43px;
+  }
+}
+.index-modal{
+  @media(max-width:767px){
+    height: 788px;
+  }
+}
+.index-modal-header{
+  background-image: url(/assets/images/image\ 45.png);
+  background-size: cover;
+  background-position: center center;
+  height: 320px;
+}
+.index-modal-header2{
+  background-image: url(/assets/images/image\ 46.png);
+  background-size: cover;
+  background-position: center 20%;
+  height: 320px;
+}
+.index-modal-header3{
+  background-image: url(/assets/images/image\ 44.png);
+  background-size: cover;
+  background-position: center top;
+  height: 320px;
+}
+.index-modal-body{
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-right: 110px;
+  padding-left: 110px;
+  @media(max-width:992px){
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+.btn-close {
+	--bs-btn-close-color: #FFFFFF;
+	--bs-btn-close-bg: url(/assets/images/icon/close_24dp_FFFFFF_FILL0_wght0_GRAD0_opszNaN.svg);
+	--bs-btn-close-opacity: 1;
+	--bs-btn-close-hover-opacity: 0.75;
+	--bs-btn-close-focus-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+	box-sizing: content-box;
+	width: 24px;
+	height: 24px;
+	color: #FFFFFF;
+}
+
+
+.slogan{
+  background-image: url(/assets/images/image\ 47.png);
+  background-size: cover;
+  background-position: center center;
+}
+.slogan-card-bg{
+  background-color: rgba(4, 4, 4, 0.4);
+  border-radius: 8px;
 }
