@@ -60,9 +60,22 @@ const feedbackChoiceSwiper = new Swiper(".feedbackChoiceSwiper",{
   spaceBetween: 12,
   
   breakpoints:{
+    768:{
+      slidesPerView: 2.5,
+      spaceBetween: 14,
+    },
     992:{
       slidesPerView: 4,
       spaceBetween: 16,
+      navigation: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        bulletActiveClass: "swiper-pagination-bullet-active",
+        clickable: true,
+
+        nextEl: ".feedbackChoiceSwiper-button-next",
+        prevEl: ".feedbackChoiceSwiper-button-prev",
+      },
     }
   }
-})
+});
