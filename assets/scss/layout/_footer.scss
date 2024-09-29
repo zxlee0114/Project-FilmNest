@@ -1,4 +1,10 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-bg {
+  background: #FFFFFF1A;
+}
+
+.fs-copyright {
+  font-size: 12px;
+  @media (min-width:768px) {
+    font-style: 14px;
+  }
 }
