@@ -461,11 +461,15 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
+  13: $spacer * 3.25,
   14: $spacer * 3.5,
   15: $spacer * 3.75,
   16: $spacer * 4,
-  18: $spacer * 4,
-  20: $spacer * 5
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  20: $spacer * 5,
+  30: $spacer * 7.5,
+  40: $spacer * 10,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
