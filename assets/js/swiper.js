@@ -53,3 +53,16 @@ const projectIntroNavSwiper = new Swiper(".project-intro-nav-swiper", {
     },
   },
 });
+
+//贊助方案 swiper
+const feedbackChoiceSwiper = new Swiper(".feedbackChoiceSwiper",{
+  slidesPerView: 1.2,
+  spaceBetween: 12,
+  
+  breakpoints:{
+    992:{
+      slidesPerView: 4,
+      spaceBetween: 16,
+    }
+  }
+})
