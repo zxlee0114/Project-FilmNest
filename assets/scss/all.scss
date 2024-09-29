@@ -18,6 +18,9 @@
 @import "./components/buttons";
 @import "./components/project-card";
 
+//helpers
+@import "./mixins/breakpoints";
+
 // vendors
 @import "./vendors/swiper";
 
@@ -31,3 +34,4 @@
 @import "./pages/index.scss";
 @import "./pages/project-intro";
 @import "./pages/project-explore";
+@import "./pages/feedback-choice";

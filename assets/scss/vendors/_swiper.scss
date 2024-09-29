@@ -57,3 +57,48 @@
 .swiper-button-next.projectIntroSwiper-button-next.swiper-button-disabled {
   opacity: 0;
 }
+
+.swiper-pagination-bullet.feedbackChoiceSwiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+  background: $primary-800;
+  margin: 0 4px;
+}
+.swiper-pagination-bullet.feedbackChoiceSwiper-pagination-bullet-active{
+  width: 8px;
+  height: 8px;
+  background: $white;
+  margin: 0 4px;
+}
+.swiper-button-prev.feedbackChoiceSwiper-button-prev{
+  &::after{
+    content:"";
+    @include md{
+      content: "\e5cb";
+      font-family: "Material Symbols Outlined";
+      font-size: 20px;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 60%;
+      background: transparent;
+    }
+  }
+}
+.swiper-button-prev.feedbackChoiceSwiper-button-next{
+  &::after{
+    content:"";
+    @include md{
+      content: "\e5cb";
+      font-family: "Material Symbols Outlined";
+      font-size: 20px;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 60%;
+      background: transparent;
+    }
+  }
+}
