@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEUUlEQVRYw8WXYWiWVRTH/3e8yHh5GUOGyYgxZI0xTGKMkH2QiDFsjDFCQkJkSYiMCBvDLCwYfpIhESIxBg2JMUJGDCk/1FhkUCYloWlWVmMOs2WhueZ6t/360P+J6+O7121YHXh43+eec++593/+55z7SP+zhJVOAEokxU8ii5LmQwiL/8oGgHJJmyQ1SnpY0kZJOav/lPSjpG8knZL0RQjhyn2BCCgH2oFxYApY8DMLzPiZBfL8LTeAs0AnsM6IrRwBT3xU0mH/ZiT9KukzSeclnfP7oqSspBoj0yTpQdt/J+klSe+FEP5YUZyBHcBln/Y3YADYAlQAOaAJ6AYOAG1GKgvU+fTfGpVp4AiQXa7zNcBTwO+G9CTwWKRfDxwF5rhTxoGmyK4uZfc6ULGcDWwHrnriUDwJyADHCjhP5GLKPgc8ZxRmvYlMMefVwA9ebCi9Y2BjEeeJ7C2A6B7r5oC2YtAfseEloKqAzU7uLUNLrD1gTpwGahJdnCINktrN7F5JWWAXkIts5leRxm3OjNdcJxokNRcy7DPjT5jRA47bcIIGUOO8Lyadts0CXSbztN/3RVwpSW/gkpXP+n0HcN2wjSZIOEz5JZyfA9barsfz54D+iGMJh+pj5zU+fR6ojBjf4kUWgHe8QDnQC0zafsHV7zhQb+b32FHedSIX+fr8LrICrR6cKBCaPYYwD4yYUKUuRJ3Wt7lXCHjZhSvvlC1NrXfMvt6IB7s8+IlPXg/U+n+JNzhtm5ElMiQL7I+QPBiFbT3QaJturzMKrElvYNzhGAPOpCrgLuCaoR2NS6s3uTeOeaIHqoC3XV9aI1/v/rMGsNuDp7zb436fAjZEjp6OSvTRqC8kp8o7BInzUiOGe0OjUboLgXYPTka7nvDYcMTsTMTuGadqt2OelNpshMpuIzIHbPP8fq/bH8evKkqtao+1GIE5oDvVD7ab+bH0pMLSFHXEg9H4Rdt3pdtvouiJyuehBJmE5ZH98z75glEqTekHrRuLUrvWB1oANqVZ3GvF+8C6iL0J+/cVaFxnjMTWlK4u4kpzhFyfx04X6gUjkr6WtFnSk5IUQvhJ0pvuAU8kG0tJJl7H7fYZ3xc/kvRh1Gs6fH98a6lb0KsR5DUeb/DNaAboKIDADNCaqqpnTcqdUY044bXHCtWRZHJZVCpPAhs8eSRdvYpsYJvj/KVjvhY4bDLeAJrjRnRHRwoh3JT0gqTvJbVIGpBUJWlQ0hVJU8vowLc8f0TSL5L6JHU5jIdCCB8U/XYwWR73tQzgK9f72lSaVZqwk8CW1OWjGugw3HkT8kDqbnHPi8RWQ4xhHja8uYgzm13EyiLn7S421z33qlM2s5rvgkpJr0hq9V3/tqSffd8/L2nakD8gqc5Mr5BUKummpE8lvSjpQghhfrVfRknrHYwurMUkuRu0Jcjcr2/DjHP+EUn1kh6SVObT3pY0IemCpI8l3Vr1if9r+Qtcj0VOW+c7qwAAAABJRU5ErkJggg=="
+      type="image/x-icon"
+    />
+    <title>專案探索</title>
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-9f001b00.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-bade619f.css">
+  </head>
+  <body>
+    <!-- header -->
+    <h1 class="header">我是 header</h1>
+<a href="index.html">index</a>
+<a href="about.html">about</a>
+<a href="contact.html">contact</a>    <section class="pt-5">
+      <div class="container" style="box-shadow: 0px 20px 20px -20px #ffffff33">
+        <div class="d-flex gap-2 gap-md-4 pb-5 border-bottom border-primary-9">
+          <div class="d-flex align-items-center">
+            <span class="project-select me-1 me-md-3 fs-sm fs-md-base"
+              >專案分類</span
+            ><select
+              class="form-select fs-sm fs-md-base project-option"
+              aria-label="Default select example"
+            >
+              <option selected><a href="#">全部專案</a></option>
+              <option value="1"><a href="#">喜劇</a></option>
+              <option value="2"><a href="#">愛情</a></option>
+              <option value="3"><a href="#">恐怖</a></option>
+              <option value="4"><a href="#">懸疑</a></option>
+              <option value="5"><a href="#">科幻</a></option>
+              <option value="6"><a href="#">紀錄片</a></option>
+              <option value="7"><a href="#">動畫</a></option>
+              <option value="8"><a href="#">實驗電影</a></option>
+            </select>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="project-select me-1 me-md-3 fs-sm fs-md-base"
+              >專案狀態</span
+            ><select
+              class="form-select fs-sm fs-md-base"
+              aria-label="Default select example"
+            >
+              <option selected><a href="#">進行中</a></option>
+              <option value="1"><a href="#">即將開始</a></option>
+              <option value="2"><a href="#">已結案</a></option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-cards -->
+    <section class="py-12">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6">
+          <!-- 1 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/追風者5-3dab702f.png"
+                  alt="外送人員背影"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    外送人員不為人知的辛勞－紀錄片《追風者》募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 2 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 26-dabc750b.png"
+                  alt="魔羯男孩"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    畢業製作《魔羯男孩》募資計畫-談青春成長的自我受限
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 3 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 33-b3b6322b.png"
+                  alt="末日遠行"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    金狗獎最佳短片《末日遠行》長片募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 4 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 28-c1628433.png"
+                  alt="梵谷-星空"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    《IQBA》：春上村樹授權改編募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 5 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/遠端對話1-8c2a6d32.png"
+                  alt="遠端對話"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    南方影展首獎 - 紀錄短片《遠端對話》劇情長片計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 6 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 38-655fca31.png"
+                  alt="孤獨時光"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    金穗獎《孤獨時光》｜長片募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 7 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 35-1ea11751.png"
+                  alt="十年"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    《十年》紀錄片募資計畫 探索教育體系對工作的影響
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 8 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 36-aaae4a9f.png"
+                  alt="遠端對話"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    學生動作片《迫影》｜募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 9 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 34-1a1bac1f.png"
+                  alt="玉蘭"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">《玉蘭》短片創作計畫</h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 10 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 39-816af60d.png"
+                  alt="喜歡你的11個理由"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    愛情電影《喜歡你的11個理由》募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 11 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/追風者7-bd6cf5d3.png"
+                  alt="追風者"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    外送人員不為人知的辛勞－紀錄片《追風者》募資計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 12 -->
+          <div class="col">
+            <a href="project-intro.html" class="project-card-link">
+              <div class="card project-card">
+                <img
+                  class="object-fit-cover rounded-top"
+                  src="/Project-FilmNest/assets/image 37-24d661a4.png"
+                  alt="遠端對話"
+                />
+                <!-- card-header & card-body & card-footer -->
+                <div class="p-3 mt-3">
+                  <h3 class="fs-sm fs-md-base mb-4">
+                    南方影展首獎 - 紀錄短片《遠端對話》劇情長片計畫
+                  </h3>
+                  <!-- 募資人數 & 募資倒數 -->
+                  <section class="d-flex justify-content-between mb-4">
+                    <div class="">
+                      <span class="material-symbols-outlined align-bottom fs-7">
+                        person </span
+                      ><span class="fs-sm">100</span>
+                    </div>
+                    <div class="fs-sm">倒數 10 天</div>
+                  </section>
+                  <!-- 募資進度 -->
+                  <section
+                    class="progress bg-primary-8 mb-4"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-white"
+                      role="progressbar"
+                      style="width: 90%; border-radius: 50px"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </section>
+                  <!-- 募資金額 -->
+                  <p class="fs-6 mb-0">NT$ 123,456</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- pagination -->
+        <ul
+          class="mt-10 d-flex list-unstyled justify-content-center align-items-center gap-1 gap-md-3"
+        >
+          <li>
+            <a
+              class="pagination-item pagination-item-disabled rounded"
+              href="#"
+              disabled
+              ><span class="material-symbols-outlined">
+                keyboard_double_arrow_left
+              </span></a
+            >
+          </li>
+          <li>
+            <a
+              class="pagination-item pagination-item-disabled rounded"
+              href="#"
+              disabled
+              ><span class="material-symbols-outlined"> chevron_left </span></a
+            >
+          </li>
+          <li>
+            <a
+              class="pagination-item pagination-item-active rounded fs-sm fs-md-base"
+              href="#"
+              >1</a
+            >
+          </li>
+          <li>
+            <a class="pagination-item rounded fs-sm fs-md-base" href="#">2</a>
+          </li>
+          <li>
+            <a class="pagination-item rounded fs-sm fs-md-base" href="#">3</a>
+          </li>
+          <li>
+            <a class="pagination-item rounded fs-sm fs-md-base" href="#">...</a>
+          </li>
+          <li>
+            <a class="pagination-item rounded fs-sm fs-md-base" href="#">10</a>
+          </li>
+          <li>
+            <a class="pagination-item rounded" href="#"
+              ><span class="material-symbols-outlined"> chevron_right </span></a
+            >
+          </li>
+          <li>
+            <a class="pagination-item rounded" href="#"
+              ><span class="material-symbols-outlined">
+                keyboard_double_arrow_right
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">我是 footer</footer>
+    
+  </body>
+</html>
