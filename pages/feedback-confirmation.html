@@ -13,7 +13,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <header class="container" style="margin-top: 88px;">
+    <header class="container mb-8" style="margin-top: 88px;">
       <div class="row">
           <div class="d-flex justify-content-around align-items-center flex-wrap">
               <div class="col-lg-5 p-6">
@@ -21,7 +21,7 @@
               </div>
               <div class="col-lg-7 d-lg-block d-none">
                   <h2  class="fs-lg-6 fs-sm text-primary-2">《 追風者 》群眾募資計畫</h2>
-                  <h1 class="fs-lg-xxl fs-6 mb-lg-3 mb-1 text-nowrap">贊助方案－我全都要組</h1>
+                  <h1 class="fs-lg-xxl fs-6 mb-lg-3 mb-1">贊助方案－我全都要組</h1>
               </div>
               <!-- 手機版標題 -->
               <div class="d-lg-none">
@@ -30,11 +30,11 @@
           </div>
       </div>
     </header>
-    <main>
-      <div class="container pt-6">
-        <div class="row">
-          <div class="col-lg-8">
-            <section class="d-flex flex-column">
+    <div class="container">
+      <div class="row justify-content-between mb-8">
+        <!-- <div class="d-flex justify-content-between mb-8"> -->
+          <main class="col-lg-8">
+            <section class="d-flex flex-column mb-8">
               <h3 class="fs-lg-3 fw-bolder">方案資訊</h3>
               <table class="table table-dark table-hover text-center my-6">
                 <thead>
@@ -82,16 +82,6 @@
                   </tr>
                 </tbody>
               </table>
-              <!-- <ol class="list-unstyled fs-lg-7 fs-base">
-                <li>1. 獨家簽名海報乙張</li>
-                <li>2. 獨家簽名劇照訪談集乙本</li>
-                <li>3. 特色手機支架乙支</li>
-                <li>4. 獨家酷卡乙組</li>
-                <li>5. 首輪交換券乙張</li>
-                <li>6. 片尾感謝名單</li>
-                <li>7. Vber Eat 100元折價券</li>
-              </ol> -->
-              <!-- 觸發 #feedbackModal 按鈕 -->
               <a class="btn btn-secondary align-self-end" href="#feedbackModal" data-bs-toggle="modal">更改方案
                 <span class="material-symbols-outlined ms-1 align-bottom">undo</span>
               </a>
@@ -111,58 +101,66 @@
                 </div>
               </div>
             </section>
-          </div>
-            <aside class="col-lg-3 feedback-confirmation-sidebar d-lg-block d-none p-3 bg-primary-9 border rounded-1 h-100 ms-auto" style="border: 1px sold #606060;">
-              <h3 class="fs-5 fw-bolder mb-4">隨喜加碼</h3>
-              <div class="amount-buttons d-flex justify-content-between mb-4">
-                <button class="amount-button btn btn-secondary" data-amount="100">+100</button>
-                <button class="amount-button btn btn-secondary" data-amount="500">+500</button>
-                <button class="amount-button btn btn-secondary" data-amount="1000">+1,000</button>
-              </div>
-              <div class="custom-amount mb-4 d-flex align-items-center justify-content-between">
-                <input type="number" id="customAmount" placeholder="自訂金額" min="0" class="p-2 rounded-1 flex-shrink-1">
-                <button class="btn btn-secondary confirm-button">加碼</button>
-              </div>
-              <hr>
-              <div class="fs-xs">總計金額</div>
-              <div class="fs-6 fw-bolder text-end mb-4">NT$ 2,000</div>
-              <button type="submit" class="checkout-button btn btn-secondary w-100">結帳</button>
-            </aside>  
-        </div>
-      </div>
-      <div class="container pt-6" style="padding-bottom: 1000px;">
-        <div class="row">
-          <div class="col-lg-8">
+            <!-- 感謝名稱 -->
             <section>
-              <h3 class="fs-lg-3 fw-bolder mb-3">感謝名稱<span class="text-danger">*</span></h3>
-              <p>請留下您的大名或暱稱，我們會將您的名字置入電影片尾感謝名單。</p>
-              <p>※如不願露出，選擇匿名即可</p>
-              <form action="">
-                <div class="d-flex align-items-center mb-3">
-                  <input type="radio" id="chooseInputName" name="showNameOrNot" class="me-2">
-                  <input type="text" id="supporterNameInput" class="supporter-name-input rounded-1 p-2" placeholder="填入您希望的稱呼" disabled>
-                </div>
-                <div>
-                  <input type="radio" id="chooseHideName" name="showNameOrNot" class="me-2">
-                  <label for="chooseHideName">我想匿名</label>
-                </div>
-                <hr>
-                <div class="d-flex flex-column">
-                  <label for="messageToTeam" class="mb-3 fs-lg-6">想跟團隊說的話</label>
-                  <textarea name="messageToTeam" id="messageToTeam" rows="6" cols="33" placeholder="您的留言會出現在留言板（選填）" class="rounded-1 p-2" style="resize: none;"></textarea>
-                </div>
-              </form>
+             <h3 class="fs-lg-3 fw-bolder mb-3">感謝名稱<span class="text-danger">*</span></h3>
+             <p>請留下您的大名或暱稱，我們會將您的名字置入電影片尾感謝名單。</p>
+             <p>※如不願露出，選擇匿名即可</p>
+             <form action="">
+               <div class="d-flex align-items-center mb-3">
+                 <input type="radio" id="chooseInputName" name="showNameOrNot" class="me-2">
+                 <input type="text" id="supporterNameInput" class="supporter-name-input rounded-1 p-2" placeholder="填入您希望的稱呼" disabled>
+               </div>
+               <div>
+                 <input type="radio" id="chooseHideName" name="showNameOrNot" class="me-2">
+                 <label for="chooseHideName">我想匿名</label>
+               </div>
+               <hr>
+               <div class="d-flex flex-column">
+                 <label for="messageToTeam" class="mb-3 fs-lg-6">想跟團隊說的話</label>
+                 <textarea name="messageToTeam" id="messageToTeam" rows="6" cols="33" placeholder="您的留言會出現在留言板（選填）" class="rounded-1 p-2" style="resize: none;"></textarea>
+               </div>
+             </form>
             </section>
-          </div>
+          </main>
+          <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none p-3 bg-primary-9 border rounded-1 h-auto" style="border: 1px sold #606060;">
+            <h3 class="fs-5 fw-bolder mb-4">隨喜加碼</h3>
+            <div class="amount-buttons d-flex justify-content-between mb-4">
+              <button class="amount-button btn btn-secondary" data-amount="100">+100</button>
+              <button class="amount-button btn btn-secondary" data-amount="500">+500</button>
+              <button class="amount-button btn btn-secondary" data-amount="1000">+1,000</button>
+            </div>
+            <div class="custom-amount mb-4 d-flex align-items-center justify-content-between flex-wrap">
+              <input type="number" id="customAmount" placeholder="自訂金額" min="0" class="p-2 rounded-1 w-auto mb-4">
+              <button class="btn btn-secondary confirm-button mb-4">加碼</button>
+            </div>
+            <hr>
+            <div class="fs-xs">總計金額</div>
+            <div class="fs-6 fw-bolder text-end mb-4">NT$ 2,000</div>
+            <button type="submit" class="checkout-button btn btn-secondary w-100">下一步</button>
+          </aside>  
+        <!-- </div> -->
+      </div>
+    </div>
+    
+
+      <%- include('./layout/footer'); -%>
+
+    <!-- 手機版：aside 變成 footer -->
+    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
+          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 bg-primary-8 text-primary-2 w-auto" style="max-width: 160px;">
+          <button class="btn btn-secondary confirm-button">確認</button>
+          <button class="btn btn-secondary cancel-button">取消</button>
+        </div>
+        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+          <p class="mb-0">總計：</p>
+          <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+          <button type="submit" class="btn btn-primary ms-auto">下一步</button>
         </div>
       </div>
-    </main>
-
-
-
-
-    <%- include('./layout/footer'); -%>
-
+    </footer>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
