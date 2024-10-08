@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>付款資料</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container" style="margin-top: 88px;">
+        <div class="row">
+            <main class="col-lg-8">
+                <h2 class="fs-lg-6 fs-sm text-primary-2">付款資料</h2>
+                <form>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">會員資料</legend>
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                                <label for="memberName" class="form-label required">會員姓名</label>
+                                <input type="text" class="form-control" id="memberName" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="memberPhone" class="form-label required">手機</label>
+                                <input type="tel" class="form-control" id="memberPhone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberEmail" class="form-label required">Email</label>
+                            <input type="email" class="form-control" id="memberEmail" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">收件人資料</legend>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="sameAsMember">
+                            <label class="form-check-label" for="sameAsMember">同會員資料</label>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="recipientName" class="form-label required">真實姓名</label>
+                                <input type="text" class="form-control" id="recipientName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="recipientPhone" class="form-label required">手機</label>
+                                <input type="tel" class="form-control" id="recipientPhone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipientEmail" class="form-label required">E-mail</label>
+                            <input type="email" class="form-control" id="recipientEmail" required>
+                         </div>
+                    </fieldset>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">收件地址</legend>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                              <label for="county" class="form-label required">縣市</label>
+                                <select class="form-select" id="county" required>
+                                  <option value="" selected>請選擇縣市</option>
+                                  <option value="Taipei">台北市</option>
+                                  <option value="Taichung">台中市</option>
+                                  <option value="Kaohsiung">高雄市</option>
+                                  <!-- 待補足 -->
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                               <label for="district" class="form-label required">鄉鎮市區</label>
+                                 <select class="form-select" id="district" required>
+                                   <option value="" selected>請選擇鄉鎮市區</option>
+                                    <!-- 呃… -->
+                                 </select>
+                            </div>
+                            <div class="col-md-4">
+                               <label for="zipcode" class="form-label required">郵遞區號</label>
+                               <input type="text" class="form-control" id="zipcode" required>
+                            </div>
+                           </div>
+                        <div class="mb-3">
+                          <label for="address" class="form-label required">詳細地址</label>
+                          <input type="text" class="form-control" id="address" required>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
