@@ -1,0 +1,19 @@
+//必填星號
+.form-label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
+//付款表單群組
+.payment-fieldset{
+    border: 1px solid #606060;
+    border-radius: 8px;
+    padding: 16px;
+}
+.payment-lengend{
+    float: none; //讓 legend 變成酷酷的東西
+    width: auto;
+    padding: 0 8px;
+    font-weight: 500;
+}
