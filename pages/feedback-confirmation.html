@@ -123,21 +123,33 @@
              </form>
             </section>
           </main>
-          <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none p-3 bg-primary-9 border rounded-1 h-auto" style="border: 1px sold #606060;">
-            <h3 class="fs-5 fw-bolder mb-4">隨喜加碼</h3>
-            <div class="amount-buttons d-flex justify-content-between mb-4">
-              <button class="amount-button btn btn-secondary" data-amount="100">+100</button>
-              <button class="amount-button btn btn-secondary" data-amount="500">+500</button>
-              <button class="amount-button btn btn-secondary" data-amount="1000">+1,000</button>
+          <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
+            <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+              <div class="card-body">
+                <h3 class="card-title fs-5 fw-bolder mb-4">隨喜加碼</h3>
+                <div class="row mb-4">
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="100">+100</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="1000">+1,000</button>
+                  </div>
+                </div>
+                <div class="input-group mb-4">
+                  <input type="number" name="" id="customAmount" placeholder="自訂金額" class="form-control rounded-start-1">
+                  <button type="button" class="btn btn-primary" id="addCustomAmount">加碼</button>
+                  <button type="button" class="btn btn-secondary rounded-end-1" id="resetCustomAmount">重設</button>
+                </div>
+                <div class="bg-primary-8 p-3 rounded-1 mb-4">
+                  <p class="mb-1">總計金額</p>
+                  <h4 class="fs-6 fw-bolder mb-1">NT$ 2,000</h4>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+              </div>
             </div>
-            <div class="custom-amount mb-4 d-flex align-items-center justify-content-between flex-wrap">
-              <input type="number" id="customAmount" placeholder="自訂金額" min="0" class="p-2 rounded-1 w-auto mb-4">
-              <button class="btn btn-secondary confirm-button mb-4">加碼</button>
-            </div>
-            <hr>
-            <div class="fs-xs">總計金額</div>
-            <div class="fs-6 fw-bolder text-end mb-4">NT$ 2,000</div>
-            <button type="submit" class="checkout-button btn btn-secondary w-100">下一步</button>
           </aside>  
         <!-- </div> -->
       </div>
@@ -152,7 +164,7 @@
         <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
           <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 bg-primary-8 text-primary-2 w-auto" style="max-width: 160px;">
           <button class="btn btn-secondary confirm-button">確認</button>
-          <button class="btn btn-secondary cancel-button">取消</button>
+          <button class="btn btn-secondary cancel-button">重設</button>
         </div>
         <div class="amount-confirm-mobile d-flex align-items-center gap-3">
           <p class="mb-0">總計：</p>
