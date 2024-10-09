@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEUUlEQVRYw8WXYWiWVRTH/3e8yHh5GUOGyYgxZI0xTGKMkH2QiDFsjDFCQkJkSYiMCBvDLCwYfpIhESIxBg2JMUJGDCk/1FhkUCYloWlWVmMOs2WhueZ6t/360P+J6+O7121YHXh43+eec++593/+55z7SP+zhJVOAEokxU8ii5LmQwiL/8oGgHJJmyQ1SnpY0kZJOav/lPSjpG8knZL0RQjhyn2BCCgH2oFxYApY8DMLzPiZBfL8LTeAs0AnsM6IrRwBT3xU0mH/ZiT9KukzSeclnfP7oqSspBoj0yTpQdt/J+klSe+FEP5YUZyBHcBln/Y3YADYAlQAOaAJ6AYOAG1GKgvU+fTfGpVp4AiQXa7zNcBTwO+G9CTwWKRfDxwF5rhTxoGmyK4uZfc6ULGcDWwHrnriUDwJyADHCjhP5GLKPgc8ZxRmvYlMMefVwA9ebCi9Y2BjEeeJ7C2A6B7r5oC2YtAfseEloKqAzU7uLUNLrD1gTpwGahJdnCINktrN7F5JWWAXkIts5leRxm3OjNdcJxokNRcy7DPjT5jRA47bcIIGUOO8Lyadts0CXSbztN/3RVwpSW/gkpXP+n0HcN2wjSZIOEz5JZyfA9barsfz54D+iGMJh+pj5zU+fR6ojBjf4kUWgHe8QDnQC0zafsHV7zhQb+b32FHedSIX+fr8LrICrR6cKBCaPYYwD4yYUKUuRJ3Wt7lXCHjZhSvvlC1NrXfMvt6IB7s8+IlPXg/U+n+JNzhtm5ElMiQL7I+QPBiFbT3QaJturzMKrElvYNzhGAPOpCrgLuCaoR2NS6s3uTeOeaIHqoC3XV9aI1/v/rMGsNuDp7zb436fAjZEjp6OSvTRqC8kp8o7BInzUiOGe0OjUboLgXYPTka7nvDYcMTsTMTuGadqt2OelNpshMpuIzIHbPP8fq/bH8evKkqtao+1GIE5oDvVD7ab+bH0pMLSFHXEg9H4Rdt3pdtvouiJyuehBJmE5ZH98z75glEqTekHrRuLUrvWB1oANqVZ3GvF+8C6iL0J+/cVaFxnjMTWlK4u4kpzhFyfx04X6gUjkr6WtFnSk5IUQvhJ0pvuAU8kG0tJJl7H7fYZ3xc/kvRh1Gs6fH98a6lb0KsR5DUeb/DNaAboKIDADNCaqqpnTcqdUY044bXHCtWRZHJZVCpPAhs8eSRdvYpsYJvj/KVjvhY4bDLeAJrjRnRHRwoh3JT0gqTvJbVIGpBUJWlQ0hVJU8vowLc8f0TSL5L6JHU5jIdCCB8U/XYwWR73tQzgK9f72lSaVZqwk8CW1OWjGugw3HkT8kDqbnHPi8RWQ4xhHja8uYgzm13EyiLn7S421z33qlM2s5rvgkpJr0hq9V3/tqSffd8/L2nakD8gqc5Mr5BUKummpE8lvSjpQghhfrVfRknrHYwurMUkuRu0Jcjcr2/DjHP+EUn1kh6SVObT3pY0IemCpI8l3Vr1if9r+Qtcj0VOW+c7qwAAAABJRU5ErkJggg=="
+      type="image/x-icon"
+    />
+    <title>《追風者》方案確認</title>
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-b2ec21d2.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-9f158db4.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3 py-lg-5 fixed-top">
+  <div class="container">
+    <button class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="p-0 me-12" href="index.html"><img src="data:image/png;base64,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" alt="filmnest logo"></a>
+    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown me-10">
+          <a class="nav-link exploreDropdown fw-bolder d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            探索
+            <span class="exploreDropdownDeco ms-2"></span>
+          </a>
+          <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-black" href="#">Action</a></li>
+            <li><a class="dropdown-item text-black" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider text-black"></li>
+            <li><a class="dropdown-item text-black" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a>
+        </li>
+      </ul>
+      <div class="ms-auto">
+        <button class="btn btn-outline-light fw-bolder p-0 border-0 me-8" type="button">登入 / 註冊</button>
+        <button class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</button>
+      </div>
+    </div>
+  </div>
+</nav>
+    <header class="container mb-8" style="margin-top: 88px;">
+      <div class="row">
+          <div class="d-flex justify-content-around align-items-center flex-wrap">
+              <div class="col-lg-5 p-6">
+                  <img class="rounded-1" src="/Project-FilmNest/assets/image 62-569e888a.png" alt="追風者 我全都要組">
+              </div>
+              <div class="col-lg-7 d-lg-block d-none">
+                  <h2 class="fs-lg-6 fs-sm text-primary-2">《 追風者 》群眾募資計畫</h2>
+                  <h1 class="fs-lg-xxl fs-6 mb-lg-3 mb-1">贊助方案－我全都要組</h1>
+              </div>
+              <!-- 手機版標題 -->
+              <div class="d-lg-none">
+                <h1 class="fs-8 mb-1 text-nowrap">《 追風者 》｜ 我全都要組</h1>
+              </div>
+          </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row justify-content-between mb-8">
+        <!-- <div class="d-flex justify-content-between mb-8"> -->
+          <main class="col-lg-8">
+            <section class="d-flex flex-column mb-8">
+              <h3 class="fs-lg-3 fw-bolder">方案資訊</h3>
+              <table class="table table-dark table-hover text-center my-6">
+                <thead>
+                  <tr class="fs-7 fw-bolder">
+                    <th scope="col"></th>
+                    <th scope="col">回饋項目</th>
+                    <th scope="col">數量</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>獨家簽名海報</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>獨家簽名劇照訪談集</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>特色手機支架</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>獨家酷卡組</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>首輪交換券</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Vber Eat 100 元折價券</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>片尾感謝名單</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="btn btn-secondary align-self-end" href="#feedbackModal" data-bs-toggle="modal">更改方案
+                <span class="material-symbols-outlined ms-1 align-bottom">undo</span>
+              </a>
+              <!-- #feedbackModal 內容 -->
+              <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                      <h1 class="modal-title fs-5 mx-auto" id="feedbackModalLabel">方案選擇</h1>
+                      <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="swiper feedbackChoiceSwiper">
+    <div class="swiper-wrapper">
+      <!-- 卡片一 -->
+      <div class="swiper-slide h-auto">
+        <section class="feedbackChoice-card bg-primary-9 rounded-2 border h-100 d-flex flex-column" style="border-color: #606060;">
+          <img class="object-fit-cover rounded-top-2" src="/Project-FilmNest/assets/image 59-3194f1bf.png" alt="電影海報組">
+          <div class="feedbackChoice-card-bottom p-lg-5 py-4 px-3 h-100 d-flex flex-column">
+            <div class="feedbackChoice-card-title fw-bolder">
+              <h2 class="feedbackChoice-card-subject fs-lg-7 mb-1">電影海報組</h2>
+              <h3 class="fs-lg-6 fs-7 mb-lg-6 mb-3">NT$ 500</h3>
+              <hr/>
+            </div>
+            <div class="feedbackChoice-card-content d-flex flex-column h-100">
+              <p class="mb-lg-2 mb-1">本方案包含：</p>
+              <ol class="list-unstyled mb-g-6 mb-3">
+                <li>1. 獨家簽名海報乙張</li>
+                <li>2. 獨家酷卡乙組</li>
+                <li>3. 首輪交換券乙張</li>
+                <li>4. 片尾感謝名單</li>
+                <li>5. Vber Eat 100元折價券</li>
+              </ol>
+              <button class="btn btn-primary w-100 py-3 mt-auto text-primary-10 fw-bolder">選擇此方案</button>
+            </div>
+          </div>
+        </section>
+      </div>
+        <!-- 卡片二 -->
+      <div class="swiper-slide h-auto">
+        <section class="feedbackChoice-card bg-primary-9 rounded-2 border h-100 d-flex flex-column" style="border-color: #606060;">
+          <img class="object-fit-cover rounded-top-2" src="/Project-FilmNest/assets/image 61-92c620cf.png" alt="劇照訪談組">
+          <div class="feedbackChoice-card-bottom p-lg-5 py-4 px-3 h-100 d-flex flex-column">
+            <div class="feedbackChoice-card-title fw-bolder">
+              <h2 class="feedbackChoice-card-subject fs-lg-7 mb-1">劇照訪談組</h2>
+              <h3 class="fs-lg-6 fs-7 mb-lg-6 mb-3">NT$ 800</h3>
+              <hr/>
+            </div>
+            <div class="feedbackChoice-card-content d-flex flex-column h-100">
+              <p class="mb-lg-2 mb-1">本方案包含：</p>
+              <ol class="list-unstyled mb-g-6 mb-3">
+                <li>1. 獨家簽名劇照訪談集乙本</li>
+                <li>2. 獨家酷卡乙組</li>
+                <li>3. 首輪交換券乙張</li>
+                <li>4. 片尾感謝名單</li>
+                <li>5. Vber Eat 100元折價券</li>
+              </ol>
+              <button class="btn btn-primary w-100 py-3 mt-auto text-primary-10 fw-bolder">選擇此方案</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 卡片三 -->
+      <div class="swiper-slide h-auto">
+        <section class="feedbackChoice-card bg-primary-9 rounded-2 border d-flex flex-column h-100" style="border-color: #606060;">
+          <img class="object-fit-cover rounded-top-2" src="/Project-FilmNest/assets/image 60-e3dec30c.png" alt="手機支架組">
+          <div class="feedbackChoice-card-bottom p-lg-5 py-4 px-3 h-100 d-flex flex-column">
+            <div class="feedbackChoice-card-title fw-bolder">
+              <h2 class="feedbackChoice-card-subject fs-lg-7 mb-1">手機支架組</h2>
+              <h3 class="fs-lg-6 fs-7 mb-lg-6 mb-3">NT$ 1,200</h3>
+              <hr/>
+            </div>
+            <div class="feedbackChoice-card-content d-flex flex-column h-100">
+                <p class="mb-lg-2 mb-1">本方案包含：</p>
+                <ol class="list-unstyled mb-g-6 mb-3">
+                  <li>1. 特色手機支架乙支</li>
+                  <li>2. 獨家酷卡乙組</li>
+                  <li>3. 首輪交換券乙張</li>
+                  <li>4. 片尾感謝名單</li>
+                  <li>5. Vber Eat 100元折價券</li>
+                </ol>
+                <button class="btn btn-primary w-100 py-3 mt-auto text-primary-10 fw-bolder">選擇此方案</button>
+              </div>
+          </div>
+        </section>
+      </div>
+      <!-- 卡片四 -->
+      <div class="swiper-slide h-auto">
+       <section class="feedbackChoice-card bg-primary-9 rounded-2 border h-100 d-flex flex-column" style="border-color: #606060;">
+         <img class="object-fit-cover rounded-top-2" src="/Project-FilmNest/assets/image 62-569e888a.png" alt="我全都要組">
+         <div class="feedbackChoice-card-bottom p-lg-5 py-4 px-3 h-100 d-flex flex-column">
+           <div class="feedbackChoice-card-title fw-bolder">
+             <h2 class="feedbackChoice-card-subject fs-lg-7 mb-1">我全都要組</h2>
+             <h3 class="fs-lg-6 fs-7 mb-lg-6 mb-3">NT$ 2000</h3>
+             <hr/>
+            </div>
+             <div class="feedbackChoice-card-content d-flex flex-column h-100">
+               <p class="mb-lg-2 mb-1">本方案包含：</p>
+               <ol class="list-unstyled mb-g-6 mb-3">
+                 <li>1. 獨家簽名海報乙張</li>
+                 <li>2. 獨家簽名劇照訪談集乙本</li>
+                 <li>3. 特色手機支架乙支</li>
+                 <li>4. 獨家酷卡乙組</li>
+                 <li>5. 首輪交換券乙張</li>
+                 <li>6. 片尾感謝名單</li>
+                 <li>7. Vber Eat 100元折價券</li>
+               </ol>
+               <button class="btn btn-primary w-100 py-3 mt-auto text-primary-10 fw-bolder">選擇此方案</button>
+             </div>
+         </div>
+       </section>
+    </div>
+    <!-- 把分頁器弄出來的卡片 -->
+    <div class="swiper-slide h-auto">
+      <section class="feedbackChoice-card bg-primary-9 rounded-2 border h-100 d-flex flex-column" style="border-color: #606060;">
+        <img class="object-fit-cover rounded-top-2" src="/Project-FilmNest/assets/image 59-3194f1bf.png" alt="電影海報組">
+        <div class="feedbackChoice-card-bottom p-lg-5 py-4 px-3 h-100 d-flex flex-column">
+          <div class="feedbackChoice-card-title fw-bolder">
+            <h2 class="feedbackChoice-card-subject fs-lg-7 mb-1">電影海報組</h2>
+            <h3 class="fs-lg-6 fs-7 mb-lg-6 mb-3">NT$ 500</h3>
+          <hr/>
+        </div>
+        <div class="feedbackChoice-card-content d-flex flex-column h-100">
+          <p class="mb-lg-2 mb-1">本方案包含：</p>
+          <ol class="list-unstyled mb-g-6 mb-3">
+            <li>1. 獨家簽名海報乙張</li>
+            <li>2. 獨家酷卡乙組</li>
+            <li>3. 首輪交換券乙張</li>
+            <li>4. 片尾感謝名單</li>
+            <li>5. Vber Eat 100元折價券</li>
+          </ol>
+            <button class="btn btn-primary w-100 py-3 mt-auto text-primary-10 fw-bolder">選擇此方案 </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>   
+</div>
+  <!-- 分頁器 -->
+<div class="d-none d-md-flex align-items-center justify-content-center mt-7">
+  <div>
+    <div class="swiper-button-prev feedbackChoiceSwiper-button-prev"></div>
+  </div>
+  <div class="swiper-pagination feedbackChoiceSwiper-pagination w-auto"></div>
+  <div>
+    <div class="swiper-button-next feedbackChoiceSwiper-button-next"></div>
+  </div>
+</div>                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 感謝名稱 -->
+            <section>
+             <h3 class="fs-lg-3 fw-bolder mb-3">感謝名稱<span class="text-danger">*</span></h3>
+             <p>請留下您的大名或暱稱，我們會將您的名字置入電影片尾感謝名單。</p>
+             <p>※如不願露出，選擇匿名即可</p>
+             <form action="">
+               <div class="d-flex align-items-center mb-3">
+                 <input type="radio" id="chooseInputName" name="showNameOrNot" class="me-2">
+                 <input type="text" id="supporterNameInput" class="supporter-name-input rounded-1 p-2" placeholder="填入您希望的稱呼" disabled>
+               </div>
+               <div>
+                 <input type="radio" id="chooseHideName" name="showNameOrNot" class="me-2">
+                 <label for="chooseHideName">我想匿名</label>
+               </div>
+               <hr>
+               <div class="d-flex flex-column">
+                 <label for="messageToTeam" class="mb-3 fs-lg-6">想跟團隊說的話</label>
+                 <textarea name="messageToTeam" id="messageToTeam" rows="6" cols="33" placeholder="您的留言會出現在留言板（選填）" class="rounded-1 p-2" style="resize: none;"></textarea>
+               </div>
+             </form>
+            </section>
+          </main>
+          <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
+            <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+              <div class="card-body">
+                <h3 class="card-title fs-5 fw-bolder mb-4">隨喜加碼</h3>
+                <div class="row mb-4">
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="100">+100</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="1000">+1,000</button>
+                  </div>
+                </div>
+                <div class="input-group mb-4">
+                  <input type="number" name="" id="customAmount" placeholder="自訂金額" class="form-control rounded-start-1">
+                  <button type="button" class="btn btn-primary" id="addCustomAmount">加碼</button>
+                  <button type="button" class="btn btn-secondary rounded-end-1" id="resetCustomAmount">重設</button>
+                </div>
+                <div class="bg-primary-8 p-3 rounded-1 mb-4">
+                  <p class="mb-1">總計金額</p>
+                  <h4 class="fs-6 fw-bolder mb-1">NT$ 2,000</h4>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+              </div>
+            </div>
+          </aside>  
+        <!-- </div> -->
+      </div>
+    </div>
+    
+
+      <footer class="footer-bg py-8 pt-md-20 pb-md-10">
+  <div class="container">
+    <ul class="list-unstyled d-md-flex">
+      <li class="w-md-50 mb-10 mb-md-0">
+        <ul class="list-unstyled d-flex flex-md-column justify-content-between h-100">
+          <li>
+            <a href="index.html">
+              <picture>
+                <source srcset="/Project-FilmNest/assets/logo-lg-d75594b8.png " media="(min-width:992px)">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAAAZCAYAAADwvIY6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAW0SURBVHgB7VqLceM2EIUzKUCpICxBHYiuwEoFYiqQUwF1FSiugHYF8lUAXQWyKyBTgZ0KNljirbCEQIrxOZ5YxzeDobBYAAvsDwRlzIQJCldjmIho5h65KzOQXl15urq6asyEHwfOEApXLPWjdmXlSmYmXC6cgueuHKD0F1cqKH6BcuPKFgZxNAwz4fKAqPCCUiJdCH2HiHEb8YthbMyEy4FTaK48fq7om0S6OKj2TEWUjfmP0JeaMP9aZMY6Vn31CSOATa1RsojehxvFN1NGkY+cs6Rh/Kp4/wRtG42xpBDR+PctBaNexPURMs2p6wy8fo6My4iWmUsG+XMCYxXR8wGFlRFvBsXYkXOWMg55D5ZSa4NQxlBT11jZCC3adlCm9N1C9mP9jCyZ4mWsQV+jbhWv1fJ9RmC9BaWiJoUoYCmE/xXa5tSPlerf9qGg5HyEUKVStC6CnELUYXp2ZpwqrpM3mq1u7xmjAg/3Xchc6F9S1xAtfX6DKGS9Q4032ICavKdLDrZ0ilZB1PWsJfoztiOEKsFroRAperwXtM/OjDEGdkCW1vDMCNAPYBA7NMobhSi5NQooudIbmzCGlRqPN7ceIdRSGYFEgp2izSKZeN4tKeOgrlGV1DUQqVd9BkGnqYJ/zyMZmbZVNJsyCPDt0MdiTRu03aL9SFP95BV+TsEhmC9LyMt7slE8VQ9foeQUPtlLToMvaOuk+J/wZEa+eeQbSIMbyGvjbySZOXO0368CrtGvbXOlcLQHJc8T6L3Apt8o0ix6MlYsExayM/621IicETK054om9aG3Cx7rPvr9GsmVma5cfWA+PnxyanpCn5L8Gxmv9VHR8sQcopg96ofIOFsa98f4jSsF96OukxSQIcN6mC9T+/aMOQzGeeysAtZmKZwFJFV0IoUWjKLIQN1zRIW23k2EN9gzZUvdg2KVGKeMvEDmJlW3qA+lDEadoBfx3NQfIVqPU/U8npd89IjHq0BbJNalI5McrteJOTSfnJluBtabTBkSIdhyMjxZidYxZogUv4GHQ2GbJkw6MjCNjeZvGbzHk6WNLfOL8dabKtz+zXiPyFzZcJQyb8Or+TjouZoz7UN4xlM71QL9vypdNMbvVZGYl1NLbv4FfsaTB1wiPLMBsBLYgq9ZcY7GKcKaENIyo4yBfE5kGivtERY8ZuHtOJj/SdGZ1rix/mCvcL+/Ydycx4UxCXiexviNy6Pxdb0xH2sY34uUrBKlB89nbn/uYCy3xjt3Y7xuHswZaIPgEJK7TnsomK2Lc/hDZBS88bfKGDLjc9re0b6gnps4L70RbBRqnjYvwmj3rkjovI+6bXroBiHy4ZN+qW2M3//lOUY4053xuuA137v6X6zfc33l5HrMa6jzueEQ8dk4z6r8l6EuuWk1Yt4FhVdOOfVyajpEOVHfgm5Bk7uTt2CRkIXofc4Qtaof73cULU+MV8Vy9fDJ2SCP5h088Co5ysS6Ts8QyPV7E6IE1zlUz2kgB5E3gsKVR/Y4CtGiGROeHH4x3oLb/1eAxrmTQ+NXNYecT54kYsDDMxPSToP+OtTK773xXiX8z+b70ODJr5Jz83G4w9wWRlTC2DqHZQoHfH69LIyPrAydahs8i6SOKVw714T3f1hQ/P6tPeB4oYW63GeMiQ7yplLDGyz6zilcRm0oRA5L3VerDB4j7cKjI4dsjKCm/vd2ovERQmTv9EnU3zVCqDGtWhOvbxnx5NS9W+E9WifWVime0+88avEHCh91hgxCLluY9x59T2++ekDhG4ZVgs0wbqnk2Sb6ShoR49Gb2SJal8yxM+8E+p/fVJK62HszD3W/L8QfulhR8bkip+CFvd8KzgiVwzBSuX0+0C9LLQZrKBP0sxs0IQEK17ViGCWUNocSuH2tvC4ZkiZcEKD4krq5KEbnX1UTPj/G/uuawzbnS6345+iCaMKECZeGfwDJ9upLJoYbeQAAAABJRU5ErkJggg==" alt="filmnest logo" class="footer-logo">
+              </picture>
+            </a>
+          </li>
+          <li class="d-flex me-4" style="gap: 12px;">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-line"></i>
+          </li>
+        </ul>
+      </li>
+      <li class="w-md-50">
+        <ul class="list-unstyled d-flex justify-content-between">
+          <li class="d-flex flex-column gap-3">
+            <a href="#">精選專案</a>
+            <a href="#">專案瀏覽</a>
+          </li>
+          <li class="d-flex flex-column gap-3">
+            <a href="#">我想贊助</a>
+            <a href="#">我要提案</a>
+            <a href="#">會員中心</a>
+          </li>
+          <li class="d-flex flex-column gap-3">
+            <a href="#">線上影院</a>
+          </li>
+          <li class="d-flex flex-column gap-3">
+            <a href="#">關於影巢</a>
+            <a href="#">常見問題</a>
+            <a href="#">服務條款</a>
+            <a href="#" class="me-4">隱私權政策</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p class="text-end mt-10 mt-md-20 mb-0 fs-copyright">Copyright ©2024 by 影巢影視募資平台小組 僅供作品集使用</p>
+  </div>
+</footer>
+    <!-- 手機版：aside 變成 footer -->
+    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
+          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 bg-primary-8 text-primary-2 w-auto" style="max-width: 160px;">
+          <button class="btn btn-secondary confirm-button">確認</button>
+          <button class="btn btn-secondary cancel-button">重設</button>
+        </div>
+        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+          <p class="mb-0">總計：</p>
+          <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+          <button type="submit" class="btn btn-primary ms-auto">下一步</button>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
