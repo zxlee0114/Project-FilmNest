@@ -1,11 +1,11 @@
-.aboutProposal-bg {
+.aboutProposal-banner-bg {
   background: url(/assets/images/image\ 48.png) ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
 }
 
-.bg-mask {
+.banner-bg-mask {
   position: relative;
   &::after {
   position: absolute;
@@ -25,7 +25,7 @@
   }
 }
 
-.aboutProposal-banner {
+.aboutProposal-banner-wrap {
   height: 600px;
   margin-bottom: 44px;
   @media (min-width:992px) {
@@ -76,5 +76,59 @@
     @media (min-width:992px) {
       bottom: 7px;
     }
+  }
+}
+
+.process-bg {
+  &-1 {
+    background-image: url(/assets/images/image\ 53.png);
+  }
+  &-2 {
+    background-image: url(/assets/images/image\ 54.png);
+  }
+  &-3 {
+    background-image: url(/assets/images/image\ 55.png);
+  }
+  &-1 , &-2 , &-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.process-wrap {
+  padding-top: 28px;
+  @media (min-width:768px) {
+    padding-top: 69px;
+  }
+  background-image: url(/assets/images/image\ 49-2.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  @media (min-width: 375px) {
+    background-image: url(/assets/images/image\ 49-1.png);
+    background-size: cover;
+  }
+}
+
+.process-card {
+  height: 174px;
+  @media (min-width:992px) {
+    height: 400px;
+  }
+}
+
+.process-card-mask {
+  position: relative;
+  &::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.2) ;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
   }
 }
