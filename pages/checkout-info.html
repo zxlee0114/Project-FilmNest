@@ -87,6 +87,60 @@
                         </div>
                     </fieldset>
 
+                    <div class="accordion" id="paymentOption">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button py-0" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionOne" aria-expanded="true" aria-controls="paymentOptionOne">
+                            <div class="form-check w-100">
+                              <input class="form-check-input my-4" type="radio" name="paymentMethod" id="creditCard" value="creditCard">
+                              <label class="form-check-label w-100 d-inline-block align-middle py-4" for="creditCard">
+                                  線上刷卡
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionOne" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionTwo" aria-expanded="false" aria-controls="paymentOptionTwo">
+                            <div class="form-check w-100">
+                              <input class="form-check-input" type="radio" name="paymentMethod" id="atmTransfer" value="atmTransfer">
+                              <label class="form-check-label w-100 d-inline-block align-middle" for="atmTransfer">
+                                  ATM 轉帳
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionTwo" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionThree" aria-expanded="false" aria-controls="paymentOptionThree">
+                            <div class="form-check w-100">
+                              <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCode" value="paymentCode">
+                              <label class="form-check-label w-100 d-inline-block align-middle" for="paymentCode">
+                                  超商代碼付款
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionThree" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                 </form>
             </main>
         </div>
