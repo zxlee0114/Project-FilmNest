@@ -8,8 +8,17 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div style="height: 720px; background: url(/assets/images/image\ 48.png);"></div>
-    <h1>我是about</h1>
+
+    <%- include('./layout/aboutProposal-nav', {page: "aboutProposal-now"}); -%>
+
+    <section class="aboutproposal-now">
+      <div class="container py-10 py-lg-20">
+        <div class="p-3 bg-primary-6 border border-white rounded-5">
+          <h3 class="fs-6 py-10 text-center">尚未發起過專案</h3>
+        </div>
+      </div>
+    </section>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
