@@ -1,9 +1,4 @@
-//必填星號
-.form-label.required::after {
-    content: "*";
-    color: red;
-    margin-left: 4px;
-}
+
 
 //付款表單群組
 .payment-fieldset{

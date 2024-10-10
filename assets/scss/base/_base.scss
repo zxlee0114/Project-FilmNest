@@ -34,3 +34,10 @@ textarea{
 .fit-content{
   width: fit-content;
 }
+
+//必填星號
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
