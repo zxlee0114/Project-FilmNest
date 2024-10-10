@@ -1,7 +1,7 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   &::after {
     display: block;
     content: "";
@@ -11,10 +11,12 @@
     height: 2px;
   }
 
-  &:hover::after {
-    width: 100%;
-    background-color: $white;
-    transition: width 0.3s;
+  @media screen and (min-width: 992px) {
+    &:hover::after {
+      width: 100%;
+      background-color: $white;
+      transition: width 0.3s;
+    }
   }
 }
 
