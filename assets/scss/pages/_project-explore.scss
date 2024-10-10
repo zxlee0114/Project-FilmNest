@@ -34,3 +34,13 @@
   color: $primary-600;
   pointer-events: none;
 }
+
+.project-spacing {
+  @media screen and (min-width: 375px) {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  @media screen and (max-width: 375px) {
+    justify-content: space-between;
+  }
+}
