@@ -140,24 +140,25 @@ var indexbannerswiper = new Swiper(".indexbannerswiper", {
 const feedbackChoiceSwiper = new Swiper(".feedbackChoiceSwiper", {
   slidesPerView: 1.2,
   spaceBetween: 12,
-
-  breakpoints: {
-    768: {
+  //分頁器
+  pagination:{
+    el: ".swiper-pagination",
+    bulletClass: "swiper-pagination-bullet",
+    bulletActiveClass: "swiper-pagination-bullet-active",
+    clickable: true,
+  },
+  navigation: {  
+    nextEl: ".feedbackChoiceSwiper-button-next",
+    prevEl: ".feedbackChoiceSwiper-button-prev",
+  },
+  breakpoints:{
+    768:{
       slidesPerView: 2.5,
       spaceBetween: 14,
     },
     992: {
       slidesPerView: 4,
       spaceBetween: 16,
-      navigation: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        bulletActiveClass: "swiper-pagination-bullet-active",
-        clickable: true,
-
-        nextEl: ".feedbackChoiceSwiper-button-next",
-        prevEl: ".feedbackChoiceSwiper-button-prev",
-      },
-    },
+    }
   },
 });

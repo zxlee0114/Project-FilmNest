@@ -87,48 +87,60 @@
   opacity: 0;
 }
 
+// 贊助方案 分頁器
+.swiper-pagination.feedbackChoiceSwiper-pagination{
+  position: static;
+  margin-bottom: 2px;
+}
+
 .swiper-pagination-bullet.feedbackChoiceSwiper-pagination-bullet{
   width: 8px;
   height: 8px;
-  background: $primary-800;
   margin: 0 4px;
-}
-.swiper-pagination-bullet.feedbackChoiceSwiper-pagination-bullet-active{
-  width: 8px;
-  height: 8px;
-  background: $white;
-  margin: 0 4px;
-}
-.swiper-button-prev.feedbackChoiceSwiper-button-prev{
-  &::after{
-    content:"";
-    @include md{
-      content: "\e5cb";
-      font-family: "Material Symbols Outlined";
-      font-size: 20px;
-      color: $white;
-      width: 20px;
-      height: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 60%;
-      background: transparent;
-    }
-  }
-}
-.swiper-button-prev.feedbackChoiceSwiper-button-next{
-  &::after{
-    content:"";
-    @include md{
-      content: "\e5cb";
-      font-family: "Material Symbols Outlined";
-      font-size: 20px;
-      color: $white;
-      width: 20px;
-      height: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 60%;
-      background: transparent;
-    }
-  }
 }
 
+.feedbackChoiceSwiper-pagination>.swiper-pagination-bullet,.feedbackChoiceSwiper-pagination>.swiper-pagination-bullet{
+  background:  rgba(255, 255, 255, 0.2) ;
+}
+
+.feedbackChoiceSwiper-pagination>.swiper-pagination-bullet-active,.feedbackChoiceSwiper-pagination>.swiper-pagination-bullet-active{
+  background: $white;
+}
+
+//贊助方案 左右箭頭
+.swiper-button-prev.feedbackChoiceSwiper-button-prev::after{
+    content: '\e5cb';
+     font-family: "Material Symbols Outlined";
+     font-size: 20px;
+     color: $white;
+     width: 20px;
+     height: 20px;
+     border: 1px solid rgba(255, 255, 255, 0.4);
+     border-radius: 60%;
+     background: transparent;
+}
+
+.swiper-button-next.feedbackChoiceSwiper-button-next::after{
+    content: '\e5cc';
+      font-family: "Material Symbols Outlined";
+      font-size: 20px;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 60%;
+      background: transparent;
+}
+
+.swiper-button-prev.feedbackChoiceSwiper-button-prev, .swiper-button-next.feedbackChoiceSwiper-button-next {
+  position: static;
+  margin-top: 0; 
+}
+
+.swiper-button-prev.feedbackChoiceSwiper-button-prev{
+  margin-right: 12px;
+}
+
+.swiper-button-next.feedbackChoiceSwiper-button-next{
+  margin-left: 12px;
+}

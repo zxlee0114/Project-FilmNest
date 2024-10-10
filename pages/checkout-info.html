@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>付款資料</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container" style="margin-top: 88px;">
+        <div class="row">
+            <main class="col-lg-8">
+                <h2 class="fs-lg-3 fs-4 text-primary-2 mb-4">付款資料</h2>
+                <form>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">會員資料</legend>
+                        <div class="row mb-3">
+                            <div class="col-lg-6 mb-lg-0 mb-3">
+                                <label for="memberName" class="form-label required">會員姓名</label>
+                                <input type="text" class="form-control" id="memberName" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="memberPhone" class="form-label required">手機</label>
+                                <input type="tel" class="form-control" id="memberPhone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="memberEmail" class="form-label required">Email</label>
+                            <input type="email" class="form-control" id="memberEmail" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">收件人資料</legend>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="sameAsMember">
+                            <label class="form-check-label" for="sameAsMember">同會員資料</label>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6 mb-lg-0 mb-3">
+                                <label for="recipientName" class="form-label required">真實姓名</label>
+                                <input type="text" class="form-control" id="recipientName" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="recipientPhone" class="form-label required">手機</label>
+                                <input type="tel" class="form-control" id="recipientPhone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipientEmail" class="form-label required">E-mail</label>
+                            <input type="email" class="form-control" id="recipientEmail" required>
+                         </div>
+                    </fieldset>
+                    <fieldset class="payment-fieldset mb-4">
+                        <legend class="payment-lengend">收件地址</legend>
+                        <div class="row mb-3">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                              <label for="county" class="form-label required">縣市</label>
+                                <select class="form-select" id="county" required>
+                                  <option value="" selected>請選擇縣市</option>
+                                  <option value="Taipei">台北市</option>
+                                  <option value="Taichung">台中市</option>
+                                  <option value="Kaohsiung">高雄市</option>
+                                  <!-- 待補足 -->
+                                </select>
+                            </div>
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                               <label for="district" class="form-label required">鄉鎮市區</label>
+                                 <select class="form-select" id="district" required>
+                                   <option value="" selected>請選擇鄉鎮市區</option>
+                                    <!-- 呃… -->
+                                 </select>
+                            </div>
+                            <div class="col-lg-4">
+                               <label for="zipcode" class="form-label required">郵遞區號</label>
+                               <input type="text" class="form-control" id="zipcode" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="address" class="form-label required">地址</label>
+                          <input type="text" class="form-control" id="address" required>
+                        </div>
+                    </fieldset>
+
+                    <!-- 付款方式 -->
+                    <h2 class="fs-lg-3 fs-4 text-primary-2 mb-4">付款方式</h2>
+                    <div class="accordion mb-20" id="paymentOption">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionOne" aria-expanded="true" aria-controls="paymentOptionOne">
+                            <div class="form-check w-100">
+                              <input class="form-check-input" type="radio" name="paymentMethod" id="payWithCard" value="payWithCard" checked>
+                              <label class="form-check-label w-100 d-inline-block align-middle" for="payWithCard">
+                                  線上刷卡
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionOne" class="accordion-collapse collapse show" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <small>
+                              <ul class="list-unstyled text-warning">
+                                <li>1. 信用卡授權成功後，本系統不會留存該刷卡人信用卡相關資料，只會保存刷卡成功之授權碼。</li>
+                                <li>2. 國外交易需綁定 3D 驗證。</li>
+                              </ul>
+                            </small>                          
+                            <form>
+                              <!-- 卡片種類 -->
+                              <div class="row">
+                                <fieldset class="mb-4 col-md-6">
+                                  <legend class="d-inline-block">選擇卡片種類</legend>
+                                  <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="cardType" id="creditCard" checked>
+                                      <label class="form-check-label" for="creditCard">信用卡</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="cardType" id="unionPay">
+                                      <label class="form-check-label" for="unionPay">銀聯卡</label>
+                                  </div>
+                                </fieldset>
+                                <!-- 付款方式 -->
+                                <fieldset class="mb-4 col-md-6">
+                                  <legend class="d-inline-block">選擇付款方式</legend>
+                                  <div class="form-check form-check-inline">
+                                      <input class="form-check-input required" type="radio" name="installmentOrNot" id="oneTime" checked>
+                                      <label class="form-check-label" for="oneTime">一次付清</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                      <input class="form-check-input required" type="radio" name="installmentOrNot" id="installments">
+                                      <label class="form-check-label" for="installments">分期付款</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <hr>
+                              <!-- 信用卡 -->
+                               <div class="d-flex align-items-center gap-2 flex-wrap mb-4">
+                                 <label class="form-label required">輸入卡號</label>
+                                 <div class="d-flex align-items-center gap-1">
+                                   <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
+                                   <span>-</span>
+                                   <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
+                                   <span>-</span>
+                                   <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
+                                   <span>-</span>
+                                   <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
+                                 </div>
+                               </div>
+                               <div class="row mb-4">
+                                <div class="col-lg-3 fit-content mb-lg-0 mb-4">
+                                  <div class="d-flex align-items-center">
+                                    <label for="expiryDate" class="form-label text-nowrap required">有效年月</label>
+                                    <input type="text" class="form-control d-inline-block" id="expiryDate" placeholder="MM/YY" required>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3 fit-content">
+                                  <div class="d-flex align-items-center">
+                                    <label for="cvv" class="form-label text-nowrap required">背面末三碼</label>
+                                    <input type="text" class="form-control d-inline-block" id="cvv" placeholder="CVV" required>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center gap-2 mb-4">
+                                <label for="cardOwnerEmail" class="form-label required">付款人電子信箱</label>
+                                <input type="email" id="cardOwnerEmail" class="form-control d-inline-block fit-content" required>
+                              </div>
+                              <div>
+                                <input type="checkbox" id="cardPaymentNotation1" required>
+                                <label for="cardPaymentNotation1" class="text-balance">我已再次確認「訂單資訊」及「付款資訊」，付款完成後藍新金流將發送通知信至付款人電子信箱</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" id="cardPaymentNotation2" required>
+                                <label for="cardPaymentNotation2" class="text-balance">我已同意藍新金流付款方使用條款及隱私權保護政策</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionTwo" aria-expanded="false" aria-controls="paymentOptionTwo">
+                            <div class="form-check w-100">
+                              <input class="form-check-input" type="radio" name="paymentMethod" id="atmTransfer" value="atmTransfer">
+                              <label class="form-check-label w-100 d-inline-block align-middle" for="atmTransfer">
+                                  ATM 轉帳
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionTwo" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentOptionThree" aria-expanded="false" aria-controls="paymentOptionThree">
+                            <div class="form-check w-100">
+                              <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCode" value="paymentCode">
+                              <label class="form-check-label w-100 d-inline-block align-middle" for="paymentCode">
+                                  超商代碼付款
+                              </label>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="paymentOptionThree" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+               </form>
+            </main>
+            <aside class="col-lg-4 d-lg-block d-none">
+              <div class="checkout-info-sidebar bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+                <div class="order-info">
+                  <h3 class="mb-3">訂單資訊</h3>
+                  <ul class="list-unstyled fs-7 ">
+                    <li>
+                      <h4 class="fs-7 fw-bold">方案名稱：</h4>
+                      <p class="text-end text-balance">
+                        《追風者》群眾募資計畫 - 贊助方案【我全都要組】
+                      </p>
+                    </li>
+                    <li>
+                      <h4 class="fs-7 fw-bold">訂單編號：</h4>
+                      <p class="text-end text-balance">WINDS100033302</p>
+                    <li>
+                      <h4 class="fs-7 fw-bold">訂單金額：</h4>
+                      <p class="text-end text-balance">NT$ 2,000</p>
+                    </li>
+                    <hr>
+                    <li>
+                      <h4 class="fs-7 fw-bold">應付金額：</h4>
+                      <p class="text-end text-balance">NT$ 2,000</p>
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary w-100 mt-3">確認付款</button>
+                 </div>
+               </div>
+              </aside>
+        </div>
+    </div>
+    <!-- 手機版：aside 變成 footer -->
+    <footer class="checkout-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <div class="d-flex flex-column gap-1 w-auto">
+          <p class="mb-0">方案名稱：<strong>《追風者》【我全都要組】</strong></p>
+          <p class="mb-0">訂單編號：WINDS100033302</p>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <p class="mb-0">總計：</p>
+          <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+          <button type="submit" class="btn btn-primary ms-auto">確認付款</button>
+        </div>
+      </div>
+    </footer>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

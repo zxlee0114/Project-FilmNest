@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>《追風者》方案確認</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <header class="container mb-8" style="margin-top: 88px;">
+      <div class="row">
+          <div class="d-flex justify-content-around align-items-center flex-wrap">
+              <div class="col-lg-5 p-6">
+                  <img class="rounded-1" src="../assets/images/image 62.png" alt="追風者 我全都要組">
+              </div>
+              <div class="col-lg-7 d-lg-block d-none">
+                  <h2 class="fs-lg-6 fs-sm text-primary-2">《 追風者 》群眾募資計畫</h2>
+                  <h1 class="fs-lg-xxl fs-6 mb-lg-3 mb-1 text-balance">贊助方案－我全都要組</h1>
+              </div>
+              <!-- 手機版標題 -->
+              <div class="d-lg-none">
+                <h1 class="fs-8 mb-1 text-nowrap">《 追風者 》｜ 我全都要組</h1>
+              </div>
+          </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row justify-content-between mb-8">
+        <!-- <div class="d-flex justify-content-between mb-8"> -->
+          <main class="col-lg-8">
+            <section class="d-flex flex-column mb-8">
+              <h3 class="fs-lg-3 fw-bolder">方案資訊</h3>
+              <table class="table table-dark table-hover text-center my-6">
+                <thead>
+                  <tr class="fs-7 fw-bolder">
+                    <th scope="col"></th>
+                    <th scope="col">回饋項目</th>
+                    <th scope="col">數量</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>獨家簽名海報</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>獨家簽名劇照訪談集</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>特色手機支架</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>獨家酷卡組</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>首輪交換券</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Vber Eat 100 元折價券</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>片尾感謝名單</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="btn btn-secondary align-self-end" href="#feedbackModal" data-bs-toggle="modal">更改方案
+                <span class="material-symbols-outlined ms-1 align-bottom">undo</span>
+              </a>
+              <!-- #feedbackModal 內容 -->
+              <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                      <h1 class="modal-title fs-5 mx-auto" id="feedbackModalLabel">方案選擇</h1>
+                      <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <%- include('./layout/feedback-swiper'); -%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 感謝名稱 -->
+            <section>
+             <h3 class="fs-lg-3 fw-bolder mb-3">感謝名稱<span class="text-danger">*</span></h3>
+             <p>請留下您的大名或暱稱，我們會將您的名字置入電影片尾感謝名單。</p>
+             <p>※如不願露出，選擇匿名即可</p>
+             <form action="">
+               <div class="d-flex align-items-center mb-3">
+                 <input type="radio" id="chooseInputName" name="showNameOrNot" class="me-2">
+                 <input type="text" id="supporterNameInput" class="supporter-name-input rounded-1 p-2" placeholder="填入您希望的稱呼" disabled>
+               </div>
+               <div>
+                 <input type="radio" id="chooseHideName" name="showNameOrNot" class="me-2">
+                 <label for="chooseHideName">我想匿名</label>
+               </div>
+               <hr>
+               <div class="d-flex flex-column">
+                 <label for="messageToTeam" class="mb-3 fs-lg-6">想跟團隊說的話</label>
+                 <textarea name="messageToTeam" id="messageToTeam" rows="6" cols="33" placeholder="您的留言會出現在留言板（選填）" class="rounded-1 p-2" style="resize: none;"></textarea>
+               </div>
+             </form>
+            </section>
+          </main>
+          <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
+            <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+              <div class="card-body">
+                <h3 class="card-title fs-5 fw-bolder mb-4">隨喜加碼</h3>
+                <div class="row mb-4">
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="100">+100</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="1000">+1,000</button>
+                  </div>
+                </div>
+                <div class="input-group mb-4">
+                  <input type="number" name="" id="customAmount" placeholder="自訂金額" class="form-control rounded-start-1">
+                  <button type="button" class="btn btn-primary" id="addCustomAmount">加碼</button>
+                  <button type="button" class="btn btn-secondary rounded-end-1" id="resetCustomAmount">重設</button>
+                </div>
+                <div class="bg-primary-8 p-3 rounded-1 mb-4">
+                  <p class="mb-1">總計金額</p>
+                  <h4 class="fs-6 fw-bolder mb-1">NT$ 2,000</h4>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+              </div>
+            </div>
+          </aside>  
+        <!-- </div> -->
+      </div>
+    </div>
+    
+
+      <%- include('./layout/footer'); -%>
+
+    <!-- 手機版：aside 變成 footer -->
+    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
+          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 bg-primary-8 text-primary-2 w-auto" style="max-width: 160px;">
+          <button class="btn btn-secondary confirm-button">確認</button>
+          <button class="btn btn-secondary cancel-button">重設</button>
+        </div>
+        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+          <p class="mb-0">總計：</p>
+          <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+          <button type="submit" class="btn btn-primary ms-auto">下一步</button>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
