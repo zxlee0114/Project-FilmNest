@@ -56,11 +56,11 @@
   &::before , &::after {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/deco/Line\ 9.png);
+    background-image: url(/assets/images/deco/Line9.png);
     height: 60px;
     width: 2px;
     @media (min-width:992px) {
-      background-image: url(/assets/images/deco/Line\ 10.png);
+      background-image: url(/assets/images/deco/Line10.png);
       height: 174px;
       width: 1px;
     }
