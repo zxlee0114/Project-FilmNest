@@ -10,8 +10,8 @@
       type="image/x-icon"
     />
     <title>追風者-最新消息</title>
-    <script type="module" crossorigin src="/Project-FilmNest/assets/main-b2ec21d2.js"></script>
-    <link rel="stylesheet" href="/Project-FilmNest/assets/main-9f158db4.css">
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-cd0a8a48.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-fc99facb.css">
   </head>
   <body>
     <!-- header -->
@@ -29,6 +29,8 @@
             <span class="exploreDropdownDeco ms-2"></span>
           </a>
           <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-black" href="project-explore.html">專案總覽</a></li>
+            <li><a class="dropdown-item text-black" href="#">Action</a></li>
             <li><a class="dropdown-item text-black" href="#">Action</a></li>
             <li><a class="dropdown-item text-black" href="#">Another action</a></li>
             <li><hr class="dropdown-divider text-black"></li>
@@ -40,15 +42,18 @@
         </li>
       </ul>
       <div class="ms-auto">
-        <button class="btn btn-outline-light fw-bolder p-0 border-0 me-8" type="button">登入 / 註冊</button>
-        <button class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</button>
+        <a href="login.html" class="btn btn-outline-light fw-bolder p-0 border-0 me-4">登入 / 註冊</a>
+        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</a>
       </div>
     </div>
   </div>
 </nav>
 
     <!-- 劇照 swiper & 提案人 info -->
-    <section class="pt-0 pt-md-6 pb-8 pb-mb-10">
+    <section
+  class="pt-0 pt-md-6 pb-8 pb-mb-10 position-relative bg-layer-blur"
+  style="margin-top: 89px"
+>
   <div class="container">
     <div class="row d-flex flex-column flex-md-row gap-8 gap-xxl-9">
       <section class="mx-auto px-xxl-0" style="max-width: 660px">
@@ -188,8 +193,8 @@
       </section>
       <section class="mx-auto px-xxl-0 mt-xxl-1" style="max-width: 576px">
         <div class="mb-3">
-          <span class="py-1 px-2 bg-primary-8 rounded me-2">紀錄片</span
-          ><span class="py-1 px-2 bg-primary-6 rounded">進行中</span>
+          <span class="py-1 px-2 bg-primary-8 rounded me-2">紀錄片</span>
+          <span class="py-1 px-2 bg-primary-6 rounded">進行中</span>
         </div>
         <h2 class="fs-6 fs-md-3 fw-bolder mb-1 mb-md-3">
           《 追風者 》紀錄片募資計畫
@@ -224,8 +229,8 @@
             class="d-flex justify-content-between align-items-start mt-3 mt-md-4"
           >
             <div class="d-flex align-items-center gap-1">
-              <span class="material-symbols-outlined text-primary-5">
-                person </span
+              <span class="material-symbols-outlined text-primary-5"
+                >person</span
               ><span>100</span>
             </div>
             <div class="text-end">
@@ -249,25 +254,27 @@
           >
             <div>
               <h3 class="fs-base fs-md-7 mb-2">
-                <a class="text-white title-hover" href="#"
+                <a class="text-white title-hover" href="aboutProposal-now.html"
                   >春日影像製作 Spring Film</a
                 >
               </h3>
               <section class="d-flex gap-4">
-                <a class="fs-sm fs-md-base icon-text-hover" href="#"
-                  ><span
+                <a
+                  class="fs-sm fs-md-base icon-text-hover"
+                  href="aboutProposal-fin.html"
+                >
+                  <span
                     class="material-symbols-outlined align-bottom text-primary-5 me-0 me-md-1"
+                    >star</span
                   >
-                    star
-                  </span>
                   3 個專案
                 </a>
                 <a class="fs-sm fs-md-base icon-text-hover" href="#">
                   <span
                     class="material-symbols-outlined align-bottom text-primary-5 me-0 me-md-1"
+                    >person</span
                   >
-                    person </span
-                  >周先生
+                  周先生
                 </a>
               </section>
             </div>
@@ -350,13 +357,17 @@
         <a
           class="p-3 border border-primary-4 rounded-circle heart-hover"
           href="#"
-          ><span class="material-symbols-outlined text-white align-bottom">
-            favorite
-          </span></a
+        >
+          <span class="material-symbols-outlined text-white align-bottom"
+            >favorite</span
+          ></a
         >
       </li>
       <li>
-        <a class="btn btn-primary py-3 fw-bolder" style="width: 188px" href="#"
+        <a
+          class="btn btn-primary py-3 fw-bolder"
+          style="width: 188px"
+          href="feedback-choice.html"
           >立即贊助</a
         >
       </li>
@@ -416,7 +427,7 @@
 </section>
 <!-- 專案介紹頁導覽列-收藏和立即贊助-手機版 -->
 <section
-  class="py-5 bg-collect-support w-100 d-block d-lg-none position-fixed bottom-0 z-1"
+  class="py-5 bg-collect-support w-100 d-block d-lg-none position-fixed bottom-0 z-2"
 >
   <div class="container">
     <ul
@@ -432,13 +443,127 @@
         >
       </li>
       <li>
-        <a class="btn btn-primary py-3 fw-bolder" style="width: 291px" href="#"
+        <a
+          class="btn btn-primary py-3 fw-bolder"
+          style="width: 291px"
+          href="feedback-choice.html"
+          >立即贊助</a
+        >
+        <a
+          class="btn btn-primary py-3 fw-bolder"
+          style="width: 291px"
+          href="feedback-choice.html"
           >立即贊助</a
         >
       </li>
     </ul>
   </div>
 </section>
+
+    <main class="py-8 pt-md-15 pb-md-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <ul class="list-unstyled d-flex flex-column gap-8 gap-md-10">
+              <li class="border border-primary-5 rounded box-shadow">
+                <section
+                  class="p-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center align-items-start gap-2 gap-lg-0 border-bottom border-primary-5"
+                >
+                  <h4 class="mb-0 fs-base fs-md-7">
+                    上映期間公告：2024/10/6 ~ 2024/11/31 《追風者》全台上映！
+                  </h4>
+                  <time
+                    class="text-primary-5 fs-xs fs-md-sm"
+                    datetime="2024/09/29"
+                    >2024/09/29</time
+                  >
+                </section>
+                <section class="p-4 fs-sm fs-md-base">
+                  <p class="text-primary-2">
+                    感謝各位支持者的耐心等待，我們很高興宣布，《追風者》將於
+                    2024 年 10 月 6 日至 11 月 31
+                    日期間全台上映！本次上映將涵蓋多家影城，讓更多人有機會進入電影院，親眼見證外送員們的奮鬥故事。
+                  </p>
+                  <p class="text-primary-2 mb-0">
+                    我們會持續更新更多具體的影城與場次安排，讓大家能夠方便選擇適合的時間與地點。請密切關注我們的消息更新，準備好迎接這段感動人心的故事！
+                  </p>
+                </section>
+              </li>
+              <li class="border border-primary-5 rounded box-shadow">
+                <section
+                  class="p-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center align-items-start gap-2 gap-lg-0 border-bottom border-primary-5"
+                >
+                  <h4 class="mb-0 fs-base fs-md-7">
+                    首映會狀況更新：追風者首映會準備中！
+                  </h4>
+                  <time
+                    class="text-primary-5 fs-xs fs-md-sm"
+                    datetime="2024/09/23"
+                    >2024/09/23</time
+                  >
+                </section>
+                <section class="p-4 fs-sm fs-md-base">
+                  <p class="text-primary-2">
+                    親愛的支持者們，我們很高興通知您，《追風者》的首映會現已進入籌備的最後階段！目前，我們已經確認了場地，並計劃在台北舉行盛大的首映禮。活動當天，除了電影放映之外，還會安排導演與主創團隊的座談會，與大家分享拍攝背後的故事和創作歷程。
+                  </p>
+                  <p class="text-primary-2 mb-0">
+                    我們非常期待與每位支持者一同見證《追風者》的首映盛況，您的參與讓這部紀錄片得以誕生。後續將會提供更多首映會的詳細資訊，包括時間、地點及票務安排，敬請期待！
+                  </p>
+                </section>
+              </li>
+              <li class="border border-primary-5 rounded box-shadow">
+                <section
+                  class="p-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center align-items-start gap-2 gap-lg-0 border-bottom border-primary-5"
+                >
+                  <h4 class="mb-0 fs-base fs-md-7">支持與回饋新增方案</h4>
+                  <time
+                    class="text-primary-5 fs-xs fs-md-sm"
+                    datetime="2024/09/15"
+                    >2024/09/15</time
+                  >
+                </section>
+                <section class="p-4 fs-sm fs-md-base">
+                  <h5 class="fs-base fs-md-7">新增方案：追風者支持組</h5>
+                  <p>支持金額：NT$300</p>
+                  <ul class="fs-sm fs-md-base">
+                    <li>獨家酷卡乙組</li>
+                    <li>片尾感謝名單特別鳴謝</li>
+                    <li>Vber Eat 100元折價券</li>
+                  </ul>
+                </section>
+              </li>
+              <li class="border border-primary-5 rounded box-shadow">
+                <section
+                  class="p-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center align-items-start gap-2 gap-lg-0 border-bottom border-primary-5"
+                >
+                  <h4 class="mb-0 fs-base fs-md-7">籌備狀態</h4>
+                  <time
+                    class="text-primary-5 fs-xs fs-md-sm"
+                    datetime="2024/09/15"
+                    >2024/09/15</time
+                  >
+                </section>
+                <section class="p-4 fs-sm fs-md-base">
+                  <p class="text-primary-2">
+                    <strong class="fw-bolder">拍攝階段進展：</strong>
+                    我們的紀錄片《追風者》目前進入了深入採訪和拍攝階段。團隊已經與多位外送員進行了初步訪談，並實地記錄了他們在都市中奔波的生活。從清晨的街道到深夜的巷弄，我們捕捉了他們工作的日常，也開始深入了解他們面臨的困境與心聲。
+                  </p>
+                  <p class="text-primary-2">
+                    <strong>後製進度：</strong>
+                    部分拍攝素材已完成初步整理，現正進行剪輯和故事線的架構設計。我們的後期製作團隊正全力投入，確保這部影片能夠真實呈現出外送員們在追夢與現實中所經歷的點滴。我們計劃在完成一部分的後期製作後，釋出一小段預告片給支持者。
+                  </p>
+                  <p class="text-primary-2 mb-0">
+                    <strong>募資目標進展：</strong>
+                    截至目前，我們已成功達到初期募資目標的90%，距離完成所有後期製作的資金需求還有一小段距離。您的每一份支持都將幫助我們在後期製作、聲音設計及原創配樂方面提供更優質的成果。
+                  </p>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- footer -->
     <footer class="footer-bg py-8 pt-md-20 pb-md-10">
   <div class="container">

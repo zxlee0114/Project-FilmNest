@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <title>發起專案</title>
     <script type="module" crossorigin src="/Project-FilmNest/assets/main-cd0a8a48.js"></script>
     <link rel="stylesheet" href="/Project-FilmNest/assets/main-fc99facb.css">
   </head>
@@ -42,7 +42,70 @@
     </div>
   </div>
 </nav>
-    <h1>我是about</h1>
+
+    <div class="container pt-20 pt-xl-40 pb-10 pb-md-15 pb-xl-30 text-center">
+      <h1 class="text-center mb-5 mb-sm-8 mb-md-10">發起專案</h1>
+      <form action="#">
+        <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
+          <div class="col-12 col-md-10">
+            <div class="p-5 p-sm-8 p-md-10 border">
+              <h2 class="mb-5">專案基本資訊</h2>
+              <div class="mb-3 mb-md-5">
+                <label for="projectName" class="form-label">專案名稱<span class="text-danger">*</span></label>
+                <input type="text" class="form-control p-3" id="projectName" placeholder="專案名稱">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="projectType" class="form-label">專案類型<span class="text-danger">*</span></label>
+                <input type="text" class="form-control p-3" id="projectType" placeholder="專案類型">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="projectdIntroduction" class="form-label">專案簡介<span class="text-danger">*</span></label>
+                <input type="text" class="form-control p-3" id="projectdIntroduction" placeholder="專案簡介">
+                <p>限制30字</p>
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="target" class="form-label">目標金額<span class="text-danger">*</span></label>
+                <input type="text" class="form-control p-3" id="target" placeholder="目標金額">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="time" class="form-label">募資時間<span class="text-danger">*</span></label>
+                <input type="time" class="form-control p-3" id="time" placeholder="募資時間">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
+          <div class="col-12 col-md-10">
+            <div class="p-5 p-sm-8 p-md-10 border">
+              <h2 class="mb-5">提案人資訊</h2>
+              <div class="mb-3 mb-md-5">
+                <label for="text" class="form-label">提案負責人<span class="text-danger">*</span></label>
+                <input type="text" class="form-control p-3" id="text" placeholder="提案負責人">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="text" class="form-label">提案單位</label>
+                <input type="text" class="form-control p-3" id="text" placeholder="提案單位">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="Introduction" class="form-label">提案人/團隊介紹</label>
+                <input type="text" class="form-control p-3" id="Introduction" placeholder="提案人/團隊介紹">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="email" class="form-label">聯絡信箱<span class="text-danger">*</span></label>
+                <input type="email" class="form-control p-3" id="email" placeholder="聯絡信箱">
+              </div>
+              <div class="mb-3 mb-md-5">
+                <label for="tel" class="form-label">連絡電話<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control p-3" id="tel" placeholder="連絡電話">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <a href="completeProposal.html" class="btn btn-white text-primary-1000 fw-bolder py-3 px-5 w-100 w-md-auto">送出</a>
+    </div>
+
+    
     <footer class="footer-bg py-8 pt-md-20 pb-md-10">
   <div class="container">
     <ul class="list-unstyled d-md-flex">
