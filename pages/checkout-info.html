@@ -138,7 +138,7 @@
                         </h2>
                         <div id="paymentOptionThree" class="accordion-collapse collapse" data-bs-parent="#paymentOption">
                           <div class="accordion-body">
-                            <%- include('./layout/checkout-paycode'); -%>
+                            <%- include('./layout/checkout-market'); -%>
                           </div>
                         </div>
                       </div>
@@ -169,7 +169,9 @@
                       <p class="text-end text-balance">NT$ 2,000</p>
                     </li>
                   </ul>
-                  <button class="btn btn-primary w-100 mt-3">確認付款</button>
+                  <a href="payment-success.html">
+                    <button class="btn btn-primary w-100 mt-3">確認付款</button>
+                  </a>
                  </div>
                </div>
               </aside>
@@ -185,12 +187,12 @@
         <div class="d-flex align-items-center gap-3">
           <p class="mb-0">總計：</p>
           <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
-          <button type="submit" class="btn btn-primary ms-auto">確認付款</button>
+          <a href="payment-success.html">
+            <button type="submit" class="btn btn-primary ms-auto">確認付款</button>
+          </a>
         </div>
       </div>
     </footer>
-
-    
 
     <%- include('./layout/footer'); -%>
 
