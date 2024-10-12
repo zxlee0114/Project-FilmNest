@@ -9,35 +9,50 @@
       href="/assets/images/favicon.ico"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>付款成功</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <main>
       <div class="payment-success-banner">
-        <div class="container" >
+        <div class="container">
           <div class="thanks-wrapper w-lg-50 w-md-75 w-100">
             <div class="thanks-content">
-              <h4 class="bi bi-check-circle" style="color: lightgreen;"> 付款成功</h4>
-              <h1 class="text-balance">《 追風者 》群眾募資計畫</h1>
-              <p class="text-muted">春日影像製作 Spring Flim</p>
-              <p>感謝您的贊助！<br>
-                因為您，我們的目標前進了一大步！</p>
-              <div class="progress progress-bg bg-primary-8" style="height: 8px; border-radius: 50px;">
+
+              <!-- 確認方案 -->
+              <h1 class="bi bi-check-circle py-4" style="color: lightgreen;" data-aos="zoom-out-up"> 付款成功</h1>
+              <div class="payment-success-title">
+                <p class="mb-2">您贊助的方案為——</p>
+                <p class="mb-1">春日影像製作</p>
+                <h4>《 追風者 》群眾募資計畫</h4>
+                <h2>【 我全都要組 】</h2>
+              </div>
+
+              <!-- 感謝區塊 -->
+              <section>
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <span class="fs-7 fw-bold text-warning me-1">感謝您</span><p class="mb-0" style="line-height: 20px;">的贊助！</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <span class="fs-7 fw-bold text-warning">因為您</span><p class="mb-0" style="line-height: 20px;">，我們的目標前進了一大步！</p>
+                </div>
+              </section>
+
+              <!-- 進度條區塊 -->
+              <section class="progress progress-bg bg-primary-9 w-md-75 w-100 mx-auto" style="height: 8px; border-radius: 50px;">
                 <div class="progress-bar bg-white" role="progressbar" style="width: 75%; border-radius: 30px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="index.html">
-                    <div class="btn btn-secondary w-100 mb-md-0 mb-1">回首頁</div>
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <a href="project-explore.html">
-                    <div class="btn btn-secondary w-100 mb-md-0 mb-1">繼續探索</div>
-                  </a>
-                </div>
-              </div>
+              </section>
+
+              <!-- 按鈕區塊 -->
+              <section class="w-lg-50 w-md-75 w-100 mx-auto mt-auto">
+                <a href="index.html">
+                  <div class="btn btn-secondary w-100 mb-2">回首頁</div>
+                </a>
+                <a href="project-explore.html">
+                  <div class="btn btn-primary w-100 mb-4">繼續探索</div>
+                </a>
+              </section>
             </div>
           </div>
         </div>
@@ -46,5 +61,12 @@
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://kit.fontawesome.com/c8476d4a9f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>window.addEventListener('load', () => {
+      setTimeout(() => {
+        AOS.init({
+        });
+      }, 500); 
+    });</script>
   </body>
 </html>
