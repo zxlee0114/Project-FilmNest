@@ -1,0 +1,13 @@
+//信用卡卡號輸入框
+.card-number-input{
+    width: 52px;
+    @include md {
+        width: 64px;
+    }
+    &::placeholder{
+        font-size: 11px;
+        @include md{
+            font-size: 16px;
+        }
+    }
+}
