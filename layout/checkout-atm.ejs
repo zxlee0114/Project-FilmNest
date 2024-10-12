@@ -4,3 +4,30 @@
       <li>2. 由於 ATM 單筆轉帳金額上限為 50,000 元，若您有高額贊助需求，請聯繫平台客服人員。</li>
     </ol>
 </small> 
+<form>
+  <div class="d-flex flex-column mb-4 gap-2">
+    <div class="d-flex flex-wrap align-items-center gap-2">
+      <label for="bankSelect" class="form-label mb-0 required">選擇銀行</label>
+      <select class="form-select d-inline-block fit-content" id="bankSelect" required>
+        <option value="" selected>請選擇轉帳銀行</option>
+        <option value="中華郵政">中華郵政</option>
+        <option value="台灣銀行">台灣銀行</option>
+        <option value="台新銀行">台新銀行</option>
+        <option value="國泰世華銀行">國泰世華銀行</option>
+      </select>
+    </div>
+    <p class="mb-0">確認付款送出後，您將獲得所選擇的金融機構匯款帳號。您可以使用任意台灣金融機構所發行之金融卡來進行 ATM 轉帳，若持有該金融機構所發行之金融卡，將可享有轉帳免手續費。</p>
+  </div>
+  <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+    <label for="atmSupporterEmail" class="form-label mb-0 required">付款人電子信箱</label>
+    <input type="email" id="atmSupporterEmail" class="form-control d-inline-block fit-content" required>
+  </div>
+  <div class="d-flex align-items-start gap-1">
+    <input type="checkbox" id="atmPaymentNotation1" style="height: 24px;" required>
+    <label for="atmPaymentNotation1">我已再次確認「訂單資訊」及「付款資訊」，付款完成後藍新金流將發送通知信至付款人電子信箱</label>
+  </div>
+  <div class="d-flex align-items-start gap-1">
+    <input type="checkbox" id="atmPaymentNotation2" style="height: 24px;" required>
+    <label for="atmPaymentNotation2" >我已同意藍新金流付款方使用條款及隱私權保護政策</label>
+  </div>
+</form>
