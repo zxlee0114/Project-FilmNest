@@ -1,0 +1,56 @@
+//背景圖
+.payment-success-banner{
+    height: 100vh;
+    // width: calc(100vw - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/payment-success-banner-md.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // @include md{
+    //     background-image: url(/assets/images/payment-success-banner-md-2.png);
+    // }
+    @include lg{
+        background-image: url(/assets/images/payment-success-banner-lg-2.png);
+    }
+}
+
+//內容背景
+.thanks-wrapper{
+    position: relative;
+    padding: 24px;
+    margin: 0 auto;
+    &::before{
+        content: '';
+        position: absolute;
+        background: black;
+        border-radius: 12px;
+        inset: 0px;
+        opacity: 0.7;
+    }
+}
+
+.thanks-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    position: relative;
+}
+
+//進度條動畫
+.thanks-content .progress-bar{
+    animation: load 1s ease-in-out;
+}
+
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
