@@ -13,7 +13,22 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <header class="container mb-8" style="margin-top: 88px;">
+    <header class="mb-12">
+      <div class="container-md p-0">
+        <div class="row align-items-center">
+          <!-- 左半部（圖片） -->
+          <div class="col-lg-8 col-md-7">
+            <img class="img-fluid w-100 object-fit-cover rounded-1" src="../assets/images/image62.png" alt="追風者 我全都要組">
+          </div>
+          <!-- 右半部（標題） -->
+          <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center align-items-md-start align-items-center p-4">
+            <h2 class="fs-lg-6 fs-md-7 fs-sm text-primary-2">《 追風者 》群眾募資計畫</h2>
+            <h1 class="fs-lg-4 fs-md-3 fs-2 mb-lg-3 mb-1">【 我全都要組 】</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="container mb-8" style="margin-top: 88px;">
       <div class="row">
           <div class="d-flex justify-content-around align-items-center flex-wrap">
               <div class="col-lg-5 p-6">
@@ -22,17 +37,16 @@
               <div class="col-lg-7 d-lg-block d-none">
                   <h2 class="fs-lg-6 fs-sm text-primary-2">《 追風者 》群眾募資計畫</h2>
                   <h1 class="fs-lg-xxl fs-6 mb-lg-3 mb-1 text-balance">贊助方案－我全都要組</h1>
-              </div>
+              </div> -->
               <!-- 手機版標題 -->
-              <div class="d-lg-none">
+              <!-- <div class="d-lg-none">
                 <h1 class="fs-8 mb-1 text-nowrap">《 追風者 》｜ 我全都要組</h1>
               </div>
           </div>
       </div>
-    </header>
+    </header> -->
     <div class="container">
       <div class="row justify-content-between mb-8">
-        <!-- <div class="d-flex justify-content-between mb-8"> -->
           <main class="col-lg-8">
             <section class="d-flex flex-column mb-8">
               <h3 class="fs-lg-3 fw-bolder">方案資訊</h3>
@@ -135,7 +149,7 @@
                     <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
                   </div>
                   <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="1000">+1,000</button>
+                    <button class="btn btn-secondary w-100 add-amount rounded-1 text-nowrap" data-amount="1000">+1,000</button>
                   </div>
                 </div>
                 <div class="input-group mb-4">
@@ -147,11 +161,12 @@
                   <p class="mb-1">總計金額</p>
                   <h4 class="fs-6 fw-bolder mb-1">NT$ 2,000</h4>
                 </div>
-                <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+                <a href="checkout-info.html">
+                  <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+                </a>
               </div>
             </div>
           </aside>  
-        <!-- </div> -->
       </div>
     </div>
     
@@ -162,14 +177,16 @@
     <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
       <div class="d-flex justify-content-between flex-wrap gap-3">
         <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
-          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 bg-primary-8 text-primary-2 w-auto" style="max-width: 160px;">
-          <button class="btn btn-secondary confirm-button">確認</button>
+          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 w-auto form-control" style="max-width: 150px;">
+          <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
           <button class="btn btn-secondary cancel-button">重設</button>
         </div>
         <div class="amount-confirm-mobile d-flex align-items-center gap-3">
-          <p class="mb-0">總計：</p>
+          <p class="mb-0 d-sm-block d-none">總計：</p>
           <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
-          <button type="submit" class="btn btn-primary ms-auto">下一步</button>
+          <a href="checkout-info.html">
+            <button type="submit" class="btn btn-primary ms-auto">下一步</button>
+          </a>
         </div>
       </div>
     </footer>
