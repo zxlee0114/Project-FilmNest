@@ -6,8 +6,10 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-  color: $white;
+  background-image: var(--bs-accordion-btn-icon);
+  // 原本是 background-image: var(--bs-accordion-btn-active-icon);
 }
+
 // accordion 下拉後 box-shadow
 button:focus:not(:focus-visible) {
   outline: none;
