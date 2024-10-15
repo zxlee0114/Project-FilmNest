@@ -1,4 +1,8 @@
 // 提案人-info
+.bg-primary-9-transparent {
+  background: #ffffff1a;
+}
+
 .title-hover {
   display: inline-block;
   position: relative;
@@ -53,10 +57,17 @@
 .bg-layer-blur::after {
   content: "";
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
   width: 499px;
   height: 495px;
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(400px);
+  filter: blur(250px);
+
+  @media screen and (max-width: 1400px) {
+    width: 299px;
+    height: 295px;
+    filter: blur(150px);
+  }
 }
