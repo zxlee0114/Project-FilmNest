@@ -15,18 +15,21 @@
 //   --bs-btn-disabled-border-color: #0068FF;
 // }
 
-.btn-primary {
+.btn {
   border-radius: 2px;
+}
+
+.btn-primary {
   @include button-variant(
     $background: $white,
     $border: $white,
     $color: $primary-1000,
-    $hover-background: $primary-200,
-    $hover-border: $primary-200,
-    $hover-color: $primary-1000,
-    $active-background: $primary-600,
-    $active-border: $primary-600,
-    $active-color: $primary-1000,
+    $hover-background: $primary-1000,
+    $hover-border: $white,
+    $hover-color: $white,
+    $active-background: $primary-1000,
+    $active-border: $white,
+    $active-color: $white,
     $disabled-background: $primary-700,
     $disabled-border: $primary-700,
     $disabled-color: $primary-500
@@ -34,17 +37,16 @@
 }
 
 .btn-secondary {
-  border-radius: 2px;
   @include button-variant(
     $background: $primary-1000,
     $border: $white,
     $color: $white,
-    $hover-background: $primary-800,
+    $hover-background: $white,
     $hover-border: $white,
-    $hover-color: $white,
-    $active-background: $primary-500,
+    $hover-color: $primary-1000,
+    $active-background: $white,
     $active-border: $white,
-    $active-color: $white,
+    $active-color: $primary-1000,
     $disabled-background: $primary-1000,
     $disabled-border: $primary-600,
     $disabled-color: $primary-600
