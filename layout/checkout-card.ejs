@@ -35,8 +35,15 @@
     <hr>
     <!-- 信用卡 -->
      <div class="d-flex align-items-center gap-2 flex-wrap mb-4">
-       <label class="form-label mb-0 required">輸入卡號</label>
-       <div class="d-flex align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <label class="form-label mb-0 required">輸入卡號</label>
+        <ul class="checkout-card-list-tiny list-unstyled mb-0">
+         <li><i class="fa-brands fa-cc-visa"></i></li>
+         <li><i class="fa-brands fa-cc-mastercard"></i></li>
+         <li><i class="fa-brands fa-cc-jcb"></i></li>
+        </ul>
+      </div>
+       <div class="d-flex align-items-center gap-2 flex-wrap">
            <div class="d-flex align-items-center gap-1">
              <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
              <span>-</span>
@@ -45,10 +52,10 @@
              <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
              <span>-</span>
              <input type="text" class="card-number-input form-control" pattern="\d{4}" maxlength="4" placeholder="XXXX" inputmode="numeric">
+             <i class="fa-solid fa-eye ms-1" style="cursor: pointer;"></i>
+              <!-- <i class="fa-solid fa-eye-slash"></i> -->
            </div>
-           <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
-            <li><i class="fa-solid fa-eye"></i></li>
-            <!-- <i class="fa-solid fa-eye-slash"></i> -->
+           <ul class="checkout-card-list list-unstyled mb-0">
             <li><i class="fa-brands fa-cc-visa"></i></li>
             <li><i class="fa-brands fa-cc-mastercard"></i></li>
             <li><i class="fa-brands fa-cc-jcb"></i></li>

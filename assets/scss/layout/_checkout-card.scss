@@ -11,3 +11,21 @@
         }
     }
 }
+
+.checkout-card-list{
+    display: none;
+    @include tiny{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.checkout-card-list-tiny{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include tiny{
+        display: none;
+    }
+}
