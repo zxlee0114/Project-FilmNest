@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/title-logo'); -%>
     <title>about</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <%- include('./layout/aboutProposal-nav', {page: "aboutProposal-now"}); -%>
+    <%- include('./layout/header'); -%> <%-
+    include('./layout/aboutProposal-nav', {page: "aboutProposal-now"}); -%>
 
     <section class="aboutproposal-now">
       <div class="container py-10 py-lg-20">
-        <div class="p-3 bg-primary-6 border border-white rounded-5">
+        <div class="p-3 bg-primary-6 border border-white rounded-2">
           <h3 class="fs-6 py-10 text-center">尚未發起過專案</h3>
         </div>
       </div>
