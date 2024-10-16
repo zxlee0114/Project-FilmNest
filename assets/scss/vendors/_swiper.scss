@@ -1,5 +1,5 @@
 
-.swiper-button-prev.indexcard-button-prev,.indexcard-button-next.swiper-button-next,.swiper-button-prev.indexcard2-button-prev,.indexcard2-button-next.swiper-button-next{
+.swiper-button-prev.custom-style-prev,.custom-style-next.swiper-button-next{
     position: static;
     width: 28px;
     height: 28px;
@@ -8,22 +8,22 @@
     border-radius: 60px;
     margin-top: 0;
 }
-.swiper-pagination.indexcard-pagination,.swiper-pagination.indexcard2-pagination{
+.swiper-pagination.custom-style-pagination{
     position: static;
 }
-.indexcard-button-prev.swiper-button-prev:after,.indexcard2-button-prev.swiper-button-prev:after{
+.custom-style-prev.swiper-button-prev:after{
     content: "\e5cb";
     color: #FFFFFF;
     font-size: 20px;
     font-family: "Material Symbols Outlined";
 }
-.indexcard-button-next.swiper-button-next:after,.indexcard2-button-next.swiper-button-next:after{
+.custom-style-next.swiper-button-next:after{
     content: "\e5cc";
     color: #FFFFFF;
     font-size: 20px;
     font-family: "Material Symbols Outlined";
 }
-.indexcard-pagination>.swiper-pagination-bullet-active,.indexcard2-pagination>.swiper-pagination-bullet-active{
+.custom-style-pagination>.swiper-pagination-bullet-active{
     background: #FFFFFF;
 }
 

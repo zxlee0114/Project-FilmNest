@@ -44,3 +44,9 @@ textarea {
   color: red;
   margin-left: 4px;
 }
+
+//modal遮罩
+
+.modal-backdrop {
+  --bs-backdrop-opacity: .7;
+}
