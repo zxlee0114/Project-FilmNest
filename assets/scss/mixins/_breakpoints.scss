@@ -1,4 +1,11 @@
 // 手機優先；主要斷點與 bootstrap 一樣
+
+@mixin tiny{
+   @media (min-width: 420px){
+     @content;
+   }
+ }
+
 @mixin sm{
     @media (min-width: 576px){
       @content;
