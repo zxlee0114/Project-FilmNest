@@ -108,39 +108,39 @@
 }
 
 //贊助方案 左右箭頭
-.swiper-button-prev.feedbackChoiceSwiper-button-prev::after{
-    content: '\e5cb';
-     font-family: "Material Symbols Outlined";
-     font-size: 20px;
-     color: $white;
-     width: 28px;
-     height: 28px;
-     border: 1px solid rgba(255, 255, 255, 0.4);
-     border-radius: 60%;
-     background: transparent;
-}
+// .swiper-button-prev.feedbackChoiceSwiper-button-prev::after{
+//     content: '\e5cb';
+//      font-family: "Material Symbols Outlined";
+//      font-size: 20px;
+//      color: $white;
+//      width: 28px;
+//      height: 28px;
+//      border: 1px solid rgba(255, 255, 255, 0.4);
+//      border-radius: 60%;
+//      background: transparent;
+// }
 
-.swiper-button-next.feedbackChoiceSwiper-button-next::after{
-    content: '\e5cc';
-      font-family: "Material Symbols Outlined";
-      font-size: 20px;
-      color: $white;
-      width: 28px;
-      height: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 60%;
-      background: transparent;
-}
+// .swiper-button-next.feedbackChoiceSwiper-button-next::after{
+//     content: '\e5cc';
+//       font-family: "Material Symbols Outlined";
+//       font-size: 20px;
+//       color: $white;
+//       width: 28px;
+//       height: 28px;
+//       border: 1px solid rgba(255, 255, 255, 0.4);
+//       border-radius: 60%;
+//       background: transparent;
+// }
 
-.swiper-button-prev.feedbackChoiceSwiper-button-prev, .swiper-button-next.feedbackChoiceSwiper-button-next {
-  position: static;
-  margin-top: 0; 
-}
+// .swiper-button-prev.feedbackChoiceSwiper-button-prev, .swiper-button-next.feedbackChoiceSwiper-button-next {
+//   position: static;
+//   margin-top: 0; 
+// }
 
-.swiper-button-prev.feedbackChoiceSwiper-button-prev{
-  margin-right: 12px;
-}
+// .swiper-button-prev.feedbackChoiceSwiper-button-prev{
+//   margin-right: 12px;
+// }
 
-.swiper-button-next.feedbackChoiceSwiper-button-next{
-  margin-left: 12px;
-}
+// .swiper-button-next.feedbackChoiceSwiper-button-next{
+//   margin-left: 12px;
+// }
