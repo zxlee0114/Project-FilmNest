@@ -29,6 +29,7 @@
 @import "./layout/footer.scss";
 @import "./layout/project-intro-nav";
 @import "./layout/project-photograph-proposer";
+@import "./layout/checkout-card";
 
 //pages
 @import "./pages/index.scss";
@@ -37,6 +38,7 @@
 @import "./pages/feedback-choice";
 @import "./pages/feedback-confirmation.scss";
 @import "./pages/checkout-info";
+@import "./pages/payment-success";
 @import "./pages/project-breaking-news";
 @import "./pages/project-QA";
 @import "./pages/aboutProposal";

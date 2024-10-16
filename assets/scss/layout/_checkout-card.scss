@@ -1,0 +1,31 @@
+//信用卡卡號輸入框
+.card-number-input{
+    width: 52px;
+    @include md {
+        width: 64px;
+    }
+    &::placeholder{
+        font-size: 11px;
+        @include md{
+            font-size: 16px;
+        }
+    }
+}
+
+.checkout-card-list{
+    display: none;
+    @include tiny{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.checkout-card-list-tiny{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include tiny{
+        display: none;
+    }
+}

@@ -11,8 +11,9 @@ a {
   color:white;
   text-decoration: none;
 }
-textarea{
-  resize:none;
+
+textarea {
+  resize: none;
 }
 
 .material-symbols-outlined {
@@ -27,10 +28,12 @@ textarea{
   line-height: 1;
 }
 
+//文字斷行時會平均分配
 .text-balance {
   text-wrap: balance;
 }
 
+//依照內容寬度伸縮
 .fit-content{
   width: fit-content;
 }
