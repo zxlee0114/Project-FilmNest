@@ -5,37 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="shortcut icon"
-      href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEUUlEQVRYw8WXYWiWVRTH/3e8yHh5GUOGyYgxZI0xTGKMkH2QiDFsjDFCQkJkSYiMCBvDLCwYfpIhESIxBg2JMUJGDCk/1FhkUCYloWlWVmMOs2WhueZ6t/360P+J6+O7121YHXh43+eec++593/+55z7SP+zhJVOAEokxU8ii5LmQwiL/8oGgHJJmyQ1SnpY0kZJOav/lPSjpG8knZL0RQjhyn2BCCgH2oFxYApY8DMLzPiZBfL8LTeAs0AnsM6IrRwBT3xU0mH/ZiT9KukzSeclnfP7oqSspBoj0yTpQdt/J+klSe+FEP5YUZyBHcBln/Y3YADYAlQAOaAJ6AYOAG1GKgvU+fTfGpVp4AiQXa7zNcBTwO+G9CTwWKRfDxwF5rhTxoGmyK4uZfc6ULGcDWwHrnriUDwJyADHCjhP5GLKPgc8ZxRmvYlMMefVwA9ebCi9Y2BjEeeJ7C2A6B7r5oC2YtAfseEloKqAzU7uLUNLrD1gTpwGahJdnCINktrN7F5JWWAXkIts5leRxm3OjNdcJxokNRcy7DPjT5jRA47bcIIGUOO8Lyadts0CXSbztN/3RVwpSW/gkpXP+n0HcN2wjSZIOEz5JZyfA9barsfz54D+iGMJh+pj5zU+fR6ojBjf4kUWgHe8QDnQC0zafsHV7zhQb+b32FHedSIX+fr8LrICrR6cKBCaPYYwD4yYUKUuRJ3Wt7lXCHjZhSvvlC1NrXfMvt6IB7s8+IlPXg/U+n+JNzhtm5ElMiQL7I+QPBiFbT3QaJturzMKrElvYNzhGAPOpCrgLuCaoR2NS6s3uTeOeaIHqoC3XV9aI1/v/rMGsNuDp7zb436fAjZEjp6OSvTRqC8kp8o7BInzUiOGe0OjUboLgXYPTka7nvDYcMTsTMTuGadqt2OelNpshMpuIzIHbPP8fq/bH8evKkqtao+1GIE5oDvVD7ab+bH0pMLSFHXEg9H4Rdt3pdtvouiJyuehBJmE5ZH98z75glEqTekHrRuLUrvWB1oANqVZ3GvF+8C6iL0J+/cVaFxnjMTWlK4u4kpzhFyfx04X6gUjkr6WtFnSk5IUQvhJ0pvuAU8kG0tJJl7H7fYZ3xc/kvRh1Gs6fH98a6lb0KsR5DUeb/DNaAboKIDADNCaqqpnTcqdUY044bXHCtWRZHJZVCpPAhs8eSRdvYpsYJvj/KVjvhY4bDLeAJrjRnRHRwoh3JT0gqTvJbVIGpBUJWlQ0hVJU8vowLc8f0TSL5L6JHU5jIdCCB8U/XYwWR73tQzgK9f72lSaVZqwk8CW1OWjGugw3HkT8kDqbnHPi8RWQ4xhHja8uYgzm13EyiLn7S421z33qlM2s5rvgkpJr0hq9V3/tqSffd8/L2nakD8gqc5Mr5BUKummpE8lvSjpQghhfrVfRknrHYwurMUkuRu0Jcjcr2/DjHP+EUn1kh6SVObT3pY0IemCpI8l3Vr1if9r+Qtcj0VOW+c7qwAAAABJRU5ErkJggg=="
-      type="image/x-icon"
-    />
+  rel="shortcut icon"
+  href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEUUlEQVRYw8WXYWiWVRTH/3e8yHh5GUOGyYgxZI0xTGKMkH2QiDFsjDFCQkJkSYiMCBvDLCwYfpIhESIxBg2JMUJGDCk/1FhkUCYloWlWVmMOs2WhueZ6t/360P+J6+O7121YHXh43+eec++593/+55z7SP+zhJVOAEokxU8ii5LmQwiL/8oGgHJJmyQ1SnpY0kZJOav/lPSjpG8knZL0RQjhyn2BCCgH2oFxYApY8DMLzPiZBfL8LTeAs0AnsM6IrRwBT3xU0mH/ZiT9KukzSeclnfP7oqSspBoj0yTpQdt/J+klSe+FEP5YUZyBHcBln/Y3YADYAlQAOaAJ6AYOAG1GKgvU+fTfGpVp4AiQXa7zNcBTwO+G9CTwWKRfDxwF5rhTxoGmyK4uZfc6ULGcDWwHrnriUDwJyADHCjhP5GLKPgc8ZxRmvYlMMefVwA9ebCi9Y2BjEeeJ7C2A6B7r5oC2YtAfseEloKqAzU7uLUNLrD1gTpwGahJdnCINktrN7F5JWWAXkIts5leRxm3OjNdcJxokNRcy7DPjT5jRA47bcIIGUOO8Lyadts0CXSbztN/3RVwpSW/gkpXP+n0HcN2wjSZIOEz5JZyfA9barsfz54D+iGMJh+pj5zU+fR6ojBjf4kUWgHe8QDnQC0zafsHV7zhQb+b32FHedSIX+fr8LrICrR6cKBCaPYYwD4yYUKUuRJ3Wt7lXCHjZhSvvlC1NrXfMvt6IB7s8+IlPXg/U+n+JNzhtm5ElMiQL7I+QPBiFbT3QaJturzMKrElvYNzhGAPOpCrgLuCaoR2NS6s3uTeOeaIHqoC3XV9aI1/v/rMGsNuDp7zb436fAjZEjp6OSvTRqC8kp8o7BInzUiOGe0OjUboLgXYPTka7nvDYcMTsTMTuGadqt2OelNpshMpuIzIHbPP8fq/bH8evKkqtao+1GIE5oDvVD7ab+bH0pMLSFHXEg9H4Rdt3pdtvouiJyuehBJmE5ZH98z75glEqTekHrRuLUrvWB1oANqVZ3GvF+8C6iL0J+/cVaFxnjMTWlK4u4kpzhFyfx04X6gUjkr6WtFnSk5IUQvhJ0pvuAU8kG0tJJl7H7fYZ3xc/kvRh1Gs6fH98a6lb0KsR5DUeb/DNaAboKIDADNCaqqpnTcqdUY044bXHCtWRZHJZVCpPAhs8eSRdvYpsYJvj/KVjvhY4bDLeAJrjRnRHRwoh3JT0gqTvJbVIGpBUJWlQ0hVJU8vowLc8f0TSL5L6JHU5jIdCCB8U/XYwWR73tQzgK9f72lSaVZqwk8CW1OWjGugw3HkT8kDqbnHPi8RWQ4xhHja8uYgzm13EyiLn7S421z33qlM2s5rvgkpJr0hq9V3/tqSffd8/L2nakD8gqc5Mr5BUKummpE8lvSjpQghhfrVfRknrHYwurMUkuRu0Jcjcr2/DjHP+EUn1kh6SVObT3pY0IemCpI8l3Vr1if9r+Qtcj0VOW+c7qwAAAABJRU5ErkJggg=="
+  type="image/x-icon"
+/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>付款成功</title>
-    <script type="module" crossorigin src="/Project-FilmNest/assets/main-cd0a8a48.js"></script>
-    <link rel="stylesheet" href="/Project-FilmNest/assets/main-fc99facb.css">
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-75bb289c.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-c3f7b550.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3 py-lg-5 fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark py-3 py-lg-5">
   <div class="container">
-    <button class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button type="button" class="navbar-toggler border-0 me-3" data-bs-toggle="modal" data-bs-target="#mobile-nav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <a class="p-0 me-12" href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAAAZCAYAAADwvIY6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAW0SURBVHgB7VqLceM2EIUzKUCpICxBHYiuwEoFYiqQUwF1FSiugHYF8lUAXQWyKyBTgZ0KNljirbCEQIrxOZ5YxzeDobBYAAvsDwRlzIQJCldjmIho5h65KzOQXl15urq6asyEHwfOEApXLPWjdmXlSmYmXC6cgueuHKD0F1cqKH6BcuPKFgZxNAwz4fKAqPCCUiJdCH2HiHEb8YthbMyEy4FTaK48fq7om0S6OKj2TEWUjfmP0JeaMP9aZMY6Vn31CSOATa1RsojehxvFN1NGkY+cs6Rh/Kp4/wRtG42xpBDR+PctBaNexPURMs2p6wy8fo6My4iWmUsG+XMCYxXR8wGFlRFvBsXYkXOWMg55D5ZSa4NQxlBT11jZCC3adlCm9N1C9mP9jCyZ4mWsQV+jbhWv1fJ9RmC9BaWiJoUoYCmE/xXa5tSPlerf9qGg5HyEUKVStC6CnELUYXp2ZpwqrpM3mq1u7xmjAg/3Xchc6F9S1xAtfX6DKGS9Q4032ICavKdLDrZ0ilZB1PWsJfoztiOEKsFroRAperwXtM/OjDEGdkCW1vDMCNAPYBA7NMobhSi5NQooudIbmzCGlRqPN7ceIdRSGYFEgp2izSKZeN4tKeOgrlGV1DUQqVd9BkGnqYJ/zyMZmbZVNJsyCPDt0MdiTRu03aL9SFP95BV+TsEhmC9LyMt7slE8VQ9foeQUPtlLToMvaOuk+J/wZEa+eeQbSIMbyGvjbySZOXO0368CrtGvbXOlcLQHJc8T6L3Apt8o0ix6MlYsExayM/621IicETK054om9aG3Cx7rPvr9GsmVma5cfWA+PnxyanpCn5L8Gxmv9VHR8sQcopg96ofIOFsa98f4jSsF96OukxSQIcN6mC9T+/aMOQzGeeysAtZmKZwFJFV0IoUWjKLIQN1zRIW23k2EN9gzZUvdg2KVGKeMvEDmJlW3qA+lDEadoBfx3NQfIVqPU/U8npd89IjHq0BbJNalI5McrteJOTSfnJluBtabTBkSIdhyMjxZidYxZogUv4GHQ2GbJkw6MjCNjeZvGbzHk6WNLfOL8dabKtz+zXiPyFzZcJQyb8Or+TjouZoz7UN4xlM71QL9vypdNMbvVZGYl1NLbv4FfsaTB1wiPLMBsBLYgq9ZcY7GKcKaENIyo4yBfE5kGivtERY8ZuHtOJj/SdGZ1rix/mCvcL+/Ydycx4UxCXiexviNy6Pxdb0xH2sY34uUrBKlB89nbn/uYCy3xjt3Y7xuHswZaIPgEJK7TnsomK2Lc/hDZBS88bfKGDLjc9re0b6gnps4L70RbBRqnjYvwmj3rkjovI+6bXroBiHy4ZN+qW2M3//lOUY4053xuuA137v6X6zfc33l5HrMa6jzueEQ8dk4z6r8l6EuuWk1Yt4FhVdOOfVyajpEOVHfgm5Bk7uTt2CRkIXofc4Qtaof73cULU+MV8Vy9fDJ2SCP5h088Co5ysS6Ts8QyPV7E6IE1zlUz2kgB5E3gsKVR/Y4CtGiGROeHH4x3oLb/1eAxrmTQ+NXNYecT54kYsDDMxPSToP+OtTK773xXiX8z+b70ODJr5Jz83G4w9wWRlTC2DqHZQoHfH69LIyPrAydahs8i6SOKVw714T3f1hQ/P6tPeB4oYW63GeMiQ7yplLDGyz6zilcRm0oRA5L3VerDB4j7cKjI4dsjKCm/vd2ovERQmTv9EnU3zVCqDGtWhOvbxnx5NS9W+E9WifWVime0+88avEHCh91hgxCLluY9x59T2++ekDhG4ZVgs0wbqnk2Sb6ShoR49Gb2SJal8yxM+8E+p/fVJK62HszD3W/L8QfulhR8bkip+CFvd8KzgiVwzBSuX0+0C9LLQZrKBP0sxs0IQEK17ViGCWUNocSuH2tvC4ZkiZcEKD4krq5KEbnX1UTPj/G/uuawzbnS6345+iCaMKECZeGfwDJ9upLJoYbeQAAAABJRU5ErkJggg==" alt="filmnest logo"></a>
-    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse text-white">
+      <ul class="navbar-nav mb-2 mb-md-0">
         <li class="nav-item dropdown me-10">
-          <a class="nav-link exploreDropdown fw-bolder d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link Dropdown fw-bolder d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             探索
-            <span class="exploreDropdownDeco ms-2"></span>
+            <span class="DropdownDeco ms-2"></span>
           </a>
-          <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item text-black" href="project-explore.html">專案總覽</a></li>
-            <li><a class="dropdown-item text-black" href="#">Action</a></li>
-            <li><a class="dropdown-item text-black" href="#">Action</a></li>
-            <li><a class="dropdown-item text-black" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider text-black"></li>
-            <li><a class="dropdown-item text-black" href="#">Something else here</a></li>
-          </ul>
+          <ul class="dropdown-menu bg-primary-8" aria-labelledby="navbarDropdown">
+            <li style="border-bottom: 1px solid #FFFFFF33;">
+  <a href="project-explore.html" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7ZHRCcAgDEST0im6Rtdoh3Kmdg3XaMeIEVRURP1QEPRBEnJHIHAA04G6EdHJ43Iiooi1Cl6+k7tZDq7bM0VCKyF126Ax9sOP64m8lJbjhx6sUAJWKEVmDWV8FIkhLcGQobSCAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="全部專案">全部專案
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATeSURBVHgB7VlbaB5FFP7SpBcvqVGwab3UPFS8FU3tRZSiVhAfRFBBECwoIiji5VF88qmgfRMVRKQKPuiTlweFUiRGEJUqltZqqmIrtcEL2jatpo1xt9/XnSHzzz+zO/tvoC/7wZczu/+ZmXNmzpyZnQAtWrRo0aIB+jCPyPN8DcUoeSF5GbmQnCUnySlyPznR19f3I+YJjR2g0YMUm8n7ycXkjMf/As+/kfvIHXTmCBqgZwdo+FKKh8jH0W3kTMW7k075K3KcjkyhBwygB9D41RSvkcPGiNwQTjnGzNETriVXsM2P6MSvqIkFqAl2pFB5l7zUfe0Yl/tVPB23bHkeeS/bXoeaqOUAO3iA4hVyMGIQvOcM3aMe0xPWsY9rUAPJDrDhlRTPo9voDGFHMr8J77eYMxvY1zASkeQAGxyi2I5iqn1jQmGRBd7B00dJWzezz4VIQOoMPEWOILwgc9POIoRH1H8Wlzr6fphJyvhRJKAyjXIkRih+Qjg9quNl5DlG/QSK/D4Z0dcGt568xOhrP3iT/MPRsSlWHGNm+qvMvpQZeA7hURcvcowXlpDXkf3m2dXXiN/jGC8sJ59GsQH6oaR6K1GBlH3gVqdROGXxf1I76fsoZvMWY+BARP8Yigz2Iql19SB5mJxGd3gKyxgBA5yFWURQGkKsLIPGMDelMwHewQ4OGv0RY9wCzIWPW08ztJX63xt9ZZv7HH0/5BROu6g/GbOxKoTutr4gnFE+tsYLLB+gGHd+97PSZ9Z4o/87xbeIb3Ia4EGUoMqBUaB0Jz0WqHMuwqlRTiwO6C9C9wC5HEIDB4Y8I/yFvIlhcIVVZlkL+EaER1NcRZ2Njr6OI6sRHiT73I8SVC3iIXSHjtuBpvdtGvIFivhW1phB+YjeRf0NKGbvAqMPxJ1eggYOuA1nJZ2sQefe4Ou4bakd7ehno9vZLNJ+FKk7sZ+fY53EjK/S8Z1030VTaIoDhz2jBWWdO8ktqGd8yHlb1kfNeyjSpj9Yx9HAgXF0hpB4VKmQfIvliYCRdUZY7U2xrZ3myPB3oM40GjiwK/Duai7CG0x5K+KLNeREFnj35WnFPFf6HXbqWXmkiQMfoAgj//z+pP5w1L5G8WmZMvr+LAjfOBvbxkid3h0wNwbjXqdyZj1H7Bmj8zrFNs+4WMi4v+1h3bHTCnl+PYqDnT9bf1LnBHp1wOBlz3hb3syOHzVOvEHxAorjsR8uvhP/kttZ50Nj/JUUawO6wkFUIOlahZ3oO1iHLmUJ5e5ZzB22XjWzYHVvo9CIXoziw8XeA2nB/0B+Z0fVrKW16PwGsOUD1NtTZVuqA9p4dpJnIXzXo5Hawg53J7anHVtHjuXovCOy7f1Dfsr2pqvaSr7YYqc3UbyD8osrjfIOFPH9i1f/fIqryMtRfAiFbuxsWUfo/UhArZs5GvEwxbNOZ3bKY04dNRyMGOuGjP1tN42fSLWp1s0cG95GJ/QJ+Ri6d1Yr3UWokOtH5xnJ13O5t47xQu2bOXbwEsUT5CHHGCErMTL2zkrNwudsey/q2oMewZlYQfEIeTs6Q8EPCctZhMNNa+UTGn8cPWA+rtdXobht2IRwRvFj3+r8jGLUD6EB5u0fHHRE90O611Sm0R6g1Ks1Zhez7n6UbmX4Php+Ei1atGjR4kzjFHkP4zEWr3ZaAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="喜劇">喜劇
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO8SURBVHgB7Vg7aBVBFD1Pgz9IDAZtAiJaqCAoCNYiiFhYxE9joViIhQoRFA3BRBsLbS1sBBVEBBEJCkYCSoiQKH4QAipGMSomElAUVF7irue6s2TevJnd2X2vMLAHDjdvd2buOTN3ZncDFChQoECBAjMYJeRAGIZNDFvIleQCMiBHycelUulZQj9p20ouJ5vJKXKC/EyOse93ZEQmAxSwlOE8uYEsk5OWKEauU8xNQ/hmchM5W7Wz9X1ODrHvD3jC2wBFHGI440hc1hiL+0gel65kJ9lkCNfbmmM8SlrJzAYovouhw5K4bBFkmpDfzQnGJy1jCp/QxIs0bQ1pDSi+m+GkGrTiFjlE9iqhUr8nyBZ1T/bFYk1cmEBofeK4hrn/0MQw8hrgAMsYTiHabHoyqfN2Dj5otO9naLMIDPRmZhpNeMy4MlZzzHHmmUAeA0Q3qmfpPbmLg35QohsZ1pMryK2oFKj/HVhMmWMD1eblpMtuQM3+XiOhiG/TxB9k2E3ORWUNm2Lh+DutrASLmGc+c/5CFgPERhX1jd6piT/LsA3TNW6KNIXGsJVT2n5YgmjyqjALbqwzBu+n+DtKfDvDdiTPaOC452pvCtevNzo0JhpYayQb0O7thF8ZZCkZ236IzcxDDgPfEJVPPCsL/40chvIK0YrqZGHCNfN3AD+zMMarQkOKAX2gAxS/A9G7T9kQE1jE2U6dANXCfDjlEpm0AvJeYj6pm2CvUSB9BVyroLd3XfuCHAYuw77kNmGhRUSSUFe9w9JX8BVZDfDEkRK6BL/ZNMUA6YZ9rgs+UctvZDWgcBqRe5/ycIkB/FfPXO2f5AgSkGiAzuXhsR/uU8MmMk2cTairz7DrCexlQJm4jegt05bUJsY0Y548gZHCNhmCp8w9jhSkGlAmLjCcsyRMKg1XW91U4GgrHzSj8ICXAWVCDLSnCPMxB+2abaxBVbpe8DagTNxgOAq3QCTcc5Wf3uYhc7xDBmQyoEzIx3oH/Gbf9uSN94BZRgMcewQZkdmAMnGLoQvukgHsRkJNPLTfDzjma+RA6jexC0zYI9+smD6hdHG2U8VVYn0c6xVyIrcBgXwfKBPHUFkeriPW3Ae9HOMlakBNBgQUcJcmRNgRpJ9CAmkrrwY97PsGNaJmAwIKuadMHEbycSoQ8Vd9HlI+qIsBAQX1qXLaQ86BfRXkteBKvcQLcp1CLlDYfUy/wZr7QHCRbcZQR+T673QauBKrGPYh+gyVrzeZ8WsU/xYzCTTSIkSBAgUKFPhf8RfETLx+NfU4/wAAAABJRU5ErkJggg==" style="width: 20px;" class="me-2" alt="愛情">愛情
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR0SURBVHgB7VhJiFVHFD0/mJh0SOwYSEImDQFDBKNJVHBABVfiQgQVcaGudeVKwYWKa1FxAHXhuHBCEBFExHnGoZ1nbRVnbW0cu9X/Pdeq4t9fr1q73vu9kXfgcN+vuv/VvXXrVt16QI4cOXLkyIACqohSqfQNxVDyD/Jvsh35OXmTvEOeIQ8UCoXHqBKq4gANF2OnkN3JV2STlaFn4XlyPR15gozI7ACNn04xFmVDQ8a31LefTmxHBrRDStDwDhQryJ7WoJLragWd3n98zw+Um+nIU6RAqghw0FoZlPwLyZl9SMqsXoBZ92JYR/JPsjP5NZIRekRuoBPNiETaCEwl/7GDC4rkLXIeuYPsZ439DSaJxZGL5CaYBB9AfoVyNGrIPuQuRCI6Apz9cRSLUZmUYthkmB1ovDXaT9xX1pED5B5yMNkFldHbxyhcRwTSOHCN4mdl3CpyGjmX7IaWd6Bm9XyPXEr2ILsq3QY6sAUR+CxGmcYPovgdlYkoA66ESWaovtCzo2wAY8jL3rtqOMb3iECUA4QsnwIqd5MlMIfWx3ahoqcjh96IwH9+QRs60MMzoojk1qglrA5Qaaj/W7MjIhC7C3VSRmljZQeS3PjC6mjn/Ig1kA/IL8n2SDrQHhGIdeA7lGfUGTmT3ACzbUppIEtgkn23NuwluQhmz5dI1sHsQt0RjlyrELuEnqBy9tfBHFoy+8et7EXOUP9xDoiT3azODqsvO9MppadlmzmgjZIEXkrWKp1p3ArFqKdKD2w7SDFb6Xa2v08jGak2c6DOG6wRZacctDNO7yHKRod09ey3qQP13mBSKvjH/zJboNVA7Sxsk9xY7uluJH+yzy63ohyITeJ6K51hs8iRMFEYSJ7gUplDY6cqPSeHs288+3ZaXXF8PTlE6RVjHYgqJTj4MIo1qCwRrpJ7yUMwBZrUOL8iXP/ftYY/h6lKu9pXa90jdPQ+WolYBzrB3Kb8S4o2VPdJ5fmaPIZkcScz3Rz438GYK2fsEpKkDZ26oRNZcuB/a2Q9zGEH7796S3aIuthEJbG9w14PGAKvTSjnwQmYi3x/1aed1RS84BhvEIHYXUgw3zOiGDBMKtYa68BJmOrzXyQLPl1muJIkCtEOcIYWUEyEiURoOQmlRDht22Rd7yb7wtRKoUJPkvow330ZkUgTAXFiNcV+r9kZ9i15A6ZkcA5dgVlKHZBcNiKf8513kAKpv0qowf3lJIl+T/U7boOJRsnTFzxDSqSKgEUjwonYUpuGv4xeIyWyOLAVSaNdNKRE7qL65MAajfAOJNvsJaREagdsdTmFPIfKGZVnWeu1ykjJix9tv75PnCU38l0vkBJZIiBOSI2/EMkl46BvWf7XO4F8hUi9fASZHLC4bWVLh1qozTHV50SNajjgPh8KXB7IrDaptkb7Wy8fYQMyolqf10dRTMCHv0QLGlW7fJk+ioyoRgQkF9bCXC0F/iy7tpdWCuuqYfz7sVFF2JtYb5ikfUu+sXTP8kXiAo1vQo4cOXJ8EngHn4YdSMgc9dUAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="恐怖">恐怖
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VhJiBVJEI0/DDPDLG3PAjPDMPhnmEERlxZFRUVbEA8KLic9uJ4ED9IeRFSwFUFcDipeBTcQD6L2xYMHuy9exKUPigqKrUh7EbrbBVvQLt8zI/nR1fl/Vf0qReQ/eD/qR2VWRWRGRGaWSAMNNJAbURQ1gfPBn2L6f8HR8jkDBi4Ce8E74A6jnw7uBbeCs+Uj4SvJARjWDLEPfKdcAN1E8HtcLzL6cdCNkY+AryUfFoN/gQPgW3HG7tb//UrvxFjwnhSMXDMgzoEhcQZ6WY2leI4UgbwO/C2VkbcM6ejgj1Iw8jowQWobbfWU30jByOtAPHTexnTxe5EUjMwOII5btPoQK8Az4G0Jj/orcQn9ALwF9ppnlOVTAy89FlXQCbbRGHP/B/A38BfwO6Mvg2u1f595RqvkRNYy2myuW5U0kKJbKqWTLOsoN8f6VXteXShJRsCopRDkJLBFsoOOdoBdpVKpS3IiswMWmgstyjI4Sm/xukevmQPd+r8bRvdLgajLAQ2Nm+A18Cp4A3wsLnRoMGNqSGWTuPrPgvEzJZzolIJQrwMc+T5wEHwR4/OAzrK3iNDxqGsd0DCgA3aVDV2H+EYKRJ6FjHFdzdghGbmYeflMCkSe3ehB8KRU30ZQZ433bZ7Yh+hasERcSeXMdmQJsbxViMnLxLSx/1LCeUDdXRh33fTnILQFHn0c3JSmYuXdC62SSi74sKk2G3Tiju8I49slbDyxFjwvKZBrBtQQnrQOgNzr+5GOz8JT8BJGtE/7lCEepnj8vKRwyjsDrEg8Za0HL8rIKvRa3BpxwRuvWJry8WuSGtSdxBjFaRD/g5dhHEf4gOp5dKTxnIU+3BtU/bfijpUMo7R7oHJSg3q20zNBbqFPgZvFHeotuAvdD073xivmgjPBP8VVmzQYSGqQyQEYvgXiHDhDKkn7H/R2qllZGCLtpt94iHHa/ndxa0gaXEhqkNoBGLENYosMr+3+eiU/YmnTw2AXeEL7cYM3y7T/B7yi7WqBG7/jUoQD+nVte8B4v2Gj3Mi2eCkTltXjkHafI65C+b7Mu6m435bgRIekQKoyCgeOQiwXV1XIQSMHjf40DDtr+nGbvTDW3ksm+X1xicqQ40w9Ercqsx/zZDKe11PLtsQZ0Jq9WoaPug0fWzr5Ze5X7ccVulWGb63t7P0BdqrBjPVdMHYn5DI1npXqWJJ9aUJojozcpIVIA1mBNuh5mJ8WR0k43EjOQFncakxHHvK0pyPuQ6uV527J6cCSwMtDM+Ely+QecVUnPuq23YA6YVHmj85Ej+razVeQuhxoktqjnqSLjNFRTPci9i5r6DqV/bU2dWlW4tFSPXxqhVXofBBn6F0fwD0QRp4lt+ail8YBm4BJBteamdBMxTFs5U2qQESaEDqSwrDIsJqjNh98m/jH3i7JiLTrwHh9WRQwzsZ21ntTzGsK/+TSQAMNNNDAl4/33ci7+6P+YPoAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="懸疑">懸疑
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOcSURBVHgB7VhJaxRBGH09ozNjFs2oYFTccN/iErzkFBDP/gWPelO8CiKKOQoB9aoHyc2LBAIeXBHFQw4eFDzEHaNIEkWiiIzvo7udTs1X3dU9acTQDx7VU11d9d5X1V9VD1CgQIECCxaNRuMYeRI5ooR8MUgeRY7I24DgFXLEIuQALptuFqvI92QHf+9kOeN53gfMMzzMEyiywmIPuYtcTlYUfiMnyFGa+YJ5QNsGKHwxi35yOynXpmipqxr35PoJeZNGPqMNtGWA4jez2Et2YK7YqFCbCeEvcowmRpARmQxQuLw7EvXVaI22FvlqzD35/ZY8RyOTSInUWYjiaywGyJXB816EpUhdtITRtmS030IOs++tSIlUBjhAJ4tD8JeMKVQzErKMVoNme5nNqxyjHyngbIAdy5T3wZ9yLdqhUJtIm7loECT9XuJYO+AIJwNBitwNf82aUbeJKSsGteVlXi8jr3PMtS7aXGdANqJaZBBYBEU5TY6St8gpi1jNnBeYGKGJpUnCEg2wE1mbVehTP20xIdfXmFUekQ94fQOtL3DI7+QYOWn0v448laSvlCBeot4LPXu8oTgZ+C5ao/mV96bDfnj9Eq1RDn+f5f0hlieU+8epYQBZDRAbMTcqiAzSGezCXWiNbJ33eiKB2IbmnmPO4l+f0JfXFcTAupEFAjbAvlEl1cvSeBwYPAJ/XWubnbwft8nD8BOF1vcZztLltAbkmNCdQrBWr7ULd+C4Y4f5zCwN9Go6Sxbx0skS6BmiZKk33xGtbThemGZd94keatrnbADNzUrrGIhPg3Hp0XbciO4btr43pTHww1GQbUAPyRudFhhbsKRu3NkA19tvFp+UQZEgVBMN6EvMNUBSnqem16pWxCDYCevwpzekdLooKMvGtcawfTmhne25hxR/HwsVnmtDzoZERPaGMIrRaEbrwhkxr8uW9mbk5bv5OaP+zkWXk4Egrco3r6TWqsEamvm8ptyvWp6pGKXZZpAmniVpc/1bRdp1obkRZREdZ0arr7sKSwQjMctZ+Ah/FswIapG1RdvV1EXXF9f5HRDQhHxKHoD/Desa2QrcZ0zOThco/h4ckcpAxMga+Aevg5gbcddom+1E+FCWdJnJQMSInDDl0NcXGKrDTfhP8in8P7dGKHwGGdGWARM0tB7+yy4nx2FyBfxUKanxNPwj9gvXFPlPQTN3Gk2M438DRe8nJ8gpchAFChQoUKBADvgDrmLcTmT/seoAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="科幻">科幻
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP9SURBVHgB7VjNS1RRFD+j41dlTV9SUjBCUUSZVNCiIm0XFFEQ2CbdhESBaX+AtqhFm4rWoRYktRkjbNNCXdSmhUWLWliOm6CImigkGcfX7/jOa6537n3zxtFp0fvBj3Pvffe+83HvOffNEIUIESJEiP8ZEVoEHMfZAFEPfoxEIr8CzI9BxOcVRiKv6V8BhhwEr4MD4FPwJXgD3GKZHwN7wO9OFpNgOy0RAu8AlO6DOAauAN/LcCN4ApwGjyO6P5T5cYgRciM/Cj6R9imRvZh/jUoBPjLgObAVrNaedYAT4F1tvE8ifkUbj4Pj8qyJSgEo2gOeAVdJn49FQqLM/X7wHbhGWcMYUYxmhzql3yzPb1MpAEWNrFRTzuiTsYtytrcqBjN6pZ9Q1jTJGOfFEBWJsoDzfoMz0uYqkpT2G5GzMsfR1sVEjolMKmtjVCogUnXgIXCd9GPe8ZH+QznXj8BnMsYRnlTmxKSccrtTdqOdSgEoKpc8OAzWK+M1YBc4LMdkVBw5z8krRiY0Z9s85zyHikEhZbQGYi+4CawFy8Gd4HrwOUriY8OaXoge6fLRi5N7dJJgC9YkqUgU4kCVKGej+eJaDabAVzBkwmddMwRXn7gMcWW6gzVTlF8n62sHh2zO5nUAL6mAOADuJjfyVcJKkdVKu0p7Xm2Y75GTfhCGXbXobYbgKhcHRzGvxTQvSBXaD+6QuRlyK86stDOGtvpclXNan++US3ynaIZzst+i7C1OisyB7w5I9E9TbnRNEfXbAW5/JbfsRkF+bzO4DZxGdDeKPr4jEgaDk5jTYLIxSv5gRRlaGOFyhRnL86hh/n0YMagEpwPiJljLUcezlMV4X+RzwPExWh3nj7jN0vaOUJm2rhuGXobkaFcKvXfxJ0iqUOODOEBiTJTMkeb2W46sXHInwaPac5X8JZsW56LevCAVyYYgSawnZ1pz5BNPghHfwAE074GfKTeZ/ZJ/0cjngEP2yuP159QFcOIF2I3mMJmdMFWsZXOAKDf6eomcs6wbo/zOF+1A0CS25YBX3xcucpztEBfIXLlUllGwPFy0AyRGpMlegSoVw9dCtIK7yK3/tmT26F1uy+aAYzHaK5G8vgGGf2AJHiG3JKq75rcDHpfNAaJsTf9b9igbVd6ZleBZcneiwuKw7ZKbfycCUIvE/0nuXVDQJ3aQKmT6rtHzwZSgfuVzVglARoxndFGB8HUAL2YFM2T+SEsrRuSr+RnLc86BKUVfP7lHMUlL4YDgi8EQ266kyX9XTE49UJXxd798uKn/GaVsxuXNAb5hcUY5UnUg/yrjc14mUmdlnr46zr8H+IfKuEVvL/Qm0Wwj90+xECFChAgRIkSIEBr+AErE28i3SWUXAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="紀錄片">紀錄片
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,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" style="width: 20px;" class="me-2" alt="動畫">動畫
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANqSURBVHgB7Vg7aFRBFD1PgxG/65f4NyL46QQLo4IGC7FSixRaWGgjWFhaiBhFOxsREbTQThELCxsrEREVEdP4QyURVASJ+QgmG80+z83MZGffzu7O7stLkzlwmMnkvZlz3r3vvpkFAgICAgKmMiJMEOI4XspmCVkgv0RR9AeTgNQGKLyFzSlyEzlEDms+Ih/QyC9kiFQGKH4Zm1tkE5lHUbzhd/ISTQwjI0xDOlwn5+h+DJU+Bd0XLCR3IEM0bIBPfwMbiYAR/pk8S14kf+qxUbKN185ERkgTATFgxEt7g6nyhnzH/m1rvJnMISOkTaHY4mxrfJY1LkaakRGa0Di+ofiUhUeZKgug0maXvsa8Cz+QEdJWoatsNkOVz7ymXUqFL5hW95ERvCJAofOhqkkfipVG+Biq/o9d5qCY6eb9q/Tfo/q+xVAfvS6a60cK1IwAF9/P5ho5A8VaPwR33a9G+95jUGnWQx6kiS40CB8Dn9i0OAQNJYQluYX8pylP/q/V3wkVAYFEoDUZCa4rlaudHISKVK9LX1MN8TLJai1IQn+X7CSPkx0oLaN21VlObocfZI21ItJadyObQ6RsQ6RYrONYH00UUI8BPbmpJNI+5CSDnOy9FgqUfoHtr3A9yFnij7DZR36FeueMzunWmt4GjEDDM1xgN9QLHVegoJ69zwnylS4U8q6thHrqETxSvNaHzE4LwQryADkX7vQB6o+CufY02YZy4VWN1BMBW1jsGB9LMfIZuZU8DD+Ye3OWYFfrhM9WInYItsft/lO+Iz3kPfZbocqkz/xGaCXxUVoDrkrjGh8/hWkjYuKcx/x2G8FtJpUBoHy/nxy3x8ZBE52wSmQVRA49ExaBpDhX/jtfXF21ch7z91tiq6VTCXxf4uSTd/ULCeEiWmr6ZY/5BRfI31DfANsIkCICPvkP6397tHjJ/ZNQ5wI53PTWWENSbYA8D3VMzaSMViulhu0Uvw3F/ZBc/xxq17oG6gi6COqA84F8S7605hQjNzmH3NOB0nQabcTAQAWhdhSS6WTMJU3KUfM1yjd9SIqTYylNXGF3r77mI8fqNyBh5URPoD5MlVKp0pe4VrQM8lwn71hb9kF3UAM+2+l5UL82rIcKfT7BERS31ZXGXX0xIbvNboodQUBAQEBAQEBAwNTDf0rwwvLSphqMAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="實驗電影">實驗電影
+  </a>
+</li>          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a>
@@ -48,7 +95,110 @@
     </div>
   </div>
 </nav>
-    <main>
+
+<!-- 滾動監視 - 變換navbar底色 -->
+<script>
+  const nav = document.querySelector('.navbar')
+  window.addEventListener('scroll', fixNav)
+
+  function fixNav() {
+      if(window.scrollY > 0) {
+          nav.classList.add('active')
+      } else {
+          nav.classList.remove('active')
+      }
+  }
+</script>
+<!-- 參考文章：https://ithelp.ithome.com.tw/articles/10268713 -->
+
+<!-- mobile-nav Modal -->
+<div class="modal fade" tabindex="-1" id="mobile-nav" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header container border-0 py-3">
+        <div class="d-flex align-items-center w-100">
+          <button type="button" class="btn p-0 lh-1 me-3" data-bs-dismiss="modal" aria-label="Close">
+            <span class="material-symbols-outlined fs-7">close</span>
+          </button>
+          <h5 class="modal-title lh-1 d-flex align-items-center" id="exampleModalLabel"><img src="data:image/png;base64,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" alt="filmnest logo"></h5>
+          <button type="button" class="btn p-0 border-0 fw-bolder d-flex align-items-center ms-auto" data-bs-toggle="modal" data-bs-target="#mobile-nav-search">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></button>
+        </div>
+      </div>
+      <div class="modal-body p-0 bg-primary-9">
+        <a href="login.html" class="btn rounded-0 bg-primary-8 w-100" style="padding-top: 14px;padding-bottom: 14px;border-bottom: 1px solid #FFFFFF33;">登入/註冊</a>
+        <ul class="list-unstyled mb-0">
+          <li style="border-bottom: 1px solid #FFFFFF33;">
+  <a href="project-explore.html" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7ZHRCcAgDEST0im6Rtdoh3Kmdg3XaMeIEVRURP1QEPRBEnJHIHAA04G6EdHJ43Iiooi1Cl6+k7tZDq7bM0VCKyF126Ax9sOP64m8lJbjhx6sUAJWKEVmDWV8FIkhLcGQobSCAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="全部專案">全部專案
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATeSURBVHgB7VlbaB5FFP7SpBcvqVGwab3UPFS8FU3tRZSiVhAfRFBBECwoIiji5VF88qmgfRMVRKQKPuiTlweFUiRGEJUqltZqqmIrtcEL2jatpo1xt9/XnSHzzz+zO/tvoC/7wZczu/+ZmXNmzpyZnQAtWrRo0aIB+jCPyPN8DcUoeSF5GbmQnCUnySlyPznR19f3I+YJjR2g0YMUm8n7ycXkjMf/As+/kfvIHXTmCBqgZwdo+FKKh8jH0W3kTMW7k075K3KcjkyhBwygB9D41RSvkcPGiNwQTjnGzNETriVXsM2P6MSvqIkFqAl2pFB5l7zUfe0Yl/tVPB23bHkeeS/bXoeaqOUAO3iA4hVyMGIQvOcM3aMe0xPWsY9rUAPJDrDhlRTPo9voDGFHMr8J77eYMxvY1zASkeQAGxyi2I5iqn1jQmGRBd7B00dJWzezz4VIQOoMPEWOILwgc9POIoRH1H8Wlzr6fphJyvhRJKAyjXIkRih+Qjg9quNl5DlG/QSK/D4Z0dcGt568xOhrP3iT/MPRsSlWHGNm+qvMvpQZeA7hURcvcowXlpDXkf3m2dXXiN/jGC8sJ59GsQH6oaR6K1GBlH3gVqdROGXxf1I76fsoZvMWY+BARP8Yigz2Iql19SB5mJxGd3gKyxgBA5yFWURQGkKsLIPGMDelMwHewQ4OGv0RY9wCzIWPW08ztJX63xt9ZZv7HH0/5BROu6g/GbOxKoTutr4gnFE+tsYLLB+gGHd+97PSZ9Z4o/87xbeIb3Ia4EGUoMqBUaB0Jz0WqHMuwqlRTiwO6C9C9wC5HEIDB4Y8I/yFvIlhcIVVZlkL+EaER1NcRZ2Njr6OI6sRHiT73I8SVC3iIXSHjtuBpvdtGvIFivhW1phB+YjeRf0NKGbvAqMPxJ1eggYOuA1nJZ2sQefe4Ou4bakd7ehno9vZLNJ+FKk7sZ+fY53EjK/S8Z1030VTaIoDhz2jBWWdO8ktqGd8yHlb1kfNeyjSpj9Yx9HAgXF0hpB4VKmQfIvliYCRdUZY7U2xrZ3myPB3oM40GjiwK/Duai7CG0x5K+KLNeREFnj35WnFPFf6HXbqWXmkiQMfoAgj//z+pP5w1L5G8WmZMvr+LAjfOBvbxkid3h0wNwbjXqdyZj1H7Bmj8zrFNs+4WMi4v+1h3bHTCnl+PYqDnT9bf1LnBHp1wOBlz3hb3syOHzVOvEHxAorjsR8uvhP/kttZ50Nj/JUUawO6wkFUIOlahZ3oO1iHLmUJ5e5ZzB22XjWzYHVvo9CIXoziw8XeA2nB/0B+Z0fVrKW16PwGsOUD1NtTZVuqA9p4dpJnIXzXo5Hawg53J7anHVtHjuXovCOy7f1Dfsr2pqvaSr7YYqc3UbyD8osrjfIOFPH9i1f/fIqryMtRfAiFbuxsWUfo/UhArZs5GvEwxbNOZ3bKY04dNRyMGOuGjP1tN42fSLWp1s0cG95GJ/QJ+Ri6d1Yr3UWokOtH5xnJ13O5t47xQu2bOXbwEsUT5CHHGCErMTL2zkrNwudsey/q2oMewZlYQfEIeTs6Q8EPCctZhMNNa+UTGn8cPWA+rtdXobht2IRwRvFj3+r8jGLUD6EB5u0fHHRE90O611Sm0R6g1Ks1Zhez7n6UbmX4Php+Ei1atGjR4kzjFHkP4zEWr3ZaAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="喜劇">喜劇
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO8SURBVHgB7Vg7aBVBFD1Pgz9IDAZtAiJaqCAoCNYiiFhYxE9joViIhQoRFA3BRBsLbS1sBBVEBBEJCkYCSoiQKH4QAipGMSomElAUVF7irue6s2TevJnd2X2vMLAHDjdvd2buOTN3ZncDFChQoECBAjMYJeRAGIZNDFvIleQCMiBHycelUulZQj9p20ouJ5vJKXKC/EyOse93ZEQmAxSwlOE8uYEsk5OWKEauU8xNQ/hmchM5W7Wz9X1ODrHvD3jC2wBFHGI440hc1hiL+0gel65kJ9lkCNfbmmM8SlrJzAYovouhw5K4bBFkmpDfzQnGJy1jCp/QxIs0bQ1pDSi+m+GkGrTiFjlE9iqhUr8nyBZ1T/bFYk1cmEBofeK4hrn/0MQw8hrgAMsYTiHabHoyqfN2Dj5otO9naLMIDPRmZhpNeMy4MlZzzHHmmUAeA0Q3qmfpPbmLg35QohsZ1pMryK2oFKj/HVhMmWMD1eblpMtuQM3+XiOhiG/TxB9k2E3ORWUNm2Lh+DutrASLmGc+c/5CFgPERhX1jd6piT/LsA3TNW6KNIXGsJVT2n5YgmjyqjALbqwzBu+n+DtKfDvDdiTPaOC452pvCtevNzo0JhpYayQb0O7thF8ZZCkZ236IzcxDDgPfEJVPPCsL/40chvIK0YrqZGHCNfN3AD+zMMarQkOKAX2gAxS/A9G7T9kQE1jE2U6dANXCfDjlEpm0AvJeYj6pm2CvUSB9BVyroLd3XfuCHAYuw77kNmGhRUSSUFe9w9JX8BVZDfDEkRK6BL/ZNMUA6YZ9rgs+UctvZDWgcBqRe5/ycIkB/FfPXO2f5AgSkGiAzuXhsR/uU8MmMk2cTairz7DrCexlQJm4jegt05bUJsY0Y548gZHCNhmCp8w9jhSkGlAmLjCcsyRMKg1XW91U4GgrHzSj8ICXAWVCDLSnCPMxB+2abaxBVbpe8DagTNxgOAq3QCTcc5Wf3uYhc7xDBmQyoEzIx3oH/Gbf9uSN94BZRgMcewQZkdmAMnGLoQvukgHsRkJNPLTfDzjma+RA6jexC0zYI9+smD6hdHG2U8VVYn0c6xVyIrcBgXwfKBPHUFkeriPW3Ae9HOMlakBNBgQUcJcmRNgRpJ9CAmkrrwY97PsGNaJmAwIKuadMHEbycSoQ8Vd9HlI+qIsBAQX1qXLaQ86BfRXkteBKvcQLcp1CLlDYfUy/wZr7QHCRbcZQR+T673QauBKrGPYh+gyVrzeZ8WsU/xYzCTTSIkSBAgUKFPhf8RfETLx+NfU4/wAAAABJRU5ErkJggg==" style="width: 20px;" class="me-2" alt="愛情">愛情
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR0SURBVHgB7VhJiFVHFD0/mJh0SOwYSEImDQFDBKNJVHBABVfiQgQVcaGudeVKwYWKa1FxAHXhuHBCEBFExHnGoZ1nbRVnbW0cu9X/Pdeq4t9fr1q73vu9kXfgcN+vuv/VvXXrVt16QI4cOXLkyIACqohSqfQNxVDyD/Jvsh35OXmTvEOeIQ8UCoXHqBKq4gANF2OnkN3JV2STlaFn4XlyPR15gozI7ACNn04xFmVDQ8a31LefTmxHBrRDStDwDhQryJ7WoJLragWd3n98zw+Um+nIU6RAqghw0FoZlPwLyZl9SMqsXoBZ92JYR/JPsjP5NZIRekRuoBPNiETaCEwl/7GDC4rkLXIeuYPsZ439DSaJxZGL5CaYBB9AfoVyNGrIPuQuRCI6Apz9cRSLUZmUYthkmB1ovDXaT9xX1pED5B5yMNkFldHbxyhcRwTSOHCN4mdl3CpyGjmX7IaWd6Bm9XyPXEr2ILsq3QY6sAUR+CxGmcYPovgdlYkoA66ESWaovtCzo2wAY8jL3rtqOMb3iECUA4QsnwIqd5MlMIfWx3ahoqcjh96IwH9+QRs60MMzoojk1qglrA5Qaaj/W7MjIhC7C3VSRmljZQeS3PjC6mjn/Ig1kA/IL8n2SDrQHhGIdeA7lGfUGTmT3ACzbUppIEtgkn23NuwluQhmz5dI1sHsQt0RjlyrELuEnqBy9tfBHFoy+8et7EXOUP9xDoiT3azODqsvO9MppadlmzmgjZIEXkrWKp1p3ArFqKdKD2w7SDFb6Xa2v08jGak2c6DOG6wRZacctDNO7yHKRod09ey3qQP13mBSKvjH/zJboNVA7Sxsk9xY7uluJH+yzy63ohyITeJ6K51hs8iRMFEYSJ7gUplDY6cqPSeHs288+3ZaXXF8PTlE6RVjHYgqJTj4MIo1qCwRrpJ7yUMwBZrUOL8iXP/ftYY/h6lKu9pXa90jdPQ+WolYBzrB3Kb8S4o2VPdJ5fmaPIZkcScz3Rz438GYK2fsEpKkDZ26oRNZcuB/a2Q9zGEH7796S3aIuthEJbG9w14PGAKvTSjnwQmYi3x/1aed1RS84BhvEIHYXUgw3zOiGDBMKtYa68BJmOrzXyQLPl1muJIkCtEOcIYWUEyEiURoOQmlRDht22Rd7yb7wtRKoUJPkvow330ZkUgTAXFiNcV+r9kZ9i15A6ZkcA5dgVlKHZBcNiKf8513kAKpv0qowf3lJIl+T/U7boOJRsnTFzxDSqSKgEUjwonYUpuGv4xeIyWyOLAVSaNdNKRE7qL65MAajfAOJNvsJaREagdsdTmFPIfKGZVnWeu1ykjJix9tv75PnCU38l0vkBJZIiBOSI2/EMkl46BvWf7XO4F8hUi9fASZHLC4bWVLh1qozTHV50SNajjgPh8KXB7IrDaptkb7Wy8fYQMyolqf10dRTMCHv0QLGlW7fJk+ioyoRgQkF9bCXC0F/iy7tpdWCuuqYfz7sVFF2JtYb5ikfUu+sXTP8kXiAo1vQo4cOXJ8EngHn4YdSMgc9dUAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="恐怖">恐怖
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VhJiBVJEI0/DDPDLG3PAjPDMPhnmEERlxZFRUVbEA8KLic9uJ4ED9IeRFSwFUFcDipeBTcQD6L2xYMHuy9exKUPigqKrUh7EbrbBVvQLt8zI/nR1fl/Vf0qReQ/eD/qR2VWRWRGRGaWSAMNNJAbURQ1gfPBn2L6f8HR8jkDBi4Ce8E74A6jnw7uBbeCs+Uj4SvJARjWDLEPfKdcAN1E8HtcLzL6cdCNkY+AryUfFoN/gQPgW3HG7tb//UrvxFjwnhSMXDMgzoEhcQZ6WY2leI4UgbwO/C2VkbcM6ejgj1Iw8jowQWobbfWU30jByOtAPHTexnTxe5EUjMwOII5btPoQK8Az4G0Jj/orcQn9ALwF9ppnlOVTAy89FlXQCbbRGHP/B/A38BfwO6Mvg2u1f595RqvkRNYy2myuW5U0kKJbKqWTLOsoN8f6VXteXShJRsCopRDkJLBFsoOOdoBdpVKpS3IiswMWmgstyjI4Sm/xukevmQPd+r8bRvdLgajLAQ2Nm+A18Cp4A3wsLnRoMGNqSGWTuPrPgvEzJZzolIJQrwMc+T5wEHwR4/OAzrK3iNDxqGsd0DCgA3aVDV2H+EYKRJ6FjHFdzdghGbmYeflMCkSe3ehB8KRU30ZQZ433bZ7Yh+hasERcSeXMdmQJsbxViMnLxLSx/1LCeUDdXRh33fTnILQFHn0c3JSmYuXdC62SSi74sKk2G3Tiju8I49slbDyxFjwvKZBrBtQQnrQOgNzr+5GOz8JT8BJGtE/7lCEepnj8vKRwyjsDrEg8Za0HL8rIKvRa3BpxwRuvWJry8WuSGtSdxBjFaRD/g5dhHEf4gOp5dKTxnIU+3BtU/bfijpUMo7R7oHJSg3q20zNBbqFPgZvFHeotuAvdD073xivmgjPBP8VVmzQYSGqQyQEYvgXiHDhDKkn7H/R2qllZGCLtpt94iHHa/ndxa0gaXEhqkNoBGLENYosMr+3+eiU/YmnTw2AXeEL7cYM3y7T/B7yi7WqBG7/jUoQD+nVte8B4v2Gj3Mi2eCkTltXjkHafI65C+b7Mu6m435bgRIekQKoyCgeOQiwXV1XIQSMHjf40DDtr+nGbvTDW3ksm+X1xicqQ40w9Ercqsx/zZDKe11PLtsQZ0Jq9WoaPug0fWzr5Ze5X7ccVulWGb63t7P0BdqrBjPVdMHYn5DI1npXqWJJ9aUJojozcpIVIA1mBNuh5mJ8WR0k43EjOQFncakxHHvK0pyPuQ6uV527J6cCSwMtDM+Ely+QecVUnPuq23YA6YVHmj85Ej+razVeQuhxoktqjnqSLjNFRTPci9i5r6DqV/bU2dWlW4tFSPXxqhVXofBBn6F0fwD0QRp4lt+ail8YBm4BJBteamdBMxTFs5U2qQESaEDqSwrDIsJqjNh98m/jH3i7JiLTrwHh9WRQwzsZ21ntTzGsK/+TSQAMNNNDAl4/33ci7+6P+YPoAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="懸疑">懸疑
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOcSURBVHgB7VhJaxRBGH09ozNjFs2oYFTccN/iErzkFBDP/gWPelO8CiKKOQoB9aoHyc2LBAIeXBHFQw4eFDzEHaNIEkWiiIzvo7udTs1X3dU9acTQDx7VU11d9d5X1V9VD1CgQIECCxaNRuMYeRI5ooR8MUgeRY7I24DgFXLEIuQALptuFqvI92QHf+9kOeN53gfMMzzMEyiywmIPuYtcTlYUfiMnyFGa+YJ5QNsGKHwxi35yOynXpmipqxr35PoJeZNGPqMNtGWA4jez2Et2YK7YqFCbCeEvcowmRpARmQxQuLw7EvXVaI22FvlqzD35/ZY8RyOTSInUWYjiaywGyJXB816EpUhdtITRtmS030IOs++tSIlUBjhAJ4tD8JeMKVQzErKMVoNme5nNqxyjHyngbIAdy5T3wZ9yLdqhUJtIm7loECT9XuJYO+AIJwNBitwNf82aUbeJKSsGteVlXi8jr3PMtS7aXGdANqJaZBBYBEU5TY6St8gpi1jNnBeYGKGJpUnCEg2wE1mbVehTP20xIdfXmFUekQ94fQOtL3DI7+QYOWn0v448laSvlCBeot4LPXu8oTgZ+C5ao/mV96bDfnj9Eq1RDn+f5f0hlieU+8epYQBZDRAbMTcqiAzSGezCXWiNbJ33eiKB2IbmnmPO4l+f0JfXFcTAupEFAjbAvlEl1cvSeBwYPAJ/XWubnbwft8nD8BOF1vcZztLltAbkmNCdQrBWr7ULd+C4Y4f5zCwN9Go6Sxbx0skS6BmiZKk33xGtbThemGZd94keatrnbADNzUrrGIhPg3Hp0XbciO4btr43pTHww1GQbUAPyRudFhhbsKRu3NkA19tvFp+UQZEgVBMN6EvMNUBSnqem16pWxCDYCevwpzekdLooKMvGtcawfTmhne25hxR/HwsVnmtDzoZERPaGMIrRaEbrwhkxr8uW9mbk5bv5OaP+zkWXk4Egrco3r6TWqsEamvm8ptyvWp6pGKXZZpAmniVpc/1bRdp1obkRZREdZ0arr7sKSwQjMctZ+Ah/FswIapG1RdvV1EXXF9f5HRDQhHxKHoD/Desa2QrcZ0zOThco/h4ckcpAxMga+Aevg5gbcddom+1E+FCWdJnJQMSInDDl0NcXGKrDTfhP8in8P7dGKHwGGdGWARM0tB7+yy4nx2FyBfxUKanxNPwj9gvXFPlPQTN3Gk2M438DRe8nJ8gpchAFChQoUKBADvgDrmLcTmT/seoAAAAASUVORK5CYII=" style="width: 20px;" class="me-2" alt="科幻">科幻
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP9SURBVHgB7VjNS1RRFD+j41dlTV9SUjBCUUSZVNCiIm0XFFEQ2CbdhESBaX+AtqhFm4rWoRYktRkjbNNCXdSmhUWLWliOm6CImigkGcfX7/jOa6537n3zxtFp0fvBj3Pvffe+83HvOffNEIUIESJEiP8ZEVoEHMfZAFEPfoxEIr8CzI9BxOcVRiKv6V8BhhwEr4MD4FPwJXgD3GKZHwN7wO9OFpNgOy0RAu8AlO6DOAauAN/LcCN4ApwGjyO6P5T5cYgRciM/Cj6R9imRvZh/jUoBPjLgObAVrNaedYAT4F1tvE8ifkUbj4Pj8qyJSgEo2gOeAVdJn49FQqLM/X7wHbhGWcMYUYxmhzql3yzPb1MpAEWNrFRTzuiTsYtytrcqBjN6pZ9Q1jTJGOfFEBWJsoDzfoMz0uYqkpT2G5GzMsfR1sVEjolMKmtjVCogUnXgIXCd9GPe8ZH+QznXj8BnMsYRnlTmxKSccrtTdqOdSgEoKpc8OAzWK+M1YBc4LMdkVBw5z8krRiY0Z9s85zyHikEhZbQGYi+4CawFy8Gd4HrwOUriY8OaXoge6fLRi5N7dJJgC9YkqUgU4kCVKGej+eJaDabAVzBkwmddMwRXn7gMcWW6gzVTlF8n62sHh2zO5nUAL6mAOADuJjfyVcJKkdVKu0p7Xm2Y75GTfhCGXbXobYbgKhcHRzGvxTQvSBXaD+6QuRlyK86stDOGtvpclXNan++US3ynaIZzst+i7C1OisyB7w5I9E9TbnRNEfXbAW5/JbfsRkF+bzO4DZxGdDeKPr4jEgaDk5jTYLIxSv5gRRlaGOFyhRnL86hh/n0YMagEpwPiJljLUcezlMV4X+RzwPExWh3nj7jN0vaOUJm2rhuGXobkaFcKvXfxJ0iqUOODOEBiTJTMkeb2W46sXHInwaPac5X8JZsW56LevCAVyYYgSawnZ1pz5BNPghHfwAE074GfKTeZ/ZJ/0cjngEP2yuP159QFcOIF2I3mMJmdMFWsZXOAKDf6eomcs6wbo/zOF+1A0CS25YBX3xcucpztEBfIXLlUllGwPFy0AyRGpMlegSoVw9dCtIK7yK3/tmT26F1uy+aAYzHaK5G8vgGGf2AJHiG3JKq75rcDHpfNAaJsTf9b9igbVd6ZleBZcneiwuKw7ZKbfycCUIvE/0nuXVDQJ3aQKmT6rtHzwZSgfuVzVglARoxndFGB8HUAL2YFM2T+SEsrRuSr+RnLc86BKUVfP7lHMUlL4YDgi8EQ266kyX9XTE49UJXxd798uKn/GaVsxuXNAb5hcUY5UnUg/yrjc14mUmdlnr46zr8H+IfKuEVvL/Qm0Wwj90+xECFChAgRIkSIEBr+AErE28i3SWUXAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="紀錄片">紀錄片
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,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" style="width: 20px;" class="me-2" alt="動畫">動畫
+  </a>
+</li>
+
+<li>
+  <a href="#" class="container px-5 d-flex align-items-center" style="padding-top: 14px;padding-bottom: 14px;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANqSURBVHgB7Vg7aFRBFD1PgxG/65f4NyL46QQLo4IGC7FSixRaWGgjWFhaiBhFOxsREbTQThELCxsrEREVEdP4QyURVASJ+QgmG80+z83MZGffzu7O7stLkzlwmMnkvZlz3r3vvpkFAgICAgKmMiJMEOI4XspmCVkgv0RR9AeTgNQGKLyFzSlyEzlEDms+Ih/QyC9kiFQGKH4Zm1tkE5lHUbzhd/ISTQwjI0xDOlwn5+h+DJU+Bd0XLCR3IEM0bIBPfwMbiYAR/pk8S14kf+qxUbKN185ERkgTATFgxEt7g6nyhnzH/m1rvJnMISOkTaHY4mxrfJY1LkaakRGa0Di+ofiUhUeZKgug0maXvsa8Cz+QEdJWoatsNkOVz7ymXUqFL5hW95ERvCJAofOhqkkfipVG+Biq/o9d5qCY6eb9q/Tfo/q+xVAfvS6a60cK1IwAF9/P5ho5A8VaPwR33a9G+95jUGnWQx6kiS40CB8Dn9i0OAQNJYQluYX8pylP/q/V3wkVAYFEoDUZCa4rlaudHISKVK9LX1MN8TLJai1IQn+X7CSPkx0oLaN21VlObocfZI21ItJadyObQ6RsQ6RYrONYH00UUI8BPbmpJNI+5CSDnOy9FgqUfoHtr3A9yFnij7DZR36FeueMzunWmt4GjEDDM1xgN9QLHVegoJ69zwnylS4U8q6thHrqETxSvNaHzE4LwQryADkX7vQB6o+CufY02YZy4VWN1BMBW1jsGB9LMfIZuZU8DD+Ye3OWYFfrhM9WInYItsft/lO+Iz3kPfZbocqkz/xGaCXxUVoDrkrjGh8/hWkjYuKcx/x2G8FtJpUBoHy/nxy3x8ZBE52wSmQVRA49ExaBpDhX/jtfXF21ch7z91tiq6VTCXxf4uSTd/ULCeEiWmr6ZY/5BRfI31DfANsIkCICPvkP6397tHjJ/ZNQ5wI53PTWWENSbYA8D3VMzaSMViulhu0Uvw3F/ZBc/xxq17oG6gi6COqA84F8S7605hQjNzmH3NOB0nQabcTAQAWhdhSS6WTMJU3KUfM1yjd9SIqTYylNXGF3r77mI8fqNyBh5URPoD5MlVKp0pe4VrQM8lwn71hb9kF3UAM+2+l5UL82rIcKfT7BERS31ZXGXX0xIbvNboodQUBAQEBAQEBAwNTDf0rwwvLSphqMAAAAAElFTkSuQmCC" style="width: 20px;" class="me-2" alt="實驗電影">實驗電影
+  </a>
+</li>        </ul>
+        <a href="aboutProposal.html" class="btn border-0 rounded-0 btn-primary w-100" style="padding-top: 14px;padding-bottom: 14px;">我要提案</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile-nav-search Modal -->
+<div class="modal fade" tabindex="-1" id="mobile-nav-search" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header container border-0 py-3">
+        搜尋
+      </div>
+      <div class="modal-body p-0">
+        搜尋
+      </div>
+    </div>
+  </div>
+</div>    <main>
       <div class="payment-success-banner">
         <div class="container">
           <div class="thanks-wrapper w-lg-50 w-md-75 w-100">
@@ -74,8 +224,11 @@
               </section>
 
               <!-- 進度條區塊 -->
-              <section class="progress progress-bg bg-primary-9 w-md-75 w-100 mx-auto" style="height: 8px; border-radius: 50px;">
-                <div class="progress-bar bg-white" role="progressbar" style="width: 75%; border-radius: 30px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <section class="thanks-progress-wrapper d-flex align-items-center w-md-75 w-100 mx-auto">
+                <div class="progress progress-bg bg-primary-9">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="progress-text"></span>
               </section>
 
               <!-- 按鈕區塊 -->
