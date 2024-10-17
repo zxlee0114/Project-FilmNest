@@ -75,20 +75,21 @@
     width: 0;
     height: 100%;
     border-radius: 30px;
-    transition: width 1s linear, background-color 1s ease;
-    animation: progress-animation 1s linear forwards;
+    transition: width 1.5s linear, background-color 1.5s ease;
+    animation: progress-animation 1.5s linear forwards;
 }
 
 .progress-text {
     min-width: 50px;
+    font-size: 20px;
     text-align: right;
     font-weight: bold;
 }
 
 .progress-text::after {
-    content: counter(progress) '%';
-    animation: progress-text-animation 1s linear forwards;
-    counter-reset: progress var(--progress);
+    content: counter(progress) ' %';
+    animation: progress-text-animation 1.5s linear forwards;
+    counter-reset: progress var(--progress); //設置一個名為 progress 的計數器，並套用變數 var(--progress)
 }
 
 @keyframes progress-animation {
@@ -113,7 +114,7 @@
 @keyframes progress-text-animation {
     @for $i from 0 through 75 {
       #{calc($i / 75 * 100%)} {
-        --progress: #{$i};
+        --progress: #{$i}; //#{}為scss插值寫法
       }
     }
   }
