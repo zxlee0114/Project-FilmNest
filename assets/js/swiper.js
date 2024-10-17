@@ -104,7 +104,7 @@ const projectIntroSwiper2 = new Swiper(".projectIntroSwiper2", {
 const projectIntroNavSwiper = new Swiper(".project-intro-nav-swiper", {
   slidesPerView: 4.2,
   slidesPerGroup: 1,
-  spaceBetween: 20,
+  spaceBetween: 15,
   loop: false,
 
   breakpoints: {
@@ -141,24 +141,24 @@ const feedbackChoiceSwiper = new Swiper(".feedbackChoiceSwiper", {
   slidesPerView: 1.2,
   spaceBetween: 12,
   //分頁器
-  pagination:{
+  pagination: {
     el: ".swiper-pagination",
     bulletClass: "swiper-pagination-bullet",
     bulletActiveClass: "swiper-pagination-bullet-active",
     clickable: true,
   },
-  navigation: {  
+  navigation: {
     nextEl: ".feedbackChoiceSwiper-button-next",
     prevEl: ".feedbackChoiceSwiper-button-prev",
   },
-  breakpoints:{
-    768:{
+  breakpoints: {
+    768: {
       slidesPerView: 2.5,
       spaceBetween: 14,
     },
     992: {
       slidesPerView: 4,
       spaceBetween: 16,
-    }
+    },
   },
 });
