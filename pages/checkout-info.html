@@ -142,46 +142,55 @@
                </form>
             </main>
             <aside class="col-lg-4 d-lg-block d-none">
-              <div class="checkout-info-sidebar bg-primary-9 p-7  border rounded-1 h-auto" style="border: 1px sold #606060;">
+              <div class="card checkout-info-sidebar bg-primary-9 border rounded-1 h-auto" style="border: 1px sold #606060;">
                 <div class="order-info">
-                  <h3 class="mb-3">訂單資訊</h3>
-                  <ul class="list-unstyled fs-7 ">
-                    <li>
-                      <h4 class="fs-7 fw-bold">方案名稱：</h4>
-                      <p class="text-end text-balance">
-                        《追風者》群眾募資計畫 - 贊助方案【我全都要組】
-                      </p>
-                    </li>
-                    <li>
-                      <h4 class="fs-7 fw-bold">訂單編號：</h4>
-                      <p class="text-end text-balance">WINDS100033302</p>
-                    <li>
-                      <h4 class="fs-7 fw-bold">訂單金額：</h4>
-                      <p class="text-end text-balance">NT$ 2,000</p>
-                    </li>
-                    <hr>
-                    <li>
-                      <h4 class="fs-7 fw-bold">應付金額：</h4>
-                      <p class="text-end text-balance">NT$ 2,000</p>
-                    </li>
-                  </ul>
-                  <a href="payment-success.html">
-                    <button class="btn btn-primary w-100 mt-3">確認付款</button>
-                  </a>
+                  <div class="card-header">
+                    <h4 class="mb-5">訂單資訊</h3>
+                    <h5 class="small text-nowrap mb-3">方案名稱：</h4>
+                    <p class="mb-1">
+                      《追風者》群眾募資計畫 - 贊助方案<wbr><span class="text-nowrap">【我全都要組】</span>
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="small text-nowrap mb-0">訂單編號：</h5>
+                        <p class="mb-0 font-monospace">WINDS100033302</p>
+                      <li class="d-flex justify-content-between align-items-center mb-5">
+                        <h5 class="small text-nowrap mb-0">訂單金額：</h5>
+                        <p class="mb-0">NT$ 2,000</p>
+                      </li>
+                      <hr>
+                      <li class="d-flex justify-content-between align-items-center mb-5">
+                        <h5 class="small text-nowrap mb-0">應付金額：</h5>
+                        <p class="mb-0 fw-bold fw-7">NT$ 2,000</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <a href="payment-success.html">
+                      <button class="btn btn-primary w-100 my-2">確認付款</button>
+                    </a>
+                  </div>
                  </div>
                </div>
               </aside>
         </div>
     </div>
     <!-- 手機版：aside 變成 footer -->
-    <footer class="checkout-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+    <footer class="checkout-footer d-lg-none d-block p-4 bg-primary-8 fixed-bottom">
       <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-        <div class="d-flex flex-column gap-1 w-auto">
-          <p class="mb-0">方案名稱：<strong>《追風者》【我全都要組】</strong></p>
-          <p class="mb-0">訂單編號：WINDS100033302</p>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <p class="mb-0">總計：</p>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+          查看訂單
+        </button>
+        <!-- <div class="d-flex flex-column gap-1 w-auto">
+          <div class="d-flex">
+            <p class="mb-0 d-xs1-block">方案名稱：</p>
+            <strong>《追風者》【我全都要組】</strong>
+          </div>
+          <p class="mb-0 d-xs1-block">訂單編號：WINDS100033302</p>
+        </div> -->
+        <div class="d-flex align-items-center gap-3 justify-content-between">
           <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
           <a href="payment-success.html">
             <button type="submit" class="btn btn-primary ms-auto">確認付款</button>
@@ -190,7 +199,52 @@
       </div>
     </footer>
 
-    <%- include('./layout/footer'); -%>
+    <div class="modal fade checkout-modal" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModal" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content bg-primary-9 rounded-1">
+          <div class="modal-header">
+            <h5 class="modal-title fs-sm-6 fs-7" id="checkoutModal">《 追風者 》贊助方案－－【 我全都要組 】</h5>
+            <button type="button" class="btn-close btn-checkout-close btn-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-between">
+            <ul class="list-unstyled d-flex flex-column gap-3">
+              <li class="d-flex justify-content-between align-items-center">
+                <small class="mb-0">訂單編號：</small>
+                <p class="mb-0">WINDS100033302</p>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <small>方案金額：</small>
+                <p class="mb-0">NT$2,000</p>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <small>加購項目：</small>
+                <p class="mb-0">無</p>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <small>加購金額：</small>
+                <p class="mb-0">NT$0</p>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <small>加碼金額：</small>
+                <p class="mb-0">NT$0</p>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="mb-0">總計：</p>
+              <p class="fs-7 fw-bold mb-0">NT$2,000</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">確認訂單</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-lg-0 mb-20">
+      <%- include('./layout/footer'); -%>
+    </div>
+
 
     <script type="module" src="../main.js"></script>
     <script src="https://kit.fontawesome.com/c8476d4a9f.js" crossorigin="anonymous"></script>
