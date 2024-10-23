@@ -14,6 +14,59 @@
       <h1 class="text-center mb-5 mb-sm-8 mb-md-10">發起專案</h1>
       <form action="#">
         <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
+          <fieldset class="payment-fieldset col-12 col-md-10">
+            <legend class="payment-lengend">專案基本資訊</legend>
+            <div class="mb-3 mb-md-5">
+              <label for="projectName" class="form-label required">專案名稱</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="projectType" class="form-label required">專案類型</label>
+              <input type="text" class="form-control" id="projectType" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="projectdIntroduction" class="form-label required">專案簡介</label>
+              <input type="text" class="form-control" id="projectdIntroduction" required>
+              <p class="fs-sm mb-0 mt-1">限制30字</p>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="target" class="form-label required">目標金額</label>
+              <input type="text" class="form-control" id="target" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="time" class="form-label required">募資時間</label>
+              <input type="time" class="form-control" id="time" required>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
+          <fieldset class="payment-fieldset col-12 col-md-10">
+            <legend class="payment-lengend">提案人資訊</legend>
+            <div class="mb-3 mb-md-5">
+              <label for="proposalLeader" class="form-label required">提案負責人</label>
+              <input type="text" class="form-control" id="proposalLeader" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="proposalUnit" class="form-label required">提案單位</label>
+              <input type="text" class="form-control" id="proposalUnit" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="Introduction" class="form-label required">提案人/團隊介紹</label>
+              <input type="text" class="form-control" id="Introduction" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="email" class="form-label required">聯絡信箱</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3 mb-md-5">
+              <label for="tel" class="form-label required">連絡電話</label>
+              <input type="tel" class="form-control" id="tel" required>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
           <div class="col-12 col-md-10">
             <div class="p-5 p-sm-8 p-md-10 border">
               <h2 class="mb-5">專案基本資訊</h2>
@@ -40,8 +93,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
+        </div> -->
+        <!-- <div class="row justify-content-center mb-5 mb-sm-8 mb-md-10 text-start">
           <div class="col-12 col-md-10">
             <div class="p-5 p-sm-8 p-md-10 border">
               <h2 class="mb-5">提案人資訊</h2>
@@ -50,8 +103,8 @@
                 <input type="text" class="form-control p-3" id="text" placeholder="提案負責人">
               </div>
               <div class="mb-3 mb-md-5">
-                <label for="text" class="form-label">提案單位</label>
-                <input type="text" class="form-control p-3" id="text" placeholder="提案單位">
+                <label for="proposalUnit" class="form-label">提案單位</label>
+                <input type="text" class="form-control p-3" id="proposalUnit" placeholder="提案單位">
               </div>
               <div class="mb-3 mb-md-5">
                 <label for="Introduction" class="form-label">提案人/團隊介紹</label>
@@ -67,7 +120,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </form>
       <a href="completeProposal.html" class="btn btn-white text-primary-1000 fw-bolder py-3 px-5 w-100 w-md-auto">送出</a>
     </div>
