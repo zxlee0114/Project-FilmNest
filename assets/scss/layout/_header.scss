@@ -13,6 +13,13 @@
   height: 20px;
 }
 
+.login-btn {
+  border-color: transparent;
+  &:hover {
+    border-color: #FFF;
+  }
+}
+
 .nav-btn-deco::before {
   position: absolute;
   content: "";
@@ -20,9 +27,14 @@
   width: 1px;
   opacity: 40%;
   background: #FFF;
-  left: -32px;
+  // left: -32px;
+  right: -12px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.nav-btn-deco:hover::before {
+  opacity: 0%;
 }
 
 .DropdownDeco {
