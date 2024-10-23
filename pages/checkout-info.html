@@ -144,26 +144,24 @@
             <aside class="col-lg-4 d-lg-block d-none">
               <div class="card checkout-info-sidebar bg-primary-9 border rounded-1 h-auto" style="border: 1px sold #606060;">
                 <div class="order-info">
-                  <div class="card-header">
-                    <h4 class="mb-5">訂單資訊</h3>
-                    <h5 class="small text-nowrap mb-3">方案名稱：</h4>
-                    <p class="mb-1">
-                      《追風者》群眾募資計畫 - 贊助方案<wbr><span class="text-nowrap">【我全都要組】</span>
-                    </p>
+                  <div class="card-header p-4">
+                    <h3 class="mb-5">訂單資訊</h3>
+                    <h4 class="fs-7 fw-normal mb-3">《追風者》群眾募資計畫–【我全都要組】</h4>
+                    <!-- <p class="fs-base mb-1">《追風者》群眾募資計畫–【我全都要組】</p> -->
                   </div>
                   <div class="card-body">
                     <ul class="list-unstyled">
                       <li class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="small text-nowrap mb-0">訂單編號：</h5>
+                        <h5 class="small text-primary-2 mb-0">訂單編號：</h5>
                         <p class="mb-0 font-monospace">WINDS100033302</p>
                       <li class="d-flex justify-content-between align-items-center mb-5">
-                        <h5 class="small text-nowrap mb-0">訂單金額：</h5>
+                        <h5 class="small text-primary-2 mb-0">訂單金額：</h5>
                         <p class="mb-0">NT$ 2,000</p>
                       </li>
                       <hr>
                       <li class="d-flex justify-content-between align-items-center mb-5">
-                        <h5 class="small text-nowrap mb-0">應付金額：</h5>
-                        <p class="mb-0 fw-bold fw-7">NT$ 2,000</p>
+                        <h5 class="fs-7 text-primary-2 mb-0">應付金額：</h5>
+                        <p class="mb-0 fw-bold fs-7">NT$ 2,000</p>
                       </li>
                     </ul>
                   </div>
@@ -200,35 +198,36 @@
     </footer>
 
     <div class="modal fade checkout-modal" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModal" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen-sm-down">
-        <div class="modal-content bg-primary-9 rounded-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-primary-9 rounded-1 border border-primary-1">
           <div class="modal-header">
-            <h5 class="modal-title fs-sm-6 fs-7" id="checkoutModal">《 追風者 》贊助方案－－【 我全都要組 】</h5>
-            <button type="button" class="btn-close btn-checkout-close btn-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title fs-sm-6 fs-7" id="checkoutModal">《追風者》群眾募資計畫【我全都要組】</h5>
+            <button type="button" class="material-symbols-outlined text-white border-0 ms-auto" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">close</button>
           </div>
           <div class="modal-body d-flex flex-column justify-content-between">
-            <ul class="list-unstyled d-flex flex-column gap-3">
+            <ul class="list-unstyled d-flex flex-column gap-5 lh-1">
               <li class="d-flex justify-content-between align-items-center">
-                <small class="mb-0">訂單編號：</small>
-                <p class="mb-0">WINDS100033302</p>
+                <small class="mb-0 text-primary-3 lh-1">訂單編號：</small>
+                <p class="mb-0 lh-1">WINDS100033302</p>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <small>方案金額：</small>
+                <small class="text-primary-3">方案金額：</small>
                 <p class="mb-0">NT$2,000</p>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <small>加購項目：</small>
+                <small class="text-primary-3">加購項目：</small>
                 <p class="mb-0">無</p>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <small>加購金額：</small>
+                <small class="text-primary-3">加購金額：</small>
                 <p class="mb-0">NT$0</p>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <small>加碼金額：</small>
+                <small class="text-primary-3">加碼金額：</small>
                 <p class="mb-0">NT$0</p>
               </li>
             </ul>
+            <hr>
             <div class="d-flex justify-content-between align-items-center">
               <p class="mb-0">總計：</p>
               <p class="fs-7 fw-bold mb-0">NT$2,000</p>
@@ -241,7 +240,7 @@
       </div>
     </div>
 
-    <div class="mb-lg-0 mb-20">
+    <div class="mb-lg-0 mb-11">
       <%- include('./layout/footer'); -%>
     </div>
 
