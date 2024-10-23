@@ -50,3 +50,47 @@ textarea {
 .modal-backdrop {
   --bs-backdrop-opacity: .7;
 }
+
+.bg-ligth-deco {
+  position: relative;
+  &::before {
+    content: "";
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    position: absolute;
+    top: 305px;
+    left: -72px;
+    background-color: #686868;
+    z-index: -1;
+    filter: blur(250px);
+    @media (min-width:768px) {
+      width: 350px;
+      height: 330px;
+    }
+    @media (min-width:992px) {
+      width: 420px;
+      height: 400px;
+    }
+  }
+  &::after {
+    content: "";
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: absolute;
+    top: 600px;
+    right: 50px;
+    background-color: #686868;
+    z-index: -1;
+    filter: blur(250px);
+    @media (min-width:768px) {
+      width: 350px;
+      height: 330px;
+    }
+    @media (min-width:992px) {
+      width: 420px;
+      height: 400px;
+    }
+  }
+}
