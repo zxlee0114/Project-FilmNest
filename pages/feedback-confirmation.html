@@ -167,8 +167,9 @@
       </div>
     </div>
     
-
-      <%- include('./layout/footer'); -%>
+<div class="mb-lg-0 mb-20">
+  <%- include('./layout/footer'); -%>
+</div>
 
     <!-- 手機版：aside 變成 footer -->
     <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-8 fixed-bottom">
@@ -186,27 +187,41 @@
       </div>
     </footer>
     <div class="modal fade" id="extraSupportModal" tabindex="-1" aria-labelledby="extraSupportModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-1 bg-primary-9">
-          <div class="modal-header">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-1 bg-primary-9 border border-primary-1">
+          <div class="modal-header align-items-center">
             <h1 class="modal-title fs-5" id="extraSupportModal">我要加碼</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="material-symbols-outlined text-white border-0 ms-auto" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">close</button>
           </div>
-          <div class="modal-body">
-            <div class="custom-amount-mobile input-group w-auto">
-              <input type="number" id="customAmountMobile" list="customAmountChoice" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-start-1 w-auto form-control">
-              <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
-              <button class="btn btn-secondary cancel-button rounded-end-1">重設</button>
+          <div class="modal-body d-flex flex-column justify-content-center gap-3">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">多給一點點，讓夢想早日實現</p> 
+              <span class="material-symbols-outlined ms-1 fs-base icon-fill text-danger">favorite</span>
+            </div>
+            <div class="btn-group w-100">
+              <button class="btn btn-secondary rounded-start-1">+100</button>
+              <button class="btn btn-secondary">+500</button>
+              <button class="btn btn-secondary rounded-end-1">+1,000</button>
+            </div>
+            <div class="custom-amount-mobile input-group w-100 flex-nowrap">
+              <input type="number" id="customAmountMobile" list="customAmountChoice" placeholder="自訂金額" min="0" class="px-4 rounded-start-1 w-auto form-control">
+              <!-- <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button> -->
+              <button class="btn btn-secondary cancel-button rounded-end-1 flex-shrink-0">重設</button>
             </div>
             <datalist id="customAmountChoice">
-              <option value="100"></option>
-              <option value="500"></option>
-              <option value="1000"></option>
+              <option value="168"></option>
+              <option value="666"></option>
+              <option value="777"></option>
+              <option value="888"></option>
+              <option value="999"></option>
             </datalist>
+            <div class="bg-primary-8 p-6 rounded-1">
+              <p class="mb-0 text-center">總計：NT$ 2,000</p>
+            </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認加碼</button>
           </div>
         </div>
       </div>
