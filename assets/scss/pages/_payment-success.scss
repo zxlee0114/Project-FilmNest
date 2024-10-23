@@ -88,8 +88,11 @@
 
 .progress-text::after {
     content: counter(progress) ' %';
+    //設置一個名為 progress 的計數器，並在數字後面加上 %
     animation: progress-text-animation 1.5s linear forwards;
-    counter-reset: progress var(--progress); //設置一個名為 progress 的計數器，並套用變數 var(--progress)
+    //progress-text-animation 1.5s linear forwards infinite; 無限循環
+    counter-reset: progress var(--progress); 
+    //以變數 var(--progress) 重置 progress 計數器
 }
 
 @keyframes progress-animation {
