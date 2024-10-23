@@ -101,9 +101,9 @@
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
                   <div class="modal-content border rounded-1" style="border: #606060;">
                     <div class="modal-header">
-                      <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
-                      <h1 class="modal-title fs-5 mx-auto" id="feedbackModalLabel">方案選擇</h1>
-                      <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="material-symbols-outlined border-0 ms-auto opacity-0" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;" disabled>close</button>
+                      <h1 class="modal-title fs-5" id="feedbackModalLabel">方案選擇</h1>
+                      <button type="button" class="material-symbols-outlined text-white border-0 ms-auto" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">close</button>
                     </div>
                     <div class="modal-body">
                       <%- include('./layout/feedback-swiper'); -%>
@@ -137,17 +137,11 @@
           <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
             <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
               <div class="card-body">
-                <h3 class="card-title fs-5 fw-bolder mb-4">隨喜加碼</h3>
-                <div class="row mb-4">
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="100">+100</button>
-                  </div>
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
-                  </div>
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1 text-nowrap" data-amount="1000">+1,000</button>
-                  </div>
+                <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
+                <div class="btn-group w-100 mb-4">
+                  <button class="btn btn-secondary w-100 add-amount rounded-start-1" data-amount="100">+100</button>
+                  <button class="btn btn-secondary w-100 add-amount" data-amount="500">+500</button>
+                  <button class="btn btn-secondary w-100 add-amount rounded-end-1" data-amount="1000">+1,000</button>
                 </div>
                 <div class="input-group mb-4">
                   <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1">
