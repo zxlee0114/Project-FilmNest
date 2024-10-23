@@ -10,11 +10,11 @@
   <body>
     <%- include('./layout/header'); -%>
     <header class="mt-20 mb-12">
-      <div class="container-md p-0">
+      <div class="container-md">
         <div class="row align-items-center">
           <!-- 左半部（圖片） -->
           <div class="col-lg-8 col-md-7">
-            <img class="img-fluid w-100 object-fit-cover rounded-1" src="../assets/images/image62.png" alt="追風者 我全都要組">
+            <img class="img-fluid w-100 object-fit-cover rounded-lg-1" src="../assets/images/image62.png" alt="追風者 我全都要組">
           </div>
           <!-- 右半部（標題） -->
           <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center align-items-md-start align-items-center p-4">
@@ -24,6 +24,7 @@
         </div>
       </div>
     </header>
+    
     <!-- <header class="container mb-8" style="margin-top: 88px;">
       <div class="row">
           <div class="d-flex justify-content-around align-items-center flex-wrap">
@@ -149,7 +150,7 @@
                   </div>
                 </div>
                 <div class="input-group mb-4">
-                  <input type="number" name="" id="customAmount" placeholder="自訂金額" class="form-control rounded-start-1">
+                  <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1">
                   <button type="button" class="btn btn-primary" id="addCustomAmount">加碼</button>
                   <button type="button" class="btn btn-secondary rounded-end-1" id="resetCustomAmount">重設</button>
                 </div>
@@ -170,22 +171,46 @@
       <%- include('./layout/footer'); -%>
 
     <!-- 手機版：aside 變成 footer -->
-    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-8 fixed-bottom">
       <div class="d-flex justify-content-between flex-wrap gap-3">
-        <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
-          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 w-auto form-control" style="max-width: 150px;">
-          <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
-          <button class="btn btn-secondary cancel-button">重設</button>
-        </div>
-        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center">
           <p class="mb-0 d-sm-block d-none">總計：</p>
           <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+        </div>
+        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#extraSupportModal">我要加碼</button>
           <a href="checkout-info.html">
             <button type="submit" class="btn btn-primary ms-auto">下一步</button>
           </a>
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="extraSupportModal" tabindex="-1" aria-labelledby="extraSupportModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-1 bg-primary-9">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="extraSupportModal">我要加碼</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="custom-amount-mobile input-group w-auto">
+              <input type="number" id="customAmountMobile" list="customAmountChoice" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-start-1 w-auto form-control">
+              <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
+              <button class="btn btn-secondary cancel-button rounded-end-1">重設</button>
+            </div>
+            <datalist id="customAmountChoice">
+              <option value="100"></option>
+              <option value="500"></option>
+              <option value="1000"></option>
+            </datalist>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
