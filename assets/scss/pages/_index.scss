@@ -55,6 +55,61 @@
     background: linear-gradient(180deg, #040404 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
+// banner 追風者
+.index-banner-text-bg.index-banner-text-bg2{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/首頁_輪播_01.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// banner 孤獨時光
+.index-banner-text-bg.index-banner-text-bg3{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/首頁_輪播_02.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// banner 孤獨時光
+.index-banner-text-bg.index-banner-text-bg4{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/首頁_輪播_03.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// banner CLAW MACHINE
+.index-banner-text-bg.index-banner-text-bg5{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/首頁_輪播_04.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+// banner 黑色照片
+.index-banner-text-bg.index-banner-text-bg6{
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/首頁_輪播_05.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  @media(max-width:576px){
+    background-image: url(/assets/images/首頁_輪播_05_sm.jpg);
+  }
+}
+
+
+
 .swiper-horizontal > .swiper-scrollbar.indexbannerswiper-scrollbar, .swiper-scrollbar.indexbannerswiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
   left: 77%;
