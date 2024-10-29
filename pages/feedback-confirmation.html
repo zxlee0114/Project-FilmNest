@@ -135,7 +135,8 @@
             </section>
           </main>
           <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
-            <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+            <%- include('./layout/extra-amount-calculator'); -%>
+            <!-- <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
               <div class="card-body">
                 <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
                 <div class="btn-group w-100 mb-4">
@@ -156,7 +157,7 @@
                   <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
                 </a>
               </div>
-            </div>
+            </div> -->
           </aside>  
       </div>
     </div>
@@ -192,6 +193,7 @@
               <p class="mb-0">多給一點點，讓夢想早日實現</p> 
               <span class="material-symbols-outlined ms-1 fs-base icon-fill text-danger">favorite</span>
             </div>
+            <!-- <%- include('./layout/extra-amount-calculator'); -%> -->
             <div class="btn-group w-100">
               <button class="btn btn-secondary rounded-start-1">+100</button>
               <button class="btn btn-secondary">+500</button>
@@ -199,7 +201,7 @@
             </div>
             <div class="custom-amount-mobile input-group w-100 flex-nowrap">
               <input type="number" id="customAmountMobile" list="customAmountChoice" placeholder="自訂金額" min="0" class="px-4 rounded-start-1 w-auto form-control">
-              <!-- <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button> -->
+              <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
               <button class="btn btn-secondary cancel-button rounded-end-1 flex-shrink-0">重設</button>
             </div>
             <datalist id="customAmountChoice">

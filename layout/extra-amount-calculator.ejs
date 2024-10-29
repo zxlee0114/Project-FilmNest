@@ -1,0 +1,25 @@
+ <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+  <div class="card-body">
+    <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
+    <div class="btn-group w-100 mb-4">
+      <button class="btn btn-secondary w-100 add-amount rounded-start-1" data-amount="100">+100</button>
+      <button class="btn btn-secondary w-100 add-amount" data-amount="500">+500</button>
+      <button class="btn btn-secondary w-100 add-amount rounded-end-1" data-amount="1000">+1,000</button>
+    </div>
+    <div class="input-wrapper mb-8 position-relative">
+      <div class="input-group">
+        <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1 custom-amount-input">
+        <button type="button" class="btn btn-primary add-custom-amount">加碼</button>
+        <button type="button" class="btn btn-secondary rounded-end-1 reset-custom-amount">重設</button>
+      </div>
+      <small class="error-message text-warning position-absolute top-100 start-0 mt-1 ms-1">輸入大於 0 的金額才可以加碼唷</small>
+    </div>
+    <div class="bg-primary-8 p-3 rounded-1 mb-4">
+      <p class="mb-1">總計金額</p>
+      <h4 class="fs-6 fw-bolder mb-1">NT$ <span class="total-number">2,000</span></h4>
+    </div>
+    <a href="checkout-info.html">
+      <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+    </a>
+  </div>
+</div>
