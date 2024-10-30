@@ -7,5 +7,6 @@ import "swiper/css/bundle";
 // import Swiper JS
 import "./assets/js/swiper.js";
 import "./assets/js/input.js";
+import "./assets/js/checkout.js";
 
 console.log("Hello world!");
