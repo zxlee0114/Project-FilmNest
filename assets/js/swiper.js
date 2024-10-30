@@ -129,6 +129,8 @@ var sloganswiper = new Swiper(".sloganswiper", {
 
 var indexbannerswiper = new Swiper(".indexbannerswiper", {
   slidesPerView: 1,
+  loop:true,
+  autoplay:true,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true,
