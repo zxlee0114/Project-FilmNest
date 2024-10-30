@@ -10,8 +10,8 @@
   type="image/x-icon"
 />
     <title>《追風者》回饋方案</title>
-    <script type="module" crossorigin src="/Project-FilmNest/assets/main-894a1c72.js"></script>
-    <link rel="stylesheet" href="/Project-FilmNest/assets/main-ef4bdf95.css">
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-acd3d65d.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-313d4e55.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark py-3 py-lg-5">
@@ -84,12 +84,22 @@
 </li>          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a>
-        </li>
+          <!-- <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a> -->
+          <div class="search-container">
+  <input type="text" class="search-input" placeholder="輸入影片名稱" aria-label="搜索">
+  <button class="search-icon" type="submit">
+    <span class="fw-bolder me-2">搜尋</span>
+    <span class="material-symbols-outlined">search</span>
+  </button>
+  <span class="material-symbols-outlined search-input-search-icon">search</span>
+  <span class="material-symbols-outlined search-input-close-icon">close</span>
+</div>
+
+<!-- 參考 - AI製作範例：https://codepen.io/zxlee/pen/bGXWgOG?editors=1100 -->        </li>
       </ul>
       <div class="ms-auto">
-        <a href="login.html" class="btn btn-outline-light fw-bolder p-0 border-0 me-4">登入 / 註冊</a>
-        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</a>
+        <a href="login.html" class="btn btn-outline-light fw-bolder login-btn py-3 px-5 me-3 position-relative nav-btn-deco">登入 / 註冊</a>
+        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 ms-8">我要提案</a>
       </div>
     </div>
   </div>
@@ -101,11 +111,11 @@
   window.addEventListener('scroll', fixNav)
 
   function fixNav() {
-      if(window.scrollY > 0) {
-          nav.classList.add('active')
-      } else {
-          nav.classList.remove('active')
-      }
+    if(window.scrollY > 0) {
+      nav.classList.add('active')
+    } else {
+      nav.classList.remove('active')
+    }
   }
 </script>
 <!-- 參考文章：https://ithelp.ithome.com.tw/articles/10268713 -->
@@ -189,11 +199,10 @@
 <div class="modal fade" tabindex="-1" id="mobile-nav-search" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
-      <div class="modal-header container border-0 py-3">
-        搜尋
-      </div>
-      <div class="modal-body p-0">
-        搜尋
+      <div class="modal-header container border-0 p-3 position-relative">
+        <input type="text" class="w-100 mobile-search-input" placeholder="輸入影片名稱" aria-label="搜索">
+        <span class="material-symbols-outlined mobile-search-icon">search</span>
+        <button type="button" class="btn p-0 border-0 fw-bolder d-flex align-items-center  mobile-close-icon" data-bs-toggle="modal" data-bs-target="#mobile-nav"><span class="material-symbols-outlined">close</span></button>
       </div>
     </div>
   </div>
@@ -211,12 +220,12 @@
                 NT$ 123,456  <span class="fs-lg-base fs-sm text-primary-4 ms-3 me-auto">/ NT$ 3,000,000</span>
               </div>
               <div class="percentage fs-lg-6">
-                99%
+                75%
               </div>
             </li>
             <li class="mb-4">
-              <div class="progress progress-bg bg-primary-8" style="height: 8px; border-radius: 50px;" role="progressbar" aria-label="Basic example" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-white" style="width: 43%; border-radius: 30px;"></div>
+              <div class="progress progress-bg bg-primary-8" style="height: 8px; border-radius: 50px;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-white" style="width: 75%; border-radius: 30px;"></div>
               </div>
             </li>
             <li class="d-flex justify-content-between align-items-center">
@@ -233,7 +242,7 @@
       </div>
     </header>
       <!-- 贊助方案 swiper -->
-      <main class="container position-relative" style="padding: 120px 0;">
+      <main class="container position-relative" style="padding: 120px 12px;">
         <div class="swiper feedbackChoiceSwiper">
   <div class="swiper-wrapper">
     <!-- 卡片一 -->

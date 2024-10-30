@@ -10,8 +10,8 @@
   type="image/x-icon"
 />
     <title>《追風者》方案確認</title>
-    <script type="module" crossorigin src="/Project-FilmNest/assets/main-894a1c72.js"></script>
-    <link rel="stylesheet" href="/Project-FilmNest/assets/main-ef4bdf95.css">
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-acd3d65d.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-313d4e55.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark py-3 py-lg-5">
@@ -84,12 +84,22 @@
 </li>          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a>
-        </li>
+          <!-- <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a> -->
+          <div class="search-container">
+  <input type="text" class="search-input" placeholder="輸入影片名稱" aria-label="搜索">
+  <button class="search-icon" type="submit">
+    <span class="fw-bolder me-2">搜尋</span>
+    <span class="material-symbols-outlined">search</span>
+  </button>
+  <span class="material-symbols-outlined search-input-search-icon">search</span>
+  <span class="material-symbols-outlined search-input-close-icon">close</span>
+</div>
+
+<!-- 參考 - AI製作範例：https://codepen.io/zxlee/pen/bGXWgOG?editors=1100 -->        </li>
       </ul>
       <div class="ms-auto">
-        <a href="login.html" class="btn btn-outline-light fw-bolder p-0 border-0 me-4">登入 / 註冊</a>
-        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</a>
+        <a href="login.html" class="btn btn-outline-light fw-bolder login-btn py-3 px-5 me-3 position-relative nav-btn-deco">登入 / 註冊</a>
+        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 ms-8">我要提案</a>
       </div>
     </div>
   </div>
@@ -101,11 +111,11 @@
   window.addEventListener('scroll', fixNav)
 
   function fixNav() {
-      if(window.scrollY > 0) {
-          nav.classList.add('active')
-      } else {
-          nav.classList.remove('active')
-      }
+    if(window.scrollY > 0) {
+      nav.classList.add('active')
+    } else {
+      nav.classList.remove('active')
+    }
   }
 </script>
 <!-- 參考文章：https://ithelp.ithome.com.tw/articles/10268713 -->
@@ -189,20 +199,19 @@
 <div class="modal fade" tabindex="-1" id="mobile-nav-search" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
-      <div class="modal-header container border-0 py-3">
-        搜尋
-      </div>
-      <div class="modal-body p-0">
-        搜尋
+      <div class="modal-header container border-0 p-3 position-relative">
+        <input type="text" class="w-100 mobile-search-input" placeholder="輸入影片名稱" aria-label="搜索">
+        <span class="material-symbols-outlined mobile-search-icon">search</span>
+        <button type="button" class="btn p-0 border-0 fw-bolder d-flex align-items-center  mobile-close-icon" data-bs-toggle="modal" data-bs-target="#mobile-nav"><span class="material-symbols-outlined">close</span></button>
       </div>
     </div>
   </div>
 </div>    <header class="mt-20 mb-12">
-      <div class="container-md p-0">
+      <div class="container-md">
         <div class="row align-items-center">
           <!-- 左半部（圖片） -->
           <div class="col-lg-8 col-md-7">
-            <img class="img-fluid w-100 object-fit-cover rounded-1" src="/Project-FilmNest/assets/image62-569e888a.png" alt="追風者 我全都要組">
+            <img class="img-fluid w-100 object-fit-cover rounded-lg-1" src="/Project-FilmNest/assets/image62-569e888a.png" alt="追風者 我全都要組">
           </div>
           <!-- 右半部（標題） -->
           <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center align-items-md-start align-items-center p-4">
@@ -212,6 +221,7 @@
         </div>
       </div>
     </header>
+    
     <!-- <header class="container mb-8" style="margin-top: 88px;">
       <div class="row">
           <div class="d-flex justify-content-around align-items-center flex-wrap">
@@ -288,9 +298,9 @@
                 <div class="modal-dialog modal-xl modal-fullscreen-sm-down ">
                   <div class="modal-content border rounded-1" style="border: #606060;">
                     <div class="modal-header">
-                      <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
-                      <h1 class="modal-title fs-5 mx-auto" id="feedbackModalLabel">方案選擇</h1>
-                      <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="material-symbols-outlined border-0 ms-auto opacity-0" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;" disabled>close</button>
+                      <h1 class="modal-title fs-5" id="feedbackModalLabel">方案選擇</h1>
+                      <button type="button" class="material-symbols-outlined text-white border-0 ms-auto" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">close</button>
                     </div>
                     <div class="modal-body">
                       <div class="swiper feedbackChoiceSwiper">
@@ -511,11 +521,11 @@
              <p>※如不願露出，選擇匿名即可</p>
              <form action="">
                <div class="d-flex align-items-center mb-3">
-                 <input type="radio" id="chooseInputName" name="showNameOrNot" class="me-2">
+                 <input type="radio" id="chooseInputName" name="nameOption" class="me-2">
                  <input type="text" id="supporterNameInput" class="supporter-name-input rounded-1 p-2" placeholder="填入您希望的稱呼" disabled>
                </div>
                <div>
-                 <input type="radio" id="chooseHideName" name="showNameOrNot" class="me-2">
+                 <input type="radio" id="chooseHideName" name="nameOption" class="me-2">
                  <label for="chooseHideName">我想匿名</label>
                </div>
                <hr>
@@ -527,22 +537,40 @@
             </section>
           </main>
           <aside class="col-4 feedback-confirmation-sidebar d-lg-block d-none" >
-            <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+             <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+  <div class="card-body">
+    <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
+    <div class="btn-group w-100 mb-4">
+      <button class="btn btn-secondary w-100 add-amount rounded-start-1" data-amount="100">+100</button>
+      <button class="btn btn-secondary w-100 add-amount" data-amount="500">+500</button>
+      <button class="btn btn-secondary w-100 add-amount rounded-end-1" data-amount="1000">+1,000</button>
+    </div>
+    <div class="input-wrapper mb-8 position-relative">
+      <div class="input-group">
+        <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1 custom-amount-input">
+        <button type="button" class="btn btn-primary add-custom-amount">加碼</button>
+        <button type="button" class="btn btn-secondary rounded-end-1 reset-custom-amount">重設</button>
+      </div>
+      <small class="error-message text-warning position-absolute top-100 start-0 mt-1 ms-1">輸入大於 0 的金額才可以加碼唷</small>
+    </div>
+    <div class="bg-primary-8 p-3 rounded-1 mb-4">
+      <p class="mb-1">總計金額</p>
+      <h4 class="fs-6 fw-bolder mb-1">NT$ <span class="total-number">2,000</span></h4>
+    </div>
+    <a href="checkout-info.html">
+      <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+    </a>
+  </div>
+</div>            <!-- <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
               <div class="card-body">
-                <h3 class="card-title fs-5 fw-bolder mb-4">隨喜加碼</h3>
-                <div class="row mb-4">
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="100">+100</button>
-                  </div>
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1" data-amount="500">+500</button>
-                  </div>
-                  <div class="col-4">
-                    <button class="btn btn-secondary w-100 add-amount rounded-1 text-nowrap" data-amount="1000">+1,000</button>
-                  </div>
+                <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
+                <div class="btn-group w-100 mb-4">
+                  <button class="btn btn-secondary w-100 add-amount rounded-start-1" data-amount="100">+100</button>
+                  <button class="btn btn-secondary w-100 add-amount" data-amount="500">+500</button>
+                  <button class="btn btn-secondary w-100 add-amount rounded-end-1" data-amount="1000">+1,000</button>
                 </div>
                 <div class="input-group mb-4">
-                  <input type="number" name="" id="customAmount" placeholder="自訂金額" class="form-control rounded-start-1">
+                  <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1">
                   <button type="button" class="btn btn-primary" id="addCustomAmount">加碼</button>
                   <button type="button" class="btn btn-secondary rounded-end-1" id="resetCustomAmount">重設</button>
                 </div>
@@ -554,13 +582,13 @@
                   <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
                 </a>
               </div>
-            </div>
+            </div> -->
           </aside>  
       </div>
     </div>
     
-
-      <footer class="footer-bg py-8 pt-md-20 pb-md-10">
+<div class="mb-lg-0 mb-20">
+  <footer class="footer-bg py-8 pt-md-20 pb-md-10">
   <div class="container">
     <ul class="list-unstyled d-md-flex">
       <li class="w-md-50 mb-10 mb-md-0">
@@ -607,24 +635,88 @@
     </ul>
     <p class="text-end mt-10 mt-md-20 mb-0 fs-copyright">Copyright ©2024 by 影巢影視募資平台小組 僅供作品集使用</p>
   </div>
-</footer>
+</footer></div>
+
     <!-- 手機版：aside 變成 footer -->
-    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-9 border border-primary-6 rounded-top-1 fixed-bottom">
+    <footer class="checkout-confirmation-footer d-lg-none d-block p-6 bg-primary-8 fixed-bottom">
       <div class="d-flex justify-content-between flex-wrap gap-3">
-        <div class="custom-amount-mobile d-flex align-items-center gap-3 w-auto">
-          <input type="number" id="customAmountMobile" placeholder="隨喜加碼（選填）" min="0" class="p-2 rounded-1 w-auto form-control" style="max-width: 150px;">
-          <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
-          <button class="btn btn-secondary cancel-button">重設</button>
-        </div>
-        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center">
           <p class="mb-0 d-sm-block d-none">總計：</p>
           <p class="total-amount fs-7 mb-0">NT$ 2,000</p>
+        </div>
+        <div class="amount-confirm-mobile d-flex align-items-center gap-3">
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#extraSupportModal">我要加碼</button>
           <a href="checkout-info.html">
             <button type="submit" class="btn btn-primary ms-auto">下一步</button>
           </a>
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="extraSupportModal" tabindex="-1" aria-labelledby="extraSupportModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-1 bg-primary-9 border border-primary-1">
+          <div class="modal-header align-items-center">
+            <h1 class="modal-title fs-5" id="extraSupportModal">我要加碼</h1>
+            <button type="button" class="material-symbols-outlined text-white border-0 ms-auto" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">close</button>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-center gap-3">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">多給一點點，讓夢想早日實現</p> 
+              <span class="material-symbols-outlined ms-1 fs-base icon-fill text-danger">favorite</span>
+            </div>
+            <!--  <div class="card bg-primary-9 p-3  border rounded-1 h-auto" style="border: 1px sold #606060;">
+  <div class="card-body">
+    <h3 class="card-title fs-5 fw-bolder mb-6">隨喜加碼</h3>
+    <div class="btn-group w-100 mb-4">
+      <button class="btn btn-secondary w-100 add-amount rounded-start-1" data-amount="100">+100</button>
+      <button class="btn btn-secondary w-100 add-amount" data-amount="500">+500</button>
+      <button class="btn btn-secondary w-100 add-amount rounded-end-1" data-amount="1000">+1,000</button>
+    </div>
+    <div class="input-wrapper mb-8 position-relative">
+      <div class="input-group">
+        <input type="number" name="" id="customAmount" placeholder="自訂金額" min="0" class="form-control rounded-start-1 custom-amount-input">
+        <button type="button" class="btn btn-primary add-custom-amount">加碼</button>
+        <button type="button" class="btn btn-secondary rounded-end-1 reset-custom-amount">重設</button>
+      </div>
+      <small class="error-message text-warning position-absolute top-100 start-0 mt-1 ms-1">輸入大於 0 的金額才可以加碼唷</small>
+    </div>
+    <div class="bg-primary-8 p-3 rounded-1 mb-4">
+      <p class="mb-1">總計金額</p>
+      <h4 class="fs-6 fw-bolder mb-1">NT$ <span class="total-number">2,000</span></h4>
+    </div>
+    <a href="checkout-info.html">
+      <button type="submit" class="btn btn-primary w-100 rounded-1" id="nextStep">下一步</button>
+    </a>
+  </div>
+</div> -->
+            <div class="btn-group w-100">
+              <button class="btn btn-secondary rounded-start-1">+100</button>
+              <button class="btn btn-secondary">+500</button>
+              <button class="btn btn-secondary rounded-end-1">+1,000</button>
+            </div>
+            <div class="custom-amount-mobile input-group w-100 flex-nowrap">
+              <input type="number" id="customAmountMobile" list="customAmountChoice" placeholder="自訂金額" min="0" class="px-4 rounded-start-1 w-auto form-control">
+              <button class="btn btn-secondary confirm-button d-sm-block d-none">確認</button>
+              <button class="btn btn-secondary cancel-button rounded-end-1 flex-shrink-0">重設</button>
+            </div>
+            <datalist id="customAmountChoice">
+              <option value="168"></option>
+              <option value="666"></option>
+              <option value="777"></option>
+              <option value="888"></option>
+              <option value="999"></option>
+            </datalist>
+            <div class="bg-primary-8 p-6 rounded-1">
+              <p class="mb-0 text-center">總計：NT$ 2,000</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認加碼</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </body>
 </html>

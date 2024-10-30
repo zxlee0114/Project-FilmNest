@@ -10,8 +10,8 @@
   type="image/x-icon"
 />
     <title>提案介紹</title>
-    <script type="module" crossorigin src="/Project-FilmNest/assets/main-894a1c72.js"></script>
-    <link rel="stylesheet" href="/Project-FilmNest/assets/main-ef4bdf95.css">
+    <script type="module" crossorigin src="/Project-FilmNest/assets/main-acd3d65d.js"></script>
+    <link rel="stylesheet" href="/Project-FilmNest/assets/main-313d4e55.css">
   </head>
   <body class="bg-primary-1000">
     <nav class="navbar navbar-expand-md navbar-dark py-3 py-lg-5">
@@ -84,12 +84,22 @@
 </li>          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a>
-        </li>
+          <!-- <a class="nav-link fw-bolder d-flex align-items-center" href="#">搜尋<span class="material-symbols-outlined ms-2 lh-1">search</span></a> -->
+          <div class="search-container">
+  <input type="text" class="search-input" placeholder="輸入影片名稱" aria-label="搜索">
+  <button class="search-icon" type="submit">
+    <span class="fw-bolder me-2">搜尋</span>
+    <span class="material-symbols-outlined">search</span>
+  </button>
+  <span class="material-symbols-outlined search-input-search-icon">search</span>
+  <span class="material-symbols-outlined search-input-close-icon">close</span>
+</div>
+
+<!-- 參考 - AI製作範例：https://codepen.io/zxlee/pen/bGXWgOG?editors=1100 -->        </li>
       </ul>
       <div class="ms-auto">
-        <a href="login.html" class="btn btn-outline-light fw-bolder p-0 border-0 me-4">登入 / 註冊</a>
-        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 position-relative nav-btn-deco ms-8" type="button">我要提案</a>
+        <a href="login.html" class="btn btn-outline-light fw-bolder login-btn py-3 px-5 me-3 position-relative nav-btn-deco">登入 / 註冊</a>
+        <a href="aboutProposal.html" class="btn btn-outline-light fw-bolder py-3 px-5 ms-8">我要提案</a>
       </div>
     </div>
   </div>
@@ -101,11 +111,11 @@
   window.addEventListener('scroll', fixNav)
 
   function fixNav() {
-      if(window.scrollY > 0) {
-          nav.classList.add('active')
-      } else {
-          nav.classList.remove('active')
-      }
+    if(window.scrollY > 0) {
+      nav.classList.add('active')
+    } else {
+      nav.classList.remove('active')
+    }
   }
 </script>
 <!-- 參考文章：https://ithelp.ithome.com.tw/articles/10268713 -->
@@ -189,11 +199,10 @@
 <div class="modal fade" tabindex="-1" id="mobile-nav-search" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
-      <div class="modal-header container border-0 py-3">
-        搜尋
-      </div>
-      <div class="modal-body p-0">
-        搜尋
+      <div class="modal-header container border-0 p-3 position-relative">
+        <input type="text" class="w-100 mobile-search-input" placeholder="輸入影片名稱" aria-label="搜索">
+        <span class="material-symbols-outlined mobile-search-icon">search</span>
+        <button type="button" class="btn p-0 border-0 fw-bolder d-flex align-items-center  mobile-close-icon" data-bs-toggle="modal" data-bs-target="#mobile-nav"><span class="material-symbols-outlined">close</span></button>
       </div>
     </div>
   </div>
@@ -202,12 +211,8 @@
         <h1 class="text-center slogn-position mb-0">有好想法，卻沒辦法嗎？</h1>
         <div class="aboutProposal-slogan-card-position container px-md-0">
           <div class="position-relative">
-            <ul
-              class="list-unstyled d-flex justify-content-center mb-0 w-100 w-md-75 w-xl-50 mx-auto banner-deco"
-            >
-              <li
-                class="slogan-card-bg text-center w-50 py-3 py-md-5 me-3 me-md-10"
-              >
+            <ul class="list-unstyled d-flex justify-content-center mb-0 w-100 w-md-75 w-xl-50 mx-auto banner-deco">
+              <li class="slogan-card-bg text-center w-50 py-3 py-md-5 me-3 me-md-10">
                 <p class="fs-sm fs-md-base mb-2">累積金額</p>
                 <h2 class="fs-6 fs-md-1 lh-base mb-0">4,837,261</h2>
               </li>
@@ -224,16 +229,10 @@
     <div class="process-wrap pb-18 pb-md-30">
       <div class="process container py-0 py-md-20 text-center">
         <h2 class="mb-8 mb-md-20">募資三部曲</h2>
-        <ul
-          class="list-unstyled text-start row row-cols-1 row-cols-lg-3 mb-8 mb-lg-20"
-        >
+        <ul class="list-unstyled text-start row row-cols-1 row-cols-lg-3 mb-8 mb-lg-20">
           <li class="col mb-lg-0">
-            <div
-              class="process-card-mask process-bg-1 mb-5 border border-white-1"
-            >
-              <div
-                class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column"
-              >
+            <div class="process-card-mask process-bg-1 mb-5 border border-white-1">
+              <div class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column">
                 <h3 class="fs-base fs-lg-7 d-flex flex-column">
                   <span class="fs-3 fs-lg-1 lh-base mb-1">01</span>
                   準備與計畫
@@ -245,12 +244,8 @@
             </div>
           </li>
           <li class="col mb-lg-0">
-            <div
-              class="process-card-mask process-bg-2 mb-5 border border-white-1"
-            >
-              <div
-                class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column"
-              >
+            <div class="process-card-mask process-bg-2 mb-5 border border-white-1">
+              <div class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column">
                 <h3 class="fs-base fs-lg-7 d-flex flex-column">
                   <span class="fs-3 fs-lg-1 lh-base mb-1">02</span>
                   發布與推廣
@@ -263,9 +258,7 @@
           </li>
           <li class="col">
             <div class="process-card-mask process-bg-3 border border-white-1">
-              <div
-                class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column"
-              >
+              <div class="process-card position-relative z-2 p-3 p-lg-10 d-flex flex-column">
                 <h3 class="fs-base fs-lg-7 d-flex flex-column">
                   <span class="fs-3 fs-lg-1 lh-base mb-1">03</span>
                   實施與回報
@@ -277,11 +270,7 @@
             </div>
           </li>
         </ul>
-        <a
-          href="terms-of-use.html"
-          class="btn btn-white text-primary-1000 fw-bolder py-3 px-5 w-100 w-md-auto"
-          >我要提案</a
-        >
+        <a href="terms-of-use.html" class="btn btn-primary fw-bolder py-3 px-5 w-100 w-md-auto">我要提案</a>
       </div>
     </div>
 
