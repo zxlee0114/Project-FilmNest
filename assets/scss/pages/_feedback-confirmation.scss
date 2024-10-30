@@ -18,3 +18,11 @@
     // max-height: calc(100vh - 100px);
     // overflow-y: auto;
 }
+
+.error-message{
+    display: none;
+}
+
+.input-error {
+    border-color: #FFC107 !important;
+}
